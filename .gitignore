@@ -1,0 +1,5 @@
+config/credentials.yml
+config/app.yml
+coverage/
+Gemfile.lock
+*.gem
