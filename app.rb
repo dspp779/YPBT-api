@@ -41,17 +41,6 @@ class YPBT_API < Sinatra::Base
         content[:author_channel_url] = comment.author.author_channel_url
         content
       end.to_json
-=begin      {
-        commentthreads: video.commentthreads.first(3).map do |comment|
-          content = { author_name: comment.author.author_name }
-          content[:comment_text] = comment.text_display
-          content[:like_count] = comment.author.like_count
-          content[:author_channel_url] = comment.author.author_channel_url
-
-          { comment: content }
-        end
-      }.to_json
-=end
     rescue
       halt 404, "Commentthreads (video_id: #{video_id}) not found"
     end
