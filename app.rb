@@ -10,7 +10,7 @@ class YPBT_API < Sinatra::Base
   Econfig.env = settings.environment.to_s
   Econfig.root = settings.root
 
-  API_VER = 'api/v0.1.4'
+  API_VER = 'api/v0.1'
 
   get '/?' do
     "YPBT_API latest version endpoints are at: /#{API_VER}/"
@@ -34,7 +34,14 @@ class YPBT_API < Sinatra::Base
       video = YoutubeVideo::Video.find(video_id: video_id)
 
       content_type 'application/json'
-      {
+      video.commentthreads.first(3).map do |comment|
+        content = { author_name: comment.author.author_name }
+        content[:comment_text] = comment.text_display
+        content[:like_count] = comment.author.like_count
+        content[:author_channel_url] = comment.author.author_channel_url
+        content
+      end.to_json
+=begin      {
         commentthreads: video.commentthreads.first(3).map do |comment|
           content = { author_name: comment.author.author_name }
           content[:comment_text] = comment.text_display
@@ -44,6 +51,7 @@ class YPBT_API < Sinatra::Base
           { comment: content }
         end
       }.to_json
+=end
     rescue
       halt 404, "Commentthreads (video_id: #{video_id}) not found"
     end

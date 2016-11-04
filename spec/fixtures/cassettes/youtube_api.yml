@@ -1631,4 +1631,252 @@ http_interactions:
         }
     http_version: 
   recorded_at: Mon, 31 Oct 2016 13:28:35 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(channelId,description,publishedAt,title))&id=XxXx888xXxX&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 04 Nov 2016 12:36:30 GMT
+      Date:
+      - Fri, 04 Nov 2016 12:36:30 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/Rk41fm-2TD0VG1yv0-bkUvcBi9s"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '17'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": []
+        }
+    http_version: 
+  recorded_at: Fri, 04 Nov 2016 12:36:30 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?fields=items(snippet(authorChannelId,authorChannelUrl,authorDisplayName,authorProfileImageUrl,likeCount))&id=z122xfko2suxyh2lq22vip3a0qqyh5tkl&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 04 Nov 2016 12:36:30 GMT
+      Date:
+      - Fri, 04 Nov 2016 12:36:30 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/RAaxWYjEjeOHg0Puh1fhPJ5Ajnk"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '397'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "snippet": {
+            "authorDisplayName": "ang pang chuan",
+            "authorProfileImageUrl": "https://lh5.googleusercontent.com/-cPzTvMOGlII/AAAAAAAAAAI/AAAAAAAAAFI/k8rNOOBGrXs/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCmlO7mWtl9-GuqOoSjfPlvQ",
+            "authorChannelId": {
+             "value": "UCmlO7mWtl9-GuqOoSjfPlvQ"
+            },
+            "likeCount": 0
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 04 Nov 2016 12:36:31 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?fields=items(snippet(authorChannelId,authorChannelUrl,authorDisplayName,authorProfileImageUrl,likeCount))&id=z12ecvb4qpeiub5yv04chh4oxtarglxjsow0k&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 04 Nov 2016 12:36:31 GMT
+      Date:
+      - Fri, 04 Nov 2016 12:36:31 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/H0CirWjaHux62o2S5DIlG4z68HU"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '394'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "snippet": {
+            "authorDisplayName": "Ao Shizhong",
+            "authorProfileImageUrl": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCCpfCKOjTZ7pckMY8l3Gqyw",
+            "authorChannelId": {
+             "value": "UCCpfCKOjTZ7pckMY8l3Gqyw"
+            },
+            "likeCount": 0
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 04 Nov 2016 12:36:31 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?fields=items(snippet(authorChannelId,authorChannelUrl,authorDisplayName,authorProfileImageUrl,likeCount))&id=z12vjroh2qvpupjrz04chfwxikefy5jz3pk0k&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 04 Nov 2016 12:36:32 GMT
+      Date:
+      - Fri, 04 Nov 2016 12:36:32 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/XLB-w31NOUFT4b3T6aVUBHd3poY"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '388'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "snippet": {
+            "authorDisplayName": "XL Hu",
+            "authorProfileImageUrl": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCV1BvJIaNGhtGwtBwivj7nw",
+            "authorChannelId": {
+             "value": "UCV1BvJIaNGhtGwtBwivj7nw"
+            },
+            "likeCount": 4
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Fri, 04 Nov 2016 12:36:32 GMT
 recorded_with: VCR 3.0.3
