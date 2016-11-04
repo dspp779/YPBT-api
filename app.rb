@@ -45,7 +45,7 @@ class YPBT_API < Sinatra::Base
         end
       }.to_json
     rescue
-      halt 404, "Cannot group (id: #{group_id}) feed"
+      halt 404, "Commentthreads (video_id: #{video_id}) not found"
     end
   end
 end
