@@ -1,18 +1,19 @@
 # frozen_string_literal: true
 ENV['RACK_ENV'] = 'test'
 
-require 'simplecov'
-SimpleCov.start
-
-require 'yaml'
 require 'minitest/autorun'
 require 'minitest/rg'
+require 'rack/test'
 require 'vcr'
 require 'webmock'
-require './lib/YPBT/comment.rb'
-require './lib/YPBT/video.rb'
-require './lib/YPBT/author.rb'
-require './lib/YPBT/youtube_api.rb'
+
+require_relative '../app'
+
+include Rack::Test::Methods
+
+def app
+  YPBT_API
+end
 
 FIXTURES_FOLDER = 'spec/fixtures'
 CASSETTES_FOLDER = "#{FIXTURES_FOLDER}/cassettes"
@@ -21,7 +22,14 @@ TEST_VIDEO_ID = 'FugHj7MGhss'
 RESULT_FILE = "#{FIXTURES_FOLDER}/yt_api_results.yml"
 YT_RESULT = YAML.load(File.read(RESULT_FILE))
 
-unless ENV.key? 'YOUTUBE_API_KEY'
-  CREDENTIALS = YAML.load(File.read('config/credentials.yml'))
-  ENV['YOUTUBE_API_KEY'] = CREDENTIALS[:YOUTUBE_API_KEY]
+VCR.configure do |c|
+  c.cassette_library_dir = CASSETTES_FOLDER
+  c.hook_into :webmock
+
+  c.filter_sensitive_data('<API_KEY>') { ENV['YOUTUBE_API_KEY'] }
+  #c.filter_sensitive_data('<API_KEY>') { app.config.YOUTUBE_API_KEY }
+  c.filter_sensitive_data('<API_KEY_ESCAPED>') do
+    URI.unescape(ENV['YOUTUBE_API_KEY'])
+    #URI.unescape(app.config.YOUTUBE_API_KEY)
+  end
 end

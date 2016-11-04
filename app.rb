@@ -13,7 +13,7 @@ class YPBT_API < Sinatra::Base
   API_VER = 'api/v0.1.4'
 
   get '/?' do
-    "GroupAPI latest version endpoints are at: /#{API_VER}/"
+    "YPBT_API latest version endpoints are at: /#{API_VER}/"
   end
 
   get "/#{API_VER}/video/:video_id/?" do
