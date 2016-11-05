@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    YPBT (0.1.24)
+    YPBT (0.1.5)
       http (~> 2.0)
     addressable (2.4.0)
     byebug (9.0.6)
