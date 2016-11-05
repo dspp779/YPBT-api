@@ -10,6 +10,8 @@ class YPBT_API < Sinatra::Base
   Econfig.env = settings.environment.to_s
   Econfig.root = settings.root
 
+  ENV['YOUTUBE_API_KEY'] = config.YOUTUBE_API_KEY
+
   API_VER = 'api/v0.1'
 
   get '/?' do
