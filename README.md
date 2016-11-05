@@ -1,6 +1,6 @@
 # YPBT Web API
 
-API to access the information of comments following the movies, such as author name, comment content, and author channel url.
+API to access the information of comments following a given movie, such as author name, comment content, and author channel url.
 
 ## Routes
 
