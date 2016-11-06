@@ -1,5 +1,0 @@
----
-development:
-  YOUTUBE_API_KEY: 'AIzaSyDokkPn7eYcv3JuXq1S3zZivO-cqIsSkuM'
-test:
-  YOUTUBE_API_KEY: 'AIzaSyDokkPn7eYcv3JuXq1S3zZivO-cqIsSkuM'

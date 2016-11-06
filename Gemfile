@@ -10,7 +10,7 @@ gem 'econfig'
 
 gem 'YPBT'
 
-group :develop, :test do
+group :development, :test do
   gem 'pry-byebug'
 end
 
