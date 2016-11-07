@@ -39,7 +39,7 @@ describe 'Video Routes' do
       last_response.status.must_equal 200
       last_response.content_type.must_equal 'application/json'
       comments_data = JSON.parse(last_response.body)
-      comments_data.size == 3
+      comments_data.size.must_equal 3
       first_comment = comments_data.first
       first_comment['author_name'].length.must_be :>=, 0
       first_comment['comment_text'].length.must_be :>=, 0

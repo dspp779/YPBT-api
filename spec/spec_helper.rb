@@ -27,9 +27,9 @@ VCR.configure do |c|
   c.hook_into :webmock
 
   c.filter_sensitive_data('<API_KEY>') { ENV['YOUTUBE_API_KEY'] }
-  #c.filter_sensitive_data('<API_KEY>') { app.config.YOUTUBE_API_KEY }
+  #  c.filter_sensitive_data('<API_KEY>') { app.config.YOUTUBE_API_KEY }
   c.filter_sensitive_data('<API_KEY_ESCAPED>') do
     URI.unescape(ENV['YOUTUBE_API_KEY'])
-    #URI.unescape(app.config.YOUTUBE_API_KEY)
+    # URI.unescape(app.config.YOUTUBE_API_KEY)
   end
 end
