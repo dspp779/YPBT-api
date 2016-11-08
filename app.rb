@@ -2,8 +2,10 @@
 require 'sinatra'
 require 'econfig'
 require 'YPBT'
+require './config/environment.rb'
+require './models/'
 
-# GroupAPI web service
+# YPBTAPI web service
 class YPBT_API < Sinatra::Base
   extend Econfig::Shortcut
 

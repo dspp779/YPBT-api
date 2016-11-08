@@ -26,10 +26,17 @@ VCR.configure do |c|
   c.cassette_library_dir = CASSETTES_FOLDER
   c.hook_into :webmock
 
-  c.filter_sensitive_data('<API_KEY>') { ENV['YOUTUBE_API_KEY'] }
-  #  c.filter_sensitive_data('<API_KEY>') { app.config.YOUTUBE_API_KEY }
+  if ENV['YOUTUBE_API_KEY']
+    c.filter_sensitive_data('<API_KEY>') { ENV['YOUTUBE_API_KEY'] }
+  else
+    c.filter_sensitive_data('<API_KEY>') { app.config.YOUTUBE_API_KEY }
+  end
+
   c.filter_sensitive_data('<API_KEY_ESCAPED>') do
-    URI.unescape(ENV['YOUTUBE_API_KEY'])
-    # URI.unescape(app.config.YOUTUBE_API_KEY)
+    if ENV['YOUTUBE_API_KEY']
+      URI.unescape(ENV['YOUTUBE_API_KEY'])
+    else
+      URI.unescape(app.config.YOUTUBE_API_KEY)
+    end
   end
 end
