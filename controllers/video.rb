@@ -41,7 +41,7 @@ class YPBT_API < Sinatra::Base
 
       video.commentthreads.each do |comment|
         Comment.create(
-          video_id:           video_id,
+          video_id:           yt_video.id,
           comment_id:         comment.comment_id,
           updated_at:         comment.updated_at,
           published_at:       comment.published_at,
@@ -58,6 +58,44 @@ class YPBT_API < Sinatra::Base
     rescue
       content_type 'text/plain'
       halt 500, "Cannot create video (id: #{video_id})"
+    end
+  end
+
+  put "/#{API_VER}/video/:video_id/?" do
+    video_id = params[:video_id]
+    begin
+      video = Video.find(video_id: video_id)
+      halt 400, "Video (video_id: #{video_id}) is not stored" unless video
+      commentthreads = Comment.where(video_id: video.id).all
+
+      updated_video = YoutubeVideo::Video.find(video_id: video_id)
+      if updated_video.nil?
+        halt 404, "Video (video_id: #{video_id}) not found on Youtube"
+      end
+
+      video.update(video_id: video_id, title: video.title)
+      commentthreads.map do |comment|
+        comment.delete
+      end
+      updated_video.commentthreads.each do |comment|
+        Comment.create(
+          video_id:           video.id,
+          comment_id:         comment.comment_id,
+          updated_at:         comment.updated_at,
+          published_at:       comment.published_at,
+          text_display:       comment.text_display,
+          author_name:        comment.author&.author_name,
+          author_image_url:   comment.author&.author_image_url,
+          author_channel_url: comment.author&.author_channel_url,
+          like_count:         comment.author&.like_count
+        )
+      end
+
+      content_type 'text/plain'
+      body 'Update to lastest'
+    rescue
+      content_type 'text/plain'
+      halt 500, "Cannot update posting (id: #{posting_id})"
     end
   end
 end
