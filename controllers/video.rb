@@ -2,7 +2,7 @@
 
 # GroupAPI web service
 class YPBT_API < Sinatra::Base
-  #YT_VIDEO_REGEX = %r{\"fb:\/\/group\/(\d+)\"}
+  YT_URL_REGEX = %r{https://www.youtube.com/watch\?v=(\S[^&]+)}
 
   get "/#{API_VER}/video/:video_id/?" do
     video_id = params[:video_id]
@@ -17,14 +17,12 @@ class YPBT_API < Sinatra::Base
     end
   end
 
-  # Body args (JSON) e.g.: {"video_id": "FugHj7MGhss"}
+  # Body args (JSON) e.g.: {"url": "https://www.youtube.com/watch?v=video_id"}
   post "/#{API_VER}/video/?" do
     begin
       body_params = JSON.parse request.body.read
-      #yt_video_url = body_params['url']
-      video_id = body_params['video_id']
-      #yt_video_html = HTTP.get(yt_video_url).body.to_s
-      #yt_video_id = yt_video_html.match(YT_VIDEO_REGEX)[1]
+      yt_video_url = body_params['url']
+      video_id = yt_video_url.match(YT_URL_REGEX)[1]
 
       if Video.find(video_id: video_id)
         halt 422, "Video (video_id: #{video_id})already exists"

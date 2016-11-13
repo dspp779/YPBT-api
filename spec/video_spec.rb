@@ -14,7 +14,7 @@ describe 'Video Routes' do
     before do
       DB[:videos].delete
       DB[:comments].delete
-      post 'api/v0.1/video', { video_id: HAPPY_VIDEO_ID }.to_json, 'CONTENT_TYPE' => 'application/json'
+      post 'api/v0.1/video', { url: HAPPY_VIDEO_URL }.to_json, 'CONTENT_TYPE' => 'application/json'
     end
 
     it '[HAPPY]: should find a video given a correct id' do
@@ -43,7 +43,7 @@ describe 'Video Routes' do
 
     it '[HAPPY]: should load and save a new video by its video_id' do
       post 'api/v0.1/video',
-           { video_id: HAPPY_VIDEO_ID }.to_json,
+           { url: HAPPY_VIDEO_URL }.to_json,
            'CONTENT_TYPE' => 'application/json'
 
       last_response.status.must_equal 200
@@ -57,7 +57,7 @@ describe 'Video Routes' do
 
     it '[BAD]: should report error if given invalid video_id' do
       post 'api/v0.1/video',
-           { video_id: SAD_VIDEO_ID }.to_json,
+           { url: SAD_VIDEO_URL }.to_json,
            'CONTENT_TYPE' => 'application/json'
 
       last_response.status.must_equal 400
@@ -67,7 +67,7 @@ describe 'Video Routes' do
     it 'should report error if video already exists' do
       2.times do
         post 'api/v0.1/video',
-             { video_id: HAPPY_VIDEO_ID }.to_json,
+             { url: HAPPY_VIDEO_URL }.to_json,
              'CONTENT_TYPE' => 'application/json'
       end
 
@@ -80,7 +80,7 @@ describe 'Video Routes' do
       DB[:videos].delete
       DB[:comments].delete
       post 'api/v0.1/video',
-           { video_id: HAPPY_VIDEO_ID }.to_json,
+           { url: HAPPY_VIDEO_URL }.to_json,
            'CONTENT_TYPE' => 'application/json'
     end
 

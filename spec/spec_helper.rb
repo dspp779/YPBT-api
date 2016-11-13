@@ -40,3 +40,6 @@ end
 
 HAPPY_VIDEO_ID = 'FugHj7MGhss'
 SAD_VIDEO_ID = 'XxXx888xXxX'
+REMOVED_VIDEO_ID = '5BTjZ9U5XF8'
+HAPPY_VIDEO_URL = 'https://www.youtube.com/watch?v=FugHj7MGhss'
+SAD_VIDEO_URL = 'https://www.youtube.com/watch?v=XxXx888xXxX'
