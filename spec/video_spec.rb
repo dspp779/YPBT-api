@@ -74,4 +74,42 @@ describe 'Video Routes' do
       last_response.status.must_equal 422
     end
   end
+
+  describe 'Request to update a video (including its followed comments)' do
+    before do
+      DB[:videos].delete
+      DB[:comments].delete
+      post 'api/v0.1/video',
+           { video_id: HAPPY_VIDEO_ID }.to_json,
+           'CONTENT_TYPE' => 'application/json'
+    end
+
+    it '[HAPPY]: should successfully update valid video' do
+      original = Video.first
+      modified = Video.first
+      Video.first.comments.each { |comment| comment.delete }
+      put "api/v0.1/video/#{original.video_id}"
+      last_response.status.must_equal 200
+      updated = Video.first
+      updated.comments.size.must_equal(original.comments.size)
+    end
+
+    it '[BAD]: should report error if given invalid video_id' do
+      put "api/v0.1/video/#{SAD_VIDEO_ID}"
+
+      last_response.status.must_equal 400
+      last_response.body.must_include SAD_VIDEO_ID
+    end
+=begin
+    it '[BAD]: should report error if stored video removed from YouTube' do
+      original = Video.first
+      original.update(video_id: REMOVED_VIDEO_ID).save
+
+      put "api/v0.1/video/#{original.video_id}"
+
+      last_response.status.must_equal 404
+      last_response.body.must_include original.video_id
+    end
+=end
+  end
 end
