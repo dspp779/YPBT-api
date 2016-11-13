@@ -3,7 +3,7 @@ require_relative 'spec_helper'
 
 describe 'Video Routes' do
   before do
-    VCR.insert_cassette CASSETTE_FILE, record: :new_episodes
+    VCR.insert_cassette VIDEOS_CASSETTE, record: :new_episodes
   end
 
   after do
@@ -14,7 +14,7 @@ describe 'Video Routes' do
     before do
       DB[:videos].delete
       DB[:comments].delete
-      post 'api/v0.1/video', { "video_id": HAPPY_VIDEO_ID }.to_json, 'CONTENT_TYPE' => 'application/json'
+      post 'api/v0.1/video', { video_id: HAPPY_VIDEO_ID }.to_json, 'CONTENT_TYPE' => 'application/json'
     end
 
     it '[HAPPY]: should find a video given a correct id' do
@@ -35,26 +35,43 @@ describe 'Video Routes' do
     end
   end
 
-  describe 'Get the first three comments from a video' do
-    it '[HAPPY]: should find the first three comments' do
-      get "api/v0.1/video/#{Video.first.video_id}/commentthreads"
-
-      last_response.status.must_equal 200
-      last_response.content_type.must_equal 'application/json'
-      comments_data = JSON.parse(last_response.body)
-      comments_data.size.must_equal 3
-      first_comment = comments_data.first
-      first_comment['author_name'].length.must_be :>=, 0
-      first_comment['comment_text'].length.must_be :>=, 0
-      first_comment['like_count'].to_s.length.must_be :>=, 0
-      first_comment['author_channel_url'].length.must_be :>=, 0
+  describe 'Loading and saving a new video by video_id' do
+    before do
+      DB[:videos].delete
+      DB[:comments].delete
     end
 
-    it '[SAD]: should report if the commentthreads cannot be found' do
-      get "api/v0.1/video/#{SAD_VIDEO_ID}/commentthreads"
+    it '[HAPPY]: should load and save a new video by its video_id' do
+      post 'api/v0.1/video',
+           { video_id: HAPPY_VIDEO_ID }.to_json,
+           'CONTENT_TYPE' => 'application/json'
+
+      last_response.status.must_equal 200
+      body = JSON.parse(last_response.body)
+      body.must_include 'video_id'
+      body.must_include 'title'
+
+      Video.count.must_equal 1
+      Comment.count.must_be :>=, 3
+    end
+
+    it '[BAD]: should report error if given invalid video_id' do
+      post 'api/v0.1/video',
+           { video_id: SAD_VIDEO_ID }.to_json,
+           'CONTENT_TYPE' => 'application/json'
 
       last_response.status.must_equal 400
       last_response.body.must_include SAD_VIDEO_ID
+    end
+
+    it 'should report error if video already exists' do
+      2.times do
+        post 'api/v0.1/video',
+             { video_id: HAPPY_VIDEO_ID }.to_json,
+             'CONTENT_TYPE' => 'application/json'
+      end
+
+      last_response.status.must_equal 422
     end
   end
 end

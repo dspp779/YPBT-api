@@ -27,13 +27,13 @@ class YPBT_API < Sinatra::Base
       #yt_video_id = yt_video_html.match(YT_VIDEO_REGEX)[1]
 
       if Video.find(video_id: video_id)
-        halt 422, "Video (id: #{video_id})already exists"
+        halt 422, "Video (video_id: #{video_id})already exists"
       end
 
       video = YoutubeVideo::Video.find(video_id: video_id)
     rescue
       content_type 'text/plain'
-      halt 400, "Video (id: #{video_id}) could not be found"
+      halt 400, "Video (video_id: #{video_id}) could not be found"
     end
 
     begin
@@ -57,7 +57,7 @@ class YPBT_API < Sinatra::Base
       { video_id: yt_video.id, title: yt_video.title }.to_json
     rescue
       content_type 'text/plain'
-      halt 500, "Cannot create video (id: #{video_id})"
+      halt 500, "Cannot create video (video_id: #{video_id})"
     end
   end
 

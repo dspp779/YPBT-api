@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 ENV['RACK_ENV'] = 'test'
+sh "rake db:migrate"
 
 require 'minitest/autorun'
 require 'minitest/rg'
@@ -17,9 +18,11 @@ end
 
 FIXTURES_FOLDER = 'spec/fixtures'
 CASSETTES_FOLDER = "#{FIXTURES_FOLDER}/cassettes"
-CASSETTE_FILE = 'youtube_api'
-RESULT_FILE = "#{FIXTURES_FOLDER}/yt_api_results.yml"
-YT_RESULT = YAML.load(File.read(RESULT_FILE))
+VIDEOS_CASSETTE = 'videos'
+COMMENTS_CASSETTE = 'comments'
+#CASSETTE_FILE = 'youtube_api'
+#RESULT_FILE = "#{FIXTURES_FOLDER}/yt_api_results.yml"
+#YT_RESULT = YAML.load(File.read(RESULT_FILE))
 
 VCR.configure do |c|
   c.cassette_library_dir = CASSETTES_FOLDER
