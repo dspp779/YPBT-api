@@ -11,6 +11,12 @@ describe 'Commentthreads Routes' do
   end
 
   describe 'Get the first three comments from a video' do
+    before do
+      DB[:videos].delete
+      DB[:comments].delete
+      post 'api/v0.1/video', { url: HAPPY_VIDEO_URL }.to_json, 'CONTENT_TYPE' => 'application/json'
+    end
+
     it '[HAPPY]: should find the first three comments' do
       get "api/v0.1/video/#{Video.first.video_id}/commentthreads"
 
