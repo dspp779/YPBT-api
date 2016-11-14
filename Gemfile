@@ -36,6 +36,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'rake'
 end
 
 group :development, :production do
