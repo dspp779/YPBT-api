@@ -34,6 +34,10 @@ group :test do
   gem 'webmock'
 end
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :production do
   gem 'tux'
   gem 'hirb'
