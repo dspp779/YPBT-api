@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 ENV['RACK_ENV'] = 'test'
-sh "rake db:migrate"
 
 require 'minitest/autorun'
 require 'minitest/rg'

@@ -16,6 +16,10 @@ group :development, :test do
   gem 'pry-byebug'
 end
 
+group :test, :production do
+  gem 'rake'
+end
+
 group :development do
   gem 'rerun'
 
@@ -28,7 +32,6 @@ group :test do
   gem 'minitest-rg'
 
   gem 'rack-test'
-  gem 'rake'
 
   gem 'vcr'
   gem 'webmock'
@@ -36,7 +39,6 @@ end
 
 group :production do
   gem 'pg'
-  gem 'rake'
 end
 
 group :development, :production do
