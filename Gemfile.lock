@@ -133,6 +133,7 @@ DEPENDENCIES
   rack-test
   rake
   rerun
+  ruby-duration (~> 3.2, >= 3.2.3)
   sequel
   sinatra
   sqlite3

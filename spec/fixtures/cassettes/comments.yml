@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(channelId,description,publishedAt,title),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=FugHj7MGhss&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 17 Nov 2016 05:00:59 GMT
+      Date:
+      - Thu, 17 Nov 2016 05:00:59 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/ouz-CinTK-XQCV877t4oVtJAJLU"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '567'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "FugHj7MGhss",
+           "snippet": {
+            "publishedAt": "2015-03-04T11:40:17.000Z",
+            "channelId": "UC-pR7CuFeaa-khgLx65j7CA",
+            "title": "20150303 二珂 後來 印地安老斑鳩 後會無期 淡水河邊 野薔薇 致青春 匆匆那年 我的滑板鞋",
+            "description": "新浪微博周二珂:http://weibo.com/u/1910672761\n二珂直播:http://www.panda.tv/35723"
+           },
+           "contentDetails": {
+            "duration": "PT32M48S"
+           },
+           "statistics": {
+            "viewCount": "148076",
+            "likeCount": "417",
+            "dislikeCount": "12"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 17 Nov 2016 05:00:59 GMT
+recorded_with: VCR 3.0.3

@@ -8,11 +8,11 @@ Sequel.migration do
       String :video_id
       String :title
       String :description
-      Interger :view_count
-      Interger :like_count
-      Interger :dislike_count
+      Integer :view_count
+      Integer :like_count
+      Integer :dislike_count
       String :duration
-      TrueClass :comments_loading
+      column :last_update_time, :datetime
     end
   end
 end

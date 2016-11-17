@@ -3,17 +3,13 @@ require 'sequel'
 
 Sequel.migration do
   change do
-    create_table(:comments) do
+    create_table(:authors) do
       primary_key :id
-      foreign_key :video_id
-      String :comment_id
-      String :updated_at
-      String :published_at
-      String :text_display
+      foreign_key :comment_id
       String :author_name
       String :author_image_url
       String :author_channel_url
-      Int :like_count
+      Integer :like_count
     end
   end
 end

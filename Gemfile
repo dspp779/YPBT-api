@@ -11,6 +11,8 @@ gem 'econfig'
 gem 'YPBT', '~> 0.2.2'
 gem 'sequel'
 
+gem 'ruby-duration', '~> 3.2', '>= 3.2.3'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'pry-byebug'
