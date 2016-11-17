@@ -7,6 +7,12 @@ Sequel.migration do
       primary_key :id
       String :video_id
       String :title
+      String :description
+      Interger :view_count
+      Interger :like_count
+      Interger :dislike_count
+      String :duration
+      TrueClass :comments_loading
     end
   end
 end

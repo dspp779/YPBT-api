@@ -1,12 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    YPBT (0.1.5)
+    YPBT (0.2.2)
       http (~> 2.0)
+      ruby-duration (~> 3.2.3)
+    activesupport (5.0.0.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
     addressable (2.4.0)
     bond (0.5.1)
     byebug (9.0.6)
     coderay (1.1.1)
+    concurrent-ruby (1.0.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     domain_name (0.5.20161021)
@@ -25,7 +32,7 @@ GEM
       sexp_processor (~> 4.4)
     hashdiff (0.3.0)
     hirb (0.7.3)
-    http (2.0.3)
+    http (2.1.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
@@ -34,6 +41,8 @@ GEM
       domain_name (~> 0.5)
     http-form_data (1.0.1)
     http_parser.rb (0.6.0)
+    i18n (0.7.0)
+    iso8601 (0.9.1)
     json (2.0.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -72,6 +81,10 @@ GEM
       rack (>= 1.0)
       rack-test (~> 0.6.2)
       ripl (>= 0.7.0)
+    ruby-duration (3.2.3)
+      activesupport (>= 3.0.0)
+      i18n
+      iso8601
     ruby_dep (1.5.0)
     ruby_parser (3.8.3)
       sexp_processor (~> 4.1)
@@ -84,12 +97,15 @@ GEM
       tilt (>= 1.3, < 3)
     slop (3.6.0)
     sqlite3 (1.3.12)
+    thread_safe (0.3.5)
     tilt (2.0.5)
     tux (0.3.0)
       ripl (>= 0.3.5)
       ripl-multi_line (>= 0.2.4)
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
@@ -103,7 +119,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  YPBT
+  YPBT (~> 0.2.2)
   econfig
   flay
   flog

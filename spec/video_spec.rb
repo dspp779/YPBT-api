@@ -100,7 +100,7 @@ describe 'Video Routes' do
       last_response.status.must_equal 400
       last_response.body.must_include SAD_VIDEO_ID
     end
-=begin
+
     it '[BAD]: should report error if stored video removed from YouTube' do
       original = Video.first
       original.update(video_id: REMOVED_VIDEO_ID).save
@@ -110,6 +110,5 @@ describe 'Video Routes' do
       last_response.status.must_equal 404
       last_response.body.must_include original.video_id
     end
-=end
   end
 end

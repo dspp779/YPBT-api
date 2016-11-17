@@ -8,7 +8,7 @@ gem 'puma'
 gem 'json'
 gem 'econfig'
 
-gem 'YPBT'
+gem 'YPBT', '~> 0.2.2'
 gem 'sequel'
 
 group :development, :test do
