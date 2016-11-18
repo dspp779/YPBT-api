@@ -6,6 +6,14 @@ class YPBT_API < Sinatra::Base
   COOLDOWN_TIME = 10 # second
 
   get "/#{API_VER}/video/:video_id/?" do
+    results = SearchVideo.call(params)
+
+    if results.success?
+      VideoInfoRepresenter.new(results.value).to_json
+    else
+      ErrorRepresenter.new(results.value).to_status_response
+    end
+=begin
     video_id = params[:video_id]
     begin
       video = Video.find(video_id: video_id)
@@ -23,6 +31,7 @@ class YPBT_API < Sinatra::Base
       content_type 'text/plain'
       halt 404, "Video (video_id: #{video_id}) not found"
     end
+=end
   end
 
   # get all tagid for this video
