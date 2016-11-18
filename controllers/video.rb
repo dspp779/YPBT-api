@@ -13,25 +13,6 @@ class YPBT_API < Sinatra::Base
     else
       ErrorRepresenter.new(results.value).to_status_response
     end
-=begin
-    video_id = params[:video_id]
-    begin
-      video = Video.find(video_id: video_id)
-
-      content_type 'application/json'
-      { video_id: video_id,   # Need Revise
-        title: video.title,
-        description: video.description,
-        view_count: video.view_count,
-        like_count: video.like_count,
-        dislike_count: video.dislike_count,
-        duration: video.duration,
-      }.to_json      
-    rescue
-      content_type 'text/plain'
-      halt 404, "Video (video_id: #{video_id}) not found"
-    end
-=end
   end
 
   # get all tagid for this video
