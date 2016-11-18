@@ -5,6 +5,8 @@ class YPBT_API < Sinatra::Base
   YT_URL_REGEX = %r{https://www.youtube.com/watch\?v=(\S[^&]+)}
   COOLDOWN_TIME = 10 # second
 
+  # Get video info from database
+  # tux: get 'api/v0.1/video/:video_id'
   get "/#{API_VER}/video/:video_id/?" do
     results = SearchVideo.call(params)
 
@@ -21,7 +23,9 @@ class YPBT_API < Sinatra::Base
     ["Need Implement"].to_json
   end
 
-  # Body args (JSON) e.g.: {"url": "https://www.youtube.com/watch?v=video_id"}
+  # Add full record of a new video
+  # tux: post 'api/v0.1/video', { url: "youtube_url" }.to_json, 
+  #                             'CONTENT_TYPE' => 'application/json'
   post "/#{API_VER}/video/?" do
     begin
       body_params = JSON.parse request.body.read
@@ -62,12 +66,16 @@ class YPBT_API < Sinatra::Base
 
         time_tags = comment.time_tags
         time_tags.each do |time_tag|
-          Timetag.create(
-            comment_id:    new_comment_record.id,
-            #yt_like_count: time_tag.like_count, # Need Vevise
-            our_like_count: 0,
-            start_time:    time_tag.start_time,
-          )
+          existed_time_tag = Timetag.find(comment_id: comment.comment_id,
+                                          start_time: time_tag.start_time)
+          if existed_time_tag.nil?
+            Timetag.create(
+              comment_id:    new_comment_record.id,
+              yt_like_count: comment.like_count,
+              our_like_count: 0,
+              start_time:    time_tag.start_time,
+            )
+          end
         end
 
         author = comment.author
@@ -96,6 +104,8 @@ class YPBT_API < Sinatra::Base
     end
   end
 
+  # Update whole record of an existed video in the database
+  # tux: put 'api/v0.1/video/:video_id'
   put "/#{API_VER}/video/:video_id/?" do
     video_id = params[:video_id]
     begin
@@ -138,12 +148,16 @@ class YPBT_API < Sinatra::Base
 
           newest_time_tags = newest_comment.time_tags
           newest_time_tags.each do |newest_time_tag|
-            Timetag.create(
-              comment_id:    new_db_comment.id,
-              #yt_like_count: newest_time_tag.like_count, # Need Vevise
-              our_like_count: 0,
-              start_time:    newest_time_tag.start_time,
-            )
+            existed_time_tag = Timetag.find(comment_id: newest_comment.comment_id,
+                                            start_time: newest_comment.start_time)
+            if existed_time_tag.nil?
+              Timetag.create(
+                comment_id:    new_db_comment.id,
+                yt_like_count: comment.like_count,
+                our_like_count: 0,
+                start_time:    newest_time_tag.start_time,
+              )
+            end
           end
 
           newest_author = newest_comment.author
@@ -162,7 +176,7 @@ class YPBT_API < Sinatra::Base
             text_display:  newest_comment.text_display,
             like_count:    newest_comment.like_count
           )
-=begin
+
           newest_time_tags = newest_comment.time_tags
           newest_time_tags.each do |newest_time_tag|
             db_timetag = Timetag.find(comment_id: db_comment.id,
@@ -170,28 +184,25 @@ class YPBT_API < Sinatra::Base
             if db_timetag.nil?
               Timetag.create(
                 comment_id:    db_comment.id,
-                #yt_like_count: newest_time_tag.like_count, # Need Vevise
+                yt_like_count: newest_comment.like_count,
                 our_like_count: 0,
                 start_time:    newest_time_tag.start_time,
               )
             else
-              db_timetag.first.update(
-                #yt_like_count: newest_time_tag.like_count, # Need Vevise
+              db_timetag.update(
+                yt_like_count: newest_comment.like_count
               )
             end
           end
-=end
-          # Uncomment this block will break this program, don't know why
+
           newest_author = newest_comment.author
           db_author = Author.find(comment_id: db_comment.id)
-=begin
           db_author.update(
-            #author_name:        newest_author.author_name,
-            #author_image_url:   newest_author.author_image_url,
-            #author_channel_url: newest_author.author_channel_url,
+            author_name:        newest_author.author_name,
+            author_image_url:   newest_author.author_image_url,
+            author_channel_url: newest_author.author_channel_url,
             like_count:         newest_author.like_count
           )           
-=end
         end
       end
 
