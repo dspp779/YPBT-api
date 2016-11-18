@@ -68,7 +68,7 @@ class LoadVideoFromYT
   def self.call(params)
     Dry.Transaction(container: self) do
       step :validate_request_json
-      step :retrieve_fb_group_html
+      step :validate_request_url
       step :parse_video_id
       step :retrieve_video_and_others_data
       step :create_video_and_comments_and_more
