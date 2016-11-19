@@ -23,10 +23,18 @@ class YPBT_API < Sinatra::Base
     ["Need Implement"].to_json
   end
 
-  # Add full record of a new video
+  # Create a new video and its downstream data in the database
   # tux: post 'api/v0.1/video', { url: "youtube_url" }.to_json, 
   #                             'CONTENT_TYPE' => 'application/json'
   post "/#{API_VER}/video/?" do
+    results = LoadVideoFromYT.call(request)
+
+    if results.success?
+      VideoInfoRepresenter.new(results.value).to_json
+    else
+      ErrorRepresenter.new(results.value).to_status_response
+    end
+=begin
     begin
       body_params = JSON.parse request.body.read
       video_url = body_params['url']
@@ -102,6 +110,7 @@ class YPBT_API < Sinatra::Base
       content_type 'text/plain'
       halt 500, "Cannot create video (video_id: #{video_id})"
     end
+=end
   end
 
   # Update whole record of an existed video in the database
