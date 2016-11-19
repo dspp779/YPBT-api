@@ -5,7 +5,6 @@ sh "rake db:migrate"
 require 'minitest/autorun'
 require 'minitest/rg'
 require 'rack/test'
-require 'rack/vcr'
 require 'vcr'
 require 'webmock'
 
