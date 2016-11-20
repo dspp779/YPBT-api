@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 require_relative 'spec_helper'
 
+COOLDOWN_TIME = 10.1 # second
+
 describe 'Video Routes' do
   before do
     VCR.insert_cassette VIDEOS_CASSETTE, record: :new_episodes
@@ -56,7 +58,9 @@ describe 'Video Routes' do
       body.must_include 'title'
 
       Video.count.must_equal 1
-      Comment.count.must_be :>=, 3
+      Comment.count.must_be :>=, 1
+      Timetag.count.must_be :>=, 1
+      Author.count.must_be :>=, 1
     end
 
     it '[BAD]: should report error if given invalid video_id' do
@@ -89,17 +93,55 @@ describe 'Video Routes' do
            { url: HAPPY_VIDEO_URL }.to_json,
            'CONTENT_TYPE' => 'application/json'
     end
-=begin
+
+    it '[HAPPY]: should update a existed video' do
+      original = Video.first
+      modified = Video.first
+      modified.title = modified.description = modified.view_count = nil
+      modified.like_count = modified.dislike_count = modified.duration = nil
+      modified.last_update_time -= COOLDOWN_TIME
+      modified.save
+      put "#{API_VER}/video/#{original.video_id}"
+      last_response.status.must_equal 200
+      last_response.body == "Update to lastest"
+      Video.count.must_equal 1
+      updated = Video.first
+      updated.title.must_equal original.title
+      updated.description.must_equal original.description
+      updated.last_update_time.wont_equal original.last_update_time
+    end
+
     it '[HAPPY]: should create a new comment and downstream data' +
        ' if a comment is not existed in the database' do
-
+      original = Comment.first
+      modified = Comment.first
+      modified.delete
+      video = Video[original.video_id]
+      video.last_update_time -= COOLDOWN_TIME
+      video.save
+      put "#{API_VER}/video/#{video.video_id}"
+      last_response.status.must_equal 200
+      last_response.body == "Update to lastest"
+      updated = Comment.find(comment_id: original.comment_id)
+      updated.video_id.must_equal original.video_id
+      updated.text_display.must_equal original.text_display
     end
 
     it '[HAPPY]: should update a modified comment if that comment' +
        ' is already existed in the database' do
-
+      original = Comment.first
+      modified = Comment.first
+      modified.text_display = nil
+      video = Video[original.video_id]
+      video.last_update_time -= COOLDOWN_TIME
+      video.save
+      put "#{API_VER}/video/#{video.video_id}"
+      last_response.status.must_equal 200
+      last_response.body == "Update to lastest"
+      updated = Comment.find(comment_id: original.comment_id)
+      updated.text_display.must_equal original.text_display
     end
-
+=begin
     it '[HAPPY]: should create a new timetag if the timetag is not' +
        'existed in the database' do
 
@@ -115,14 +157,13 @@ describe 'Video Routes' do
 
     end
 =end
-    it '[HAPPY]: should successfully update valid video' do
-      original = Video.first
-      modified = Video.first
-      #Video.first.comments.each { |comment| comment.delete }
-      put "api/v0.1/video/#{original.video_id}"
+    it '[HAPPY]: should have cd time between update queries' do
+      video = Video.first
+      video.last_update_time -= COOLDOWN_TIME
+      video.save
+      2.times { put "#{API_VER}/video/#{video.video_id}" }
       last_response.status.must_equal 200
-      #updated = Video.first
-      #updated.comments.size.must_equal(original.comments.size)
+      last_response.body == "Already update to lastest"
     end
 
     it '[BAD]: should report error if given invalid video_id' do

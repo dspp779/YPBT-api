@@ -2,5 +2,5 @@
 
 # Represents an author's stored information
 class Author < Sequel::Model
-  one_to_one :comment
+  many_to_one :comments
 end
