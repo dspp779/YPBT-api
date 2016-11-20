@@ -16,6 +16,12 @@ def app
   YPBT_API
 end
 
+API_VER = 'api/v0.1'
+
+unless ENV['YOUTUBE_API_KEY']
+  ENV['YOUTUBE_API_KEY'] = app.config.YOUTUBE_API_KEY
+end
+
 FIXTURES_FOLDER = 'spec/fixtures'
 CASSETTES_FOLDER = "#{FIXTURES_FOLDER}/cassettes"
 VIDEOS_CASSETTE = 'videos'
@@ -29,10 +35,6 @@ AUTHORS_CASSETTE = 'authors'
 VCR.configure do |c|
   c.cassette_library_dir = CASSETTES_FOLDER
   c.hook_into :webmock
-
-  unless ENV['YOUTUBE_API_KEY']
-    ENV['YOUTUBE_API_KEY'] = app.config.YOUTUBE_API_KEY
-  end
 
   c.filter_sensitive_data('<API_KEY>') { ENV['YOUTUBE_API_KEY'] }
   c.filter_sensitive_data('<API_KEY_ESCAPED>') do

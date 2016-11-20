@@ -60,7 +60,7 @@ class YPBT_API < Sinatra::Base
         view_count: newest_video.view_count,
         like_count: newest_video.like_count,
         dislike_count: newest_video.dislike_count,
-        #duration: newest_video.duration,    # Need Revise
+        duration: newest_video.duration,
         last_update_time: DateTime.now
       )
 
@@ -80,12 +80,14 @@ class YPBT_API < Sinatra::Base
 
           newest_time_tags = newest_comment.time_tags
           newest_time_tags.each do |newest_time_tag|
-            existed_time_tag = Timetag.find(comment_id: newest_comment.comment_id,
-                                            start_time: newest_comment.start_time)
+            existed_time_tag = Timetag.find(
+              comment_id: new_db_comment.id,
+              start_time: newest_time_tag.start_time
+            )
             if existed_time_tag.nil?
               Timetag.create(
                 comment_id:    new_db_comment.id,
-                yt_like_count: comment.like_count,
+                yt_like_count: newest_time_tag.like_count,
                 our_like_count: 0,
                 start_time:    newest_time_tag.start_time,
               )
@@ -116,13 +118,13 @@ class YPBT_API < Sinatra::Base
             if db_timetag.nil?
               Timetag.create(
                 comment_id:    db_comment.id,
-                yt_like_count: newest_comment.like_count,
+                yt_like_count: newest_time_tag.like_count,
                 our_like_count: 0,
                 start_time:    newest_time_tag.start_time,
               )
             else
               db_timetag.update(
-                yt_like_count: newest_comment.like_count
+                yt_like_count: newest_time_tag.like_count
               )
             end
           end
@@ -134,7 +136,7 @@ class YPBT_API < Sinatra::Base
             author_image_url:   newest_author.author_image_url,
             author_channel_url: newest_author.author_channel_url,
             like_count:         newest_author.like_count
-          )           
+          )
         end
       end
 
