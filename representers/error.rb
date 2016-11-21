@@ -7,6 +7,7 @@ class ErrorRepresenter < Roar::Decorator
   property :message
 
   ERROR = {
+    OK: 200,
     cannot_process: 422,
     not_found: 404,
     bad_request: 400,

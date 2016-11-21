@@ -44,9 +44,13 @@ class LoadVideoFromYT
 
   register :render_video_info, lambda { |input|
     results = VideoInfo.new(
-      input[:video].id, input[:video].title, input[:video].description,
-      input[:video].view_count , input[:video].like_count,
-      input[:video].dislike_count, input[:video].duration
+      video_id:      input[:video].id,
+      title:         input[:video].title,
+      description:   input[:video].description,
+      view_count:    input[:video].view_count,
+      like_count:    input[:video].like_count,
+      dislike_count: input[:video].dislike_count,
+      duration:      input[:video].duration
     )
     Right(results)
   }
