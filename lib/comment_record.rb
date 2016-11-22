@@ -14,32 +14,27 @@ class CommentRecord
     )
   end
 
+  # Find comment record
+  def self.find(comment_info)
+    columns = [:id, :video_id, :comment_id, :published_at, :updated_at,
+               :text_display, :like_count]
+    results = Comment.where()
+    columns.each do |col|
+      val = comment_info.send(col)
+      results = results.where(col => val) unless val.nil?
+    end
+    results.first
+  end
+
   # Update existed comment record
   def self.update(id, comment_info)
     comment = Comment.find(id: id)
 
-    unless comment_info.video_id.nil?
-      comment.video_id = comment_info.video_id
-    end
-
-    unless comment_info.comment_id.nil?
-      comment.title = comment_info.comment_id
-    end
-
-    unless comment_info.published_at.nil?
-      comment.published_at = comment_info.published_at
-    end
-
-    unless comment_info.updated_at.nil?
-      comment.updated_at = comment_info.updated_at
-    end
-
-    unless comment_info.text_display.nil?
-      comment.text_display = comment_info.text_display
-    end
-
-    unless comment_info.like_count.nil?
-      comment.like_count = comment_info.like_count
+    columns = [:video_id, :comment_id, :published_at, :updated_at,
+               :text_display, :like_count]
+    columns.each do |col|
+      val = comment_info.send(col)
+      comment.send("#{col}=", comment_info.send(col)) unless val.nil?
     end
 
     comment.save

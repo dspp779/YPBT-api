@@ -32,7 +32,7 @@ class LoadVideoFromYT
   }
 
   register :create_new_video_record, lambda { |input|
-    success = CreateVideoFromYT.call(input[:video])
+    success = CreateVideoFromYTQuery.call(input[:video])
 
     if success
       Right(video: input[:video])

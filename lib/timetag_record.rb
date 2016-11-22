@@ -16,24 +16,25 @@ class TimetagRecord
     )
   end
 
+  # Find timetag record
+  def self.find(timetag_info)
+    columns = [:id, :comment_id, :yt_like_count, :our_like_count, :start_time]
+    results = Timetag.where()
+    columns.each do |col|
+      val = timetag_info.send(col)
+      results = results.where(col => val) unless val.nil?
+    end
+    results.first
+  end
+
   # Update existed timetag record
   def self.update(id, timetag_info)
     timetag = Timetag.find(id: id)
 
-    unless timetag_info.comment_id.nil?
-      timetag.comment_id = timetag_info.comment_id
-    end
-
-    unless timetag_info.yt_like_count.nil?
-      timetag.yt_like_count = timetag_info.yt_like_count
-    end
-
-    unless timetag_info.our_like_count.nil?
-      timetag.our_like_count = timetag_info.our_like_count
-    end
-
-    unless timetag_info.start_time.nil?
-      timetag.start_time = timetag_info.start_time
+    columns = [:comment_id, :yt_like_count, :our_like_count, :start_time]
+    columns.each do |col|
+      val = timetag_info.send(col)
+      timetag.send("#{col}=", timetag_info.send(col)) unless val.nil?
     end
 
     timetag.save

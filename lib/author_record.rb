@@ -13,28 +13,27 @@ class AuthorRecord
     )
   end
 
+  # Find author record
+  def self.find(author_info)
+    columns = [:id, :comment_id, :author_name, :author_image_url,
+               :author_channel_url, :like_count]
+    results = Author.where()
+    columns.each do |col|
+      val = author_info.send(col)
+      results = results.where(col => val) unless val.nil?
+    end
+    results.first
+  end
+
   # Update existed author record
   def self.update(id, author_info)
     author = Author.find(id: id)
 
-    unless author_info.comment_id.nil?
-      author.comment_id = author_info.comment_id
-    end
-
-    unless author_info.author_name.nil?
-      author.author_name = author_info.author_name
-    end
-
-    unless author_info.author_image_url.nil?
-      author.author_image_url = author_info.author_image_url
-    end
-
-    unless author_info.author_channel_url.nil?
-      author.author_channel_url = author_info.author_channel_url
-    end
-
-    unless author_info.like_count.nil?
-      author.like_count = author_info.like_count
+    columns = [:comment_id, :author_name, :author_image_url,
+               :author_channel_url, :like_count]
+    columns.each do |col|
+      val = author_info.send(col)
+      author.send("#{col}=", author_info.send(col)) unless val.nil?
     end
 
     author.save
