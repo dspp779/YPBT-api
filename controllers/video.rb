@@ -6,6 +6,10 @@ class YPBT_API < Sinatra::Base
   COOLDOWN_TIME = 10 # second
 
   # Get video info from database
+  get "/#{API_VER}/video/?" do
+    results = SearchVideos.call
+    VideosRepresenter.new(results.value).to_json
+  end
   # tux: get 'api/v0.1/video/:video_id'
   get "/#{API_VER}/video/:video_id/?" do
     results = SearchVideo.call(params)
