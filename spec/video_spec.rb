@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require_relative 'spec_helper'
 
-COOLDOWN_TIME = 10.1 # second
+COOLDOWN_TIME = 60.1 # second
 
 describe 'Video Routes' do
   before do
@@ -11,7 +11,7 @@ describe 'Video Routes' do
   after do
     VCR.eject_cassette
   end
-
+=begin
   describe 'Find Video by its Video ID' do
     before do
       DB[:videos].delete
@@ -82,8 +82,10 @@ describe 'Video Routes' do
       last_response.status.must_equal 422
     end
   end
+=end
 
   describe 'Request to update a video (including its followed comments)' do
+=begin
     before do
       DB[:videos].delete
       DB[:comments].delete
@@ -141,6 +143,7 @@ describe 'Video Routes' do
       updated = Comment.find(comment_id: original.comment_id)
       updated.text_display.must_equal original.text_display
     end
+=end
 =begin
     it '[HAPPY]: should create a new timetag if the timetag is not' +
        'existed in the database' do
@@ -157,6 +160,7 @@ describe 'Video Routes' do
 
     end
 =end
+=begin
     it '[HAPPY]: should have cd time between update queries' do
       video = Video.first
       video.last_update_time -= COOLDOWN_TIME
@@ -172,6 +176,7 @@ describe 'Video Routes' do
       last_response.status.must_equal 400
       last_response.body.must_include SAD_VIDEO_ID
     end
+=end
 =begin
     it '[BAD]: should report error if stored video removed from YouTube' do
       original = Video.first

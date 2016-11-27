@@ -16,36 +16,41 @@ class VideoRecord
     )
   end
 
+  # Find video record
+  def self.find(video_info)
+    columns = [:id, :video_id, :title, :description, :view_count, :like_count,
+               :dislike_count, :duration, :last_update_time]
+    results = Video.where()
+    columns.each do |col|
+      val = video_info.send(col)
+      results = results.where(col => val) unless val.nil?
+    end
+
+    unless results.first.nil?
+      video_found = VideoInfo.new(
+        id: results.first.id,
+        video_id: results.first.video_id,
+        title: results.first.title,
+        description: results.first.description,
+        view_count: results.first.like_count,
+        dislike_count: results.first.dislike_count,
+        duration: results.first.duration,
+        last_update_time: results.first.last_update_time
+      )
+    else
+      nil
+    end
+  end
+
   # Update existed video record
   def self.update(id, video_info)
     video = Video.find(id: id)
 
-    unless video_info.video_id.nil?
-      video.video_id = video_info.video_id
-    end
-
-    unless video_info.title.nil?
-      video.title = video_info.title
-    end
-
-    unless video_info.description.nil?
-      video.description = video_info.description
-    end
-
-    unless video_info.view_count.nil?
-      video.view_count = video_info.view_count
-    end
-
-    unless video_info.like_count.nil?
-      video.like_count = video_info.like_count
-    end
-
-    unless video_info.dislike_count.nil?
-      video.dislike_count = video_info.dislike_count
-    end
-
-    unless video_info.duration.nil?
-      video.duration = video_info.duration
+    columns = [:video_id, :title, :description, :view_count, :like_count,
+               :dislike_count, :duration]
+    columns.each do |col|
+      val = video_info.send(col)
+      video.send("#{col}=", video_info.send(col)) unless val.nil?
     end
 
     video.last_update_time = Time.now

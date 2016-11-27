@@ -10,5 +10,5 @@ class VideoInfoRepresenter < Roar::Decorator
   property :view_count
   property :like_count
   property :dislike_count
-  property :duration
+  #property :duration
 end

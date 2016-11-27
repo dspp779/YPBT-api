@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Search video info from database
-class SearchVideo
+# Get all comments' info of one assigned video from database
+class SearchVideoAllComments
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
 
@@ -16,34 +16,21 @@ class SearchVideo
     end
   }
 
-  register :get_video_info, lambda { |input|
+  register :get_video_all_comments, lambda { |input|
     video_id = input[:video_id]
-    video = Video.find(video_id: video_id)
-    if video
-      Right(video: video)
+    comments = GetVideoAllCommentsQuery.call(video_id)
+    if comments
+      results = comments
+      Right(results)
     else
       Left(Error.new(:not_found, "Video (video_id: #{video_id}) not found"))
     end
   }
 
-  register :render_search_result, lambda { |input|
-    results = VideoInfo.new(
-      video_id:      input[:video].video_id,
-      title:         input[:video].title,
-      description:   input[:video].description,
-      view_count:    input[:video].view_count,
-      like_count:    input[:video].like_count, 
-      dislike_count: input[:video].dislike_count,
-      duration:      input[:video].duration
-    )
-    Right(results)
-  }
-
   def self.call(params)
     Dry.Transaction(container: self) do
       step :update_to_latest # update existed record or load new record
-      step :get_video_info
-      step :render_search_result
+      step :get_video_all_comments
     end.call(params)
   end
 end
