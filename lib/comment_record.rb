@@ -39,6 +39,33 @@ class CommentRecord
     end
   end
 
+  # Find all match comment records
+  def self.find_all(comment_info)
+    columns = [:id, :video_id, :comment_id, :published_at, :updated_at,
+               :text_display, :like_count]
+    results = Comment.where()
+    columns.each do |col|
+      val = comment_info.send(col)
+      results = results.where(col => val) unless val.nil?
+    end
+
+    unless results.first.nil?
+      comments_found = results.map do |comment_found|
+        CommentInfo.new(
+          id:           comment_found.id,
+          video_id:     comment_found.video_id,
+          comment_id:   comment_found.comment_id,
+          published_at: comment_found.published_at,
+          updated_at:   comment_found.updated_at,
+          text_display: comment_found.text_display,
+          like_count:   comment_found.like_count
+        )
+      end
+    else
+      nil
+    end
+  end
+
   # Update existed comment record
   def self.update(id, comment_info)
     comment = Comment.find(id: id)
