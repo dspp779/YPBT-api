@@ -12,7 +12,7 @@ Sequel.migration do
       Integer :like_count
       Integer :dislike_count
       String :duration
-      column :last_update_time, :datetime
+      column :last_update_time, DateTime
     end
   end
 end
