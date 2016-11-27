@@ -7,8 +7,7 @@ class SearchVideo
 
   register :update_to_latest, lambda { |params|
     video_id = params[:video_id]
-    #success = Update2LatestQuery.call(video_id)
-    success = true
+    success = Update2LatestQuery.call(video_id)
     if success
       Right(video_id: video_id)
     else
