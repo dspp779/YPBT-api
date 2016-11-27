@@ -22,7 +22,19 @@ class AuthorRecord
       val = author_info.send(col)
       results = results.where(col => val) unless val.nil?
     end
-    results.first
+
+    unless results.first.nil?
+      author_found = AuthorInfo.new(
+        id:                 results.first.id,
+        comment_id:         results.first.comment_id,
+        author_name:        results.first.author_name,
+        author_image_url:   results.first.author_image_url,
+        author_channel_url: results.first.author_channel_url,
+        like_count:         results.first.like_count
+      )
+    else
+      nil
+    end
   end
 
   # Update existed author record

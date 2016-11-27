@@ -8,7 +8,7 @@ gem 'puma'
 gem 'json'
 gem 'econfig'
 
-gem 'YPBT', '~> 0.2.4'
+gem 'YPBT', '~> 0.2.5'
 gem 'sequel'
 gem 'roar'
 gem 'multi_json'

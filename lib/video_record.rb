@@ -19,13 +19,27 @@ class VideoRecord
   # Find video record
   def self.find(video_info)
     columns = [:id, :video_id, :title, :description, :view_count, :like_count,
-               :dislike_count, :duration]
+               :dislike_count, :duration, :last_update_time]
     results = Video.where()
     columns.each do |col|
       val = video_info.send(col)
       results = results.where(col => val) unless val.nil?
     end
-    results.first
+
+    unless results.first.nil?
+      video_found = VideoInfo.new(
+        id: results.first.id,
+        video_id: results.first.video_id,
+        title: results.first.title,
+        description: results.first.description,
+        view_count: results.first.like_count,
+        dislike_count: results.first.dislike_count,
+        duration: results.first.duration,
+        last_update_time: results.first.last_update_time
+      )
+    else
+      nil
+    end
   end
 
   # Update existed video record

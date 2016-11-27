@@ -52,7 +52,7 @@ API to access the information of comments following a given movie, such as autho
 
 ## Time Tag
 * <strong>Get</strong> /api/{version}/TimeTag/{video id}  
-> *Discription:* return rough data of time tags that belong to target video  
+> *Discription:* return raw data of time tags that belong to target video  
 > *Return:*  array of <strong>time tags info</strong>  
 > <strong>time tags info=</strong>
 <table>

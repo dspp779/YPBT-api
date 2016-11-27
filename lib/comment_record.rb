@@ -23,7 +23,20 @@ class CommentRecord
       val = comment_info.send(col)
       results = results.where(col => val) unless val.nil?
     end
-    results.first
+
+    unless results.first.nil?
+      comment_found = CommentInfo.new(
+        id:           results.first.id,
+        video_id:     results.first.video_id,
+        comment_id:   results.first.comment_id,
+        published_at: results.first.published_at,
+        updated_at:   results.first.updated_at,
+        text_display: results.first.text_display,
+        like_count:   results.first.like_count
+      )
+    else
+      nil
+    end
   end
 
   # Update existed comment record

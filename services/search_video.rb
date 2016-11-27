@@ -5,8 +5,19 @@ class SearchVideo
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
 
-  register :get_video_info, lambda { |params|
+  register :update_to_latest, lambda { |params|
     video_id = params[:video_id]
+    success = Update2LatestQuery.call(video_id)
+    if success
+      Right(video_id: video_id)
+    else
+      Left(Error.new(:bad_request,
+           "Video (video_id: #{params[:video_id]}) could not be found"))
+    end
+  }
+
+  register :get_video_info, lambda { |input|
+    video_id = input[:video_id]
     video = Video.find(video_id: video_id)
     if video
       Right(video: video)
@@ -30,6 +41,7 @@ class SearchVideo
 
   def self.call(params)
     Dry.Transaction(container: self) do
+      step :update_to_latest # update existed record or load new record
       step :get_video_info
       step :render_search_result
     end.call(params)
