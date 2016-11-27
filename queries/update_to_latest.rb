@@ -5,12 +5,12 @@ class Update2LatestQuery
   COOLDOWN_TIME = 60 # second  
 
   def self.call(video_id)
-    #begin
+    begin
       update_to_latest(video_id)
       success = true
-    #rescue
-    #  success = false
-    #end
+    rescue
+      success = false
+    end
   end
 
   def self.update_to_latest(video_id)
