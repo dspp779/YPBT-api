@@ -7,7 +7,6 @@ API to access the information of comments following a given movie, such as autho
 
 ## Video  
 * <strong>Get</strong> /api/{version}/video/{video id}  
-
 > *Discription:* return a basic information of targe video   
 > *Return:*  
 <table>
@@ -51,7 +50,7 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 ## Time Tag
-* <strong>Get</strong> /api/{version}/TimeTag/{video id}  
+* <strong>Get</strong> /api/{version}/TimeTag/by_video/{video id}  
 > *Discription:* return raw data of time tags that belong to target video  
 > *Return:*  array of <strong>time tags info</strong>  
 > <strong>time tags info=</strong>
@@ -65,7 +64,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>end_time_percentage</td><td>float</td></tr>
 </table>
 
-* <strong>Get</strong> /api/{version}/TimeTag/{time_tag_id}
+* <strong>Get</strong> /api/{version}/Timetag/by_timetag/{time_tag_id}
 > *Discription:* return detail data of target time tag  
 > *Return:*  
 <table>
@@ -74,6 +73,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>start_time</td><td>string</td></tr>
 <tr><td>end_time</td><td>string</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
+<tr><td>unlike_count</td><td>int</td></tr>
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>comment_text_display</td><td>string</td></tr>
 <tr><td>comment_author_name</td><td>string</td></tr>
@@ -91,12 +91,23 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>end_time (optional)</td><td>string</td></tr>
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>comment_text_display</td><td>string</td></tr>
+<tr><td>api_key</td><td>string</td></tr>
 </table>
 
-* <strong>Put</strong> /api/{version}/TimeTag/
+* <strong>Put</strong> /api/{version}/TimeTag/add_one_like
 > *Discription:* add like count for the tag  
 > *Parameter:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>time_tag_id</td><td>string</td></tr>
+<tr><td>api_key</td><td>string</td></tr>
+</table>
+
+* <strong>Put</strong> /api/{version}/TimeTag/add_one_unlike
+> *Discription:* add unlike count for the tag
+> *Parameter:*
+<table>
+<tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
+<tr><td>time_tag_id</td><td>string</td></tr>
+<tr><td>api_key</td><td>string</td></tr>
 </table>
