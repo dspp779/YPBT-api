@@ -2,7 +2,7 @@
 
 # update existed record or load new record
 class Update2LatestQuery
-  COOLDOWN_TIME = 60 # second  
+  COOLDOWN_TIME = 600 # second  
 
   def self.call(video_id)
     begin

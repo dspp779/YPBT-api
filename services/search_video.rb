@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Search video info from database
+# Search video info from YPBT gem
 class SearchVideo
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
@@ -18,7 +18,8 @@ class SearchVideo
 
   register :get_video_info, lambda { |input|
     video_id = input[:video_id]
-    video = Video.find(video_id: video_id)
+    #video = Video.find(video_id: video_id)
+    video = YoutubeVideo::Video.find(video_id: video_id)
     if video
       Right(video: video)
     else
@@ -28,7 +29,7 @@ class SearchVideo
 
   register :render_search_result, lambda { |input|
     results = VideoInfo.new(
-      video_id:            input[:video].video_id,
+      video_id:            input[:video].id,
       title:               input[:video].title,
       description:         input[:video].description,
       view_count:          input[:video].view_count,
@@ -44,7 +45,7 @@ class SearchVideo
 
   def self.call(params)
     Dry.Transaction(container: self) do
-      step :update_to_latest # update existed record or load new record
+      #step :update_to_latest # update existed record or load new record
       step :get_video_info
       step :render_search_result
     end.call(params)
