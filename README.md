@@ -5,10 +5,11 @@ API to access the information of comments following a given movie, such as autho
 
 # YTBT-API doc
 
+
 ## Video  
-* <strong>Get</strong> /api/{version}/video/{video id}  
-> *Discription:* return a basic information of targe video   
-> *Return:*  
+* <strong>Get</strong> /api/{version}/video/{video id}
+> *Discription:* return a basic information of targe video
+> *Return:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>video_id</td><td>string</td></tr>
@@ -20,8 +21,8 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 ## Comment
-* <strong>Get</strong> /api/{version}/Comment/{comment id}  
-> *Discription:* return the detail information of targe comment    
+* <strong>Get</strong> /api/{version}/Comment/{comment id}
+> *Discription:* return the detail information of targeted comment
 > *Return:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
@@ -36,7 +37,7 @@ API to access the information of comments following a given movie, such as autho
 
 * <strong>Get</strong> /api/{version}/Comments/{video id}  
 > *Discription:* return the detail information of comments  
-> *Return:* array of <strong>comment datas</strong>  
+> *Return:* array of <strong>comment data</strong>  
 > <strong>comment data=</strong>
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
@@ -50,8 +51,8 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 ## Time Tag
-* <strong>Get</strong> /api/{version}/TimeTag/by_video/{video id}  
-> *Discription:* return raw data of time tags that belong to target video  
+* <strong>Get</strong> /api/{version}/TimeTags/{video id}  
+> *Discription:* return raw data of time tags that belong to the target video  
 > *Return:*  array of <strong>time tags info</strong>  
 > <strong>time tags info=</strong>
 <table>
@@ -64,7 +65,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>end_time_percentage</td><td>float</td></tr>
 </table>
 
-* <strong>Get</strong> /api/{version}/Timetag/by_timetag/{time_tag_id}
+* <strong>Get</strong> /api/{version}/TimeTag/{time_tag_id}
 > *Discription:* return detail data of target time tag  
 > *Return:*  
 <table>

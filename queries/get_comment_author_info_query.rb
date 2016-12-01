@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Update an existed video and its downstream data in the database
+# Get the author where the input comment belongs in the database
 class GetCommentAuthorInfoQuery
   def self.call(comment_id)
     comment_info  = CommentInfo.new(comment_id: comment_id)
