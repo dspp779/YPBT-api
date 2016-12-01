@@ -5,10 +5,26 @@ API to access the information of comments following a given movie, such as autho
 
 # YTBT-API doc
 
-
 ## Video  
-* <strong>Get</strong> /api/{version}/video/{video id}
-> *Discription:* return a basic information of targe video
+* <strong>Get</strong> /api/{version}/Video/{video id}  
+> *Discription:* return a basic information of targe video  
+> *Return:*  
+<table>
+<tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
+<tr><td>video_id</td><td>string</td></tr>
+<tr><td>title</td><td>string</td></tr>
+<tr><td>description</td><td>string</td></tr>
+<tr><td>view_count</td><td>int</td></tr>
+<tr><td>like_count</td><td>int</td></tr>
+<tr><td>dislike_count</td><td>int</td></tr>
+<tr><td>duration</td><td>int</td></tr>
+<tr><td>channel_title</td><td>int</td></tr>
+<tr><td>channel_image_url</td><td>int</td></tr>
+<tr><td>channel_description</td><td>int</td></tr>
+</table>
+
+* <strong>Get</strong> /api/{version}/Videos
+> *Discription:* return information of all storaged videos
 > *Return:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
@@ -18,12 +34,16 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>view_count</td><td>int</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
 <tr><td>dislike_count</td><td>int</td></tr>
+<tr><td>duration</td><td>int</td></tr>
+<tr><td>channel_title</td><td>int</td></tr>
+<tr><td>channel_image_url</td><td>int</td></tr>
+<tr><td>channel_description</td><td>int</td></tr>
 </table>
 
 ## Comment
-* <strong>Get</strong> /api/{version}/Comment/{comment id}
-> *Discription:* return the detail information of targeted comment
-> *Return:*
+* <strong>Get</strong> /api/{version}/Comment/{comment id}  
+> *Discription:* return the detail information of targeted comment  
+> *Return:*  
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>video_id</td><td>string</td></tr>

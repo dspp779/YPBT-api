@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Get all comments' info of one assigned video from database
-class SearchVideoAllComments
+# Get all timetags' info of one assigned video from database
+class SearchVideoAllTimetags
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
 
@@ -16,11 +16,11 @@ class SearchVideoAllComments
     end
   }
 
-  register :get_video_all_comments, lambda { |input|
+  register :get_video_all_timetags, lambda { |input|
     video_id = input[:video_id]
-    comments = GetVideoAllCommentsQuery.call(video_id)
-    if comments
-      results = comments
+    timetags = GetVideoAllTimetagsQuery.call(video_id)
+    if timetags
+      results = timetags
       Right(results)
     else
       Left(Error.new(:not_found, "Video (video_id: #{video_id}) not found"))
@@ -30,7 +30,7 @@ class SearchVideoAllComments
   def self.call(params)
     Dry.Transaction(container: self) do
       step :update_to_latest # update existed record or load new record
-      step :get_video_all_comments
+      step :get_video_all_timetags
     end.call(params)
   end
 end

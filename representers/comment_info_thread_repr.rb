@@ -12,6 +12,6 @@ class CommentInfoThreadRepresenter# < Roar::Decorator
   end
 
   def to_json
-    { comments: @comments }.to_json
+    @comments.to_json
   end
 end

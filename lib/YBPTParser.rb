@@ -29,13 +29,16 @@ class YPBTParser
   end
 
   def self.fill_in_video_info(record, video)
-    record.video_info.video_id      = video.id
-    record.video_info.title         = video.title
-    record.video_info.description   = video.description
-    record.video_info.view_count    = video.view_count
-    record.video_info.like_count    = video.like_count
-    record.video_info.dislike_count = video.dislike_count
+    record.video_info.video_id            = video.id
+    record.video_info.title               = video.title
+    record.video_info.description         = video.description
+    record.video_info.view_count          = video.view_count
+    record.video_info.like_count          = video.like_count
+    record.video_info.dislike_count       = video.dislike_count
     record.set_video_duration_from_iso8601(video.duration)
+    record.video_info.channel_title       = video.channel_title
+    record.video_info.channel_description = video.channel_description
+    record.video_info.channel_image_url   = video.channel_image_url
     record
   end
 

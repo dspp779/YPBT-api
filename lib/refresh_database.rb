@@ -104,13 +104,16 @@ class RefreshDatabase
 
   def self.create_video_record(record)
     video_info = VideoInfo.new(
-      video_id:      record.video_info.video_id,
-      title:         record.video_info.title,
-      description:   record.video_info.description,
-      view_count:    record.video_info.view_count,
-      like_count:    record.video_info.like_count,
-      dislike_count: record.video_info.dislike_count,
-      duration:      record.video_info.duration
+      video_id:            record.video_info.video_id,
+      title:               record.video_info.title,
+      description:         record.video_info.description,
+      view_count:          record.video_info.view_count,
+      like_count:          record.video_info.like_count,
+      dislike_count:       record.video_info.dislike_count,
+      duration:            record.video_info.duration,
+      channel_title:       record.video_info.channel_title,
+      channel_description: record.video_info.channel_description,
+      channel_image_url:   record.video_info.channel_image_url
     )
     created_video = VideoRecord.create(video_info)
     VideoInfo.new(id: created_video.id)
@@ -157,12 +160,15 @@ class RefreshDatabase
 
   def self.update_video_record(id, record)
     video_info = VideoInfo.new(
-      title:         record.video_info.title,
-      description:   record.video_info.description,
-      view_count:    record.video_info.view_count,
-      like_count:    record.video_info.like_count,
-      dislike_count: record.video_info.dislike_count,
-      duration:      record.video_info.duration
+      title:               record.video_info.title,
+      description:         record.video_info.description,
+      view_count:          record.video_info.view_count,
+      like_count:          record.video_info.like_count,
+      dislike_count:       record.video_info.dislike_count,
+      duration:            record.video_info.duration,
+      channel_title:       record.video_info.channel_title,
+      channel_description: record.video_info.channel_description,
+      channel_image_url:   record.video_info.channel_image_url
     )
     updated_video = VideoRecord.update(id, video_info)
     VideoInfo.new(id: updated_video.id)
