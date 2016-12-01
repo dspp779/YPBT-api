@@ -6,9 +6,8 @@ API to access the information of comments following a given movie, such as autho
 # YTBT-API doc
 
 ## Video  
-* <strong>Get</strong> /api/{version}/video/{video id}  
-
-> *Discription:* return a basic information of targe video   
+* <strong>Get</strong> /api/{version}/Video/{video id}  
+> *Discription:* return a basic information of targe video  
 > *Return:*  
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
@@ -18,12 +17,33 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>view_count</td><td>int</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
 <tr><td>dislike_count</td><td>int</td></tr>
+<tr><td>duration</td><td>int</td></tr>
+<tr><td>channel_title</td><td>int</td></tr>
+<tr><td>channel_image_url</td><td>int</td></tr>
+<tr><td>channel_description</td><td>int</td></tr>
+</table>
+
+* <strong>Get</strong> /api/{version}/Videos
+> *Discription:* return information of all storaged videos
+> *Return:*
+<table>
+<tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
+<tr><td>video_id</td><td>string</td></tr>
+<tr><td>title</td><td>string</td></tr>
+<tr><td>description</td><td>string</td></tr>
+<tr><td>view_count</td><td>int</td></tr>
+<tr><td>like_count</td><td>int</td></tr>
+<tr><td>dislike_count</td><td>int</td></tr>
+<tr><td>duration</td><td>int</td></tr>
+<tr><td>channel_title</td><td>int</td></tr>
+<tr><td>channel_image_url</td><td>int</td></tr>
+<tr><td>channel_description</td><td>int</td></tr>
 </table>
 
 ## Comment
 * <strong>Get</strong> /api/{version}/Comment/{comment id}  
-> *Discription:* return the detail information of targe comment    
-> *Return:*
+> *Discription:* return the detail information of targeted comment  
+> *Return:*  
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>video_id</td><td>string</td></tr>
@@ -37,7 +57,7 @@ API to access the information of comments following a given movie, such as autho
 
 * <strong>Get</strong> /api/{version}/Comments/{video id}  
 > *Discription:* return the detail information of comments  
-> *Return:* array of <strong>comment datas</strong>  
+> *Return:* array of <strong>comment data</strong>  
 > <strong>comment data=</strong>
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
@@ -51,8 +71,8 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 ## Time Tag
-* <strong>Get</strong> /api/{version}/TimeTag/{video id}  
-> *Discription:* return raw data of time tags that belong to target video  
+* <strong>Get</strong> /api/{version}/TimeTags/{video id}  
+> *Discription:* return raw data of time tags that belong to the target video  
 > *Return:*  array of <strong>time tags info</strong>  
 > <strong>time tags info=</strong>
 <table>
@@ -74,6 +94,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>start_time</td><td>string</td></tr>
 <tr><td>end_time</td><td>string</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
+<tr><td>unlike_count</td><td>int</td></tr>
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>comment_text_display</td><td>string</td></tr>
 <tr><td>comment_author_name</td><td>string</td></tr>
@@ -91,12 +112,23 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>end_time (optional)</td><td>string</td></tr>
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>comment_text_display</td><td>string</td></tr>
+<tr><td>api_key</td><td>string</td></tr>
 </table>
 
-* <strong>Put</strong> /api/{version}/TimeTag/
+* <strong>Put</strong> /api/{version}/TimeTag/add_one_like
 > *Discription:* add like count for the tag  
 > *Parameter:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>time_tag_id</td><td>string</td></tr>
+<tr><td>api_key</td><td>string</td></tr>
+</table>
+
+* <strong>Put</strong> /api/{version}/TimeTag/add_one_unlike
+> *Discription:* add unlike count for the tag
+> *Parameter:*
+<table>
+<tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
+<tr><td>time_tag_id</td><td>string</td></tr>
+<tr><td>api_key</td><td>string</td></tr>
 </table>

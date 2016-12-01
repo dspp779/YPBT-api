@@ -27,14 +27,18 @@ class Update2LatestQuery
   def self.update_video(video_found)
     unless within_cd(video_found)
       latest_video = YoutubeVideo::Video.find(video_id: video_found.video_id)
-      UpdateRecordFromYT.update_video_record(video_found.id, latest_video)
+      arrayOfRecord = YPBTParser.call(latest_video)
+      RefreshDatabase.call(arrayOfRecord)
+      #UpdateRecordFromYT.update_video_record(video_found.id, latest_video)
     else
     end
   end
 
   def self.create_video(video_id)
     new_video = YoutubeVideo::Video.find(video_id: video_id)
-    CreateRecordFromYT.create_video_record(new_video)
+    arrayOfRecord = YPBTParser.call(new_video)
+    RefreshDatabase.call(arrayOfRecord)
+    #CreateRecordFromYT.create_video_record(new_video)
   end
 
   def self.within_cd(video_found)

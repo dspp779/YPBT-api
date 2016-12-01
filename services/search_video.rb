@@ -28,13 +28,16 @@ class SearchVideo
 
   register :render_search_result, lambda { |input|
     results = VideoInfo.new(
-      video_id:      input[:video].video_id,
-      title:         input[:video].title,
-      description:   input[:video].description,
-      view_count:    input[:video].view_count,
-      like_count:    input[:video].like_count, 
-      dislike_count: input[:video].dislike_count,
-      duration:      input[:video].duration
+      video_id:            input[:video].video_id,
+      title:               input[:video].title,
+      description:         input[:video].description,
+      view_count:          input[:video].view_count,
+      like_count:          input[:video].like_count, 
+      dislike_count:       input[:video].dislike_count,
+      duration:            input[:video].duration,
+      channel_title:       input[:video].channel_title,
+      channel_description: input[:video].channel_description,
+      channel_image_url:   input[:video].channel_image_url
     )
     Right(results)
   }
