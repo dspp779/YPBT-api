@@ -12,7 +12,7 @@ class YPBT_API < Sinatra::Base
     VideosRepresenter.new(results.value).to_json
   end
 
-  # Get video info from database
+  # Get video info from YPBT gem
   # tux: get 'api/v0.1/Video/:video_id'
   get "/#{API_VER}/Video/:video_id/?" do
     results = SearchVideo.call(params)
