@@ -135,5 +135,5 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 ##  
-* <strong>Database Model</strong> (primitive)
-[Database Model](docs/database_structure.png)
+* <strong>Database Model</strong> (primitive)  
+![Database Model](docs/database_structure.png)
