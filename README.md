@@ -133,3 +133,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>time_tag_id</td><td>string</td></tr>
 <tr><td>api_key</td><td>string</td></tr>
 </table>
+
+##  
+* <strong>Database Model</strong> (primitive)
+[Database Model](docs/database_structure.png)
