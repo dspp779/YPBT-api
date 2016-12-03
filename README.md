@@ -4,10 +4,10 @@
 API to access the information of comments following a given movie, such as author name, comment content, and author channel url.
 
 # YTBT-API doc  
-`version`    : v0.1  
-`video_id`   : YouTube video id  
-`comment_id` : YouTube comment id  
-`time_tag_id`: YTBT-API time tag id  
+- `version`    : v0.1  
+- `video_id`   : YouTube video id  
+- `comment_id` : YouTube comment id  
+- `time_tag_id`: YTBT-API time tag id  
 
 ## Video  
 * <strong>Get</strong> /api/{version}/Video/{video_id}  
