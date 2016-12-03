@@ -5,7 +5,7 @@ class YPBT_API < Sinatra::Base
   YT_URL_REGEX = %r{https://www.youtube.com/watch\?v=(\S[^&]+)}
   COOLDOWN_TIME = 10 # second
 
-  # Get video info from database
+  # Get all videos info in database
   # tux: get 'api/v0.1/Videos'
   get "/#{API_VER}/Videos/?" do
     results = SearchVideos.call

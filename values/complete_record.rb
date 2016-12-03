@@ -26,10 +26,24 @@ class CompleteRecord
     @timetag_info.start_time = duration.total
   end
 
+  def set_timetag_end_time_from_iso8601(iso8601_string)
+    duration = Duration.new(iso8601_string)
+    @timetag_info.end_time = duration.total
+  end
+
   def set_timetag_start_time_percentage()
     unless @video_info.duration.nil?
       @timetag_info.start_time_percentage =
         (@timetag_info.start_time.to_f / @video_info.duration.to_f).round(3)
+    else
+      nil
+    end
+  end
+
+  def set_timetag_end_time_percentage()
+    unless @video_info.duration.nil?
+      @timetag_info.end_time_percentage =
+        (@timetag_info.end_time.to_f / @video_info.duration.to_f).round(3)
     else
       nil
     end

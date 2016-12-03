@@ -23,7 +23,7 @@ class SearchVideoAllComments
       results = comments
       Right(results)
     else
-      Left(Error.new(:not_found, "Video (video_id: #{video_id}) not found"))
+      Left(Error.new(:not_found, "No record existed (video_id: #{video_id})"))
     end
   }
 

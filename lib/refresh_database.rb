@@ -140,7 +140,9 @@ class RefreshDatabase
       our_unlike_count:      record.timetag_info.our_unlike_count,
       tag_type:              record.timetag_info.tag_type,
       start_time:            record.timetag_info.start_time,
-      start_time_percentage: record.timetag_info.start_time_percentage
+      end_time:              record.timetag_info.end_time,
+      start_time_percentage: record.timetag_info.start_time_percentage,
+      end_time_percentage: record.timetag_info.end_time_percentage
     )
     created_timetag = TimetagRecord.create(timetag_info)
     TimetagInfo.new(id: created_timetag.id)

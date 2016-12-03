@@ -5,9 +5,15 @@ class GetVideoAllTimetagsQuery
   def self.call(video_id)
     video_info     = VideoInfo.new(video_id: video_id)
     video_found    = VideoRecord.find(video_info)
+    unless video_found.nil?
+      comments_found = find_all_comments(video_found)
+      timetags_found = find_all_timetags(comments_found)
+    end
+  end
+
+  def self.find_all_comments(video_found)
     comment_info   = CommentInfo.new(video_id: video_found.id)
     comments_found = CommentRecord.find_all(comment_info)
-    timetags_found = find_all_timetags(comments_found)
   end
 
   def self.find_all_timetags(comments_found)

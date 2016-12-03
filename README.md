@@ -3,10 +3,14 @@
 
 API to access the information of comments following a given movie, such as author name, comment content, and author channel url.
 
-# YTBT-API doc
+# YTBT-API doc  
+`version`    : v0.1  
+`video_id`   : YouTube video id  
+`comment_id` : YouTube comment id  
+`time_tag_id`: YTBT-API time tag id  
 
 ## Video  
-* <strong>Get</strong> /api/{version}/Video/{video id}  
+* <strong>Get</strong> /api/{version}/Video/{video_id}  
 > *Discription:* return a basic information of target video directly from YouTube API  
 > *Return:*  
 <table>
@@ -42,7 +46,7 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 ## Comment
-* <strong>Get</strong> /api/{version}/Comment/{comment id}  
+* <strong>Get</strong> /api/{version}/Comment/{comment_id}  
 > *Discription:* return the detail information of targeted comment  
 > *Return:*  
 <table>
@@ -56,7 +60,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>author_channel_url</td><td>url</td></tr>
 </table>
 
-* <strong>Get</strong> /api/{version}/Comments/{video id}  
+* <strong>Get</strong> /api/{version}/Comments/{video_id}  
 > *Discription:* return the detail information of comments  
 > *Return:* array of <strong>comment data</strong>  
 > <strong>comment data=</strong>
@@ -70,9 +74,10 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>author_image_url</td><td>url</td></tr>
 <tr><td>author_channel_url</td><td>url</td></tr>
 </table>
+> *Additional effects:* update database records for `video_id`
 
 ## Time Tag
-* <strong>Get</strong> /api/{version}/TimeTags/{video id}  
+* <strong>Get</strong> /api/{version}/TimeTags/{video_id}  
 > *Discription:* return raw data of time tags that belong to the target video  
 > *Return:*  array of <strong>time tags info</strong>  
 > <strong>time tags info=</strong>
@@ -85,6 +90,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>start_time_percentage</td><td>float</td></tr>
 <tr><td>end_time_percentage</td><td>float</td></tr>
 </table>
+> *Additional effects:* update database records for `video_id`
 
 * <strong>Get</strong> /api/{version}/TimeTag/{time_tag_id}
 > *Discription:* return detail data of target time tag  
@@ -133,3 +139,8 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>time_tag_id</td><td>string</td></tr>
 <tr><td>api_key</td><td>string</td></tr>
 </table>
+
+##  
+* <strong>Database Model</strong> (primitive)  
+  
+![Database Model](docs/database_structure.png)

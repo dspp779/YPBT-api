@@ -28,37 +28,50 @@ class YPBT_API < Sinatra::Base
     end
   end
 
-=begin
-  # get all tagid for this video
-  get "/#{API_VER}/video/:video_id/get_all_tagid?" do
-    content_type 'application/json'
-    ["Need Implement"].to_json
-  end
-
-  # Create a new video and its downstream data in the database
-  # tux: post 'api/v0.1/video', { url: "youtube_url" }.to_json, 
-  #                             'CONTENT_TYPE' => 'application/json'
-  post "/#{API_VER}/video/?" do
-    results = LoadVideoFromYT.call(request)
-
-    if results.success?
-      VideoInfoRepresenter.new(results.value).to_json
-    else
-      ErrorRepresenter.new(results.value).to_status_response
-    end
-  end
-
-  # Update whole record of an existed video in the database
-  # tux: put 'api/v0.1/video/:video_id'
-  put "/#{API_VER}/video/:video_id/?" do
-    results = UpdateVideoFromYT.call(params)
+  # Add new TimeTag
+  # tux: post 'api/v0.1/TimeTag',
+  #   { video_id:             "video_id",
+  #     start_time:           "start_time",
+  #     end_time:             "end_time",
+  #     tag_type:             "tag_type",
+  #     comment_text_display: "comment_text_display"
+  #   }.to_json,
+  #   'CONTENT_TYPE' => 'application/json'
+  post "/#{API_VER}/TimeTag/?" do
+    results = AddNewTimetag.call(request)
 
     if results.success?
-      #{ status: 'OK', message: "Update to lastest" }.to_json
       ApiInfoRepresenter.new(results.value).to_json
     else
       ErrorRepresenter.new(results.value).to_status_response
     end
   end
-=end
+
+  # Add like count for the tag
+  # tux: put 'api/v0.1/TimeTag/add_one_like',
+  #   { time_tag_id: "timetag_id" }.to_json,
+  #   'CONTENT_TYPE' => 'application/json'
+  put "/#{API_VER}/TimeTag/add_one_like/?" do
+    results = TimetagAddOneLike.call(request)
+
+    if results.success?
+      ApiInfoRepresenter.new(results.value).to_json
+    else
+      ErrorRepresenter.new(results.value).to_status_response
+    end
+  end
+
+  # Add unlike count for the tag
+  # tux: put 'api/v0.1/TimeTag/add_one_unlike',
+  #   { time_tag_id: "timetag_id" }.to_json,
+  #   'CONTENT_TYPE' => 'application/json'
+  put "/#{API_VER}/TimeTag/add_one_unlike/?" do
+    results = TimetagAddOneUnlike.call(request)
+
+    if results.success?
+      ApiInfoRepresenter.new(results.value).to_json
+    else
+      ErrorRepresenter.new(results.value).to_status_response
+    end
+  end
 end
