@@ -9,6 +9,7 @@ class ErrorRepresenter < Roar::Decorator
   ERROR = {
     OK: 200,
     cannot_process: 422,
+    forbidden: 403,
     not_found: 404,
     bad_request: 400,
     internal_error: 500

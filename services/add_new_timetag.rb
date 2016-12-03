@@ -5,9 +5,20 @@ class AddNewTimetag
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
 
-  register :check_video, lambda { |request|
+  register :api_key_authenticate, lambda { |request|
     body_params = JSON.parse request.body.read
-    video_id = body_params['video_id']
+    api_key = body_params['api_key']
+
+    if api_key == ENV['YOUTUBE_API_KEY']
+      params = body_params
+      Right(params)
+    else
+      Left(Error.new(:forbidden, "Authentication fail"))
+    end
+  }
+
+  register :check_video, lambda { |params|
+    video_id = params['video_id']
     video_info = VideoInfo.new(video_id: video_id)
     video_found = VideoRecord.find(video_info)
 
@@ -18,7 +29,6 @@ class AddNewTimetag
     end
 
     unless video_found.nil?
-      params = body_params
       Right(video_info: video_found, params: params)
     else
       Left(Error.new(:bad_request, 
@@ -46,6 +56,7 @@ class AddNewTimetag
 
   def self.call(params)
     Dry.Transaction(container: self) do
+      step :api_key_authenticate
       step :check_video # is already stored in database
       step :add_new_timetag
       step :render_api_info

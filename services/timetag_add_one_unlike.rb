@@ -5,9 +5,20 @@ class TimetagAddOneUnlike
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
 
-  register :check_timetag, lambda { |request|
+  register :api_key_authenticate, lambda { |request|
     body_params = JSON.parse request.body.read
-    timetag_id = body_params['time_tag_id'].to_i
+    api_key = body_params['api_key']
+
+    if api_key == ENV['YOUTUBE_API_KEY']
+      params = body_params
+      Right(params)
+    else
+      Left(Error.new(:forbidden, "Authentication fail"))
+    end
+  }
+
+  register :check_timetag, lambda { |params|
+    timetag_id = params['time_tag_id'].to_i
     timetag = Timetag.find(id: timetag_id)
 
     if timetag
@@ -27,6 +38,7 @@ class TimetagAddOneUnlike
 
   def self.call(params)
     Dry.Transaction(container: self) do
+      step :api_key_authenticate
       step :check_timetag # is existed
       step :add_one_unlike
     end.call(params)
