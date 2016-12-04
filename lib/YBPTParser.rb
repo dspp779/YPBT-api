@@ -36,6 +36,7 @@ class YPBTParser
     record.video_info.like_count          = video.like_count
     record.video_info.dislike_count       = video.dislike_count
     record.set_video_duration_from_iso8601(video.duration)
+    record.video_info.channel_id          = video.channel_id
     record.video_info.channel_title       = video.channel_title
     record.video_info.channel_description = video.channel_description
     record.video_info.channel_image_url   = video.channel_image_url

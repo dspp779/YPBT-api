@@ -12,6 +12,7 @@ class VideoRecord
       like_count:          video_info.like_count,
       dislike_count:       video_info.dislike_count,
       duration:            video_info.duration,
+      channel_id:          video_info.channel_id,
       channel_title:       video_info.channel_title,
       channel_description: video_info.channel_description,
       channel_image_url:   video_info.channel_image_url,
@@ -22,8 +23,8 @@ class VideoRecord
   # Find video record
   def self.find(video_info)
     columns = [:id, :video_id, :title, :description, :view_count, :like_count,
-               :dislike_count, :duration, :channel_title, :channel_description,
-               :channel_image_url, :last_update_time]
+               :dislike_count, :duration, :channel_id, :channel_title,
+               :channel_description, :channel_image_url, :last_update_time]
     results = Video.where()
     columns.each do |col|
       val = video_info.send(col)
@@ -32,17 +33,18 @@ class VideoRecord
 
     unless results.first.nil?
       video_found = VideoInfo.new(
-        id: results.first.id,
-        video_id: results.first.video_id,
-        title: results.first.title,
-        description: results.first.description,
-        view_count: results.first.like_count,
-        dislike_count: results.first.dislike_count,
-        duration: results.first.duration,
-        channel_title: results.first.channel_title,
+        id:                  results.first.id,
+        video_id:            results.first.video_id,
+        title:               results.first.title,
+        description:         results.first.description,
+        view_count:          results.first.like_count,
+        dislike_count:       results.first.dislike_count,
+        duration:            results.first.duration,
+        channel_id:          results.first.channel_id,
+        channel_title:       results.first.channel_title,
         channel_description: results.first.channel_description,
-        channel_image_url: results.first.channel_image_url,
-        last_update_time: results.first.last_update_time
+        channel_image_url:   results.first.channel_image_url,
+        last_update_time:    results.first.last_update_time
       )
     else
       nil
@@ -54,8 +56,8 @@ class VideoRecord
     video = Video.find(id: id)
 
     columns = [:video_id, :title, :description, :view_count, :like_count,
-               :dislike_count, :channel_title, :channel_description,
-               :channel_image_url, :duration]
+               :dislike_count, :channel_id, :channel_title,
+               :channel_description, :channel_image_url, :duration]
     columns.each do |col|
       val = video_info.send(col)
       video.send("#{col}=", video_info.send(col)) unless val.nil?
