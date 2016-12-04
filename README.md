@@ -21,11 +21,11 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>view_count</td><td>int</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
 <tr><td>dislike_count</td><td>int</td></tr>
-<tr><td>duration</td><td>int</td></tr>
-<tr><td>channel_id</td><td>int</td></tr>
-<tr><td>channel_title</td><td>int</td></tr>
-<tr><td>channel_image_url</td><td>int</td></tr>
-<tr><td>channel_description</td><td>int</td></tr>
+<tr><td>duration</td><td>ISO 8601</td></tr>
+<tr><td>channel_id</td><td>string</td></tr>
+<tr><td>channel_title</td><td>string</td></tr>
+<tr><td>channel_image_url</td><td>url</td></tr>
+<tr><td>channel_description</td><td>string</td></tr>
 </table>
 
 * <strong>Get</strong> /api/{version}/Videos
@@ -40,11 +40,11 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>view_count</td><td>int</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
 <tr><td>dislike_count</td><td>int</td></tr>
-<tr><td>duration</td><td>int</td></tr>
-<tr><td>channel_id</td><td>int</td></tr>
-<tr><td>channel_title</td><td>int</td></tr>
-<tr><td>channel_image_url</td><td>int</td></tr>
-<tr><td>channel_description</td><td>int</td></tr>
+<tr><td>duration</td><td>ISO 8601</td></tr>
+<tr><td>channel_id</td><td>string</td></tr>
+<tr><td>channel_title</td><td>string</td></tr>
+<tr><td>channel_image_url</td><td>url</td></tr>
+<tr><td>channel_description</td><td>string</td></tr>
 </table>
 
 ## Comment
