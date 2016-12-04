@@ -30,8 +30,8 @@ class TimetagInfoRepresenterB
       end_time:                   @end_time,
       tag_type:                   @tag_type,
       start_time_percentage:      @start_time_percentage,
-      end_time_percentage:        @end_time_percentage
-    }.to_json
+      end_time_percentage:        @end_time_percentage,
+      like_count:                 @like_count }.to_json
   end
 
   def set_time_tag_id(timetag_info)
