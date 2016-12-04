@@ -91,6 +91,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>start_time_percentage</td><td>float</td></tr>
 <tr><td>end_time_percentage</td><td>float</td></tr>
+<tr><td>like_count</td><td>int</td></tr>
 </table>
 > *Additional effects:* update database records for `video_id`
 
