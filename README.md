@@ -22,6 +22,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>like_count</td><td>int</td></tr>
 <tr><td>dislike_count</td><td>int</td></tr>
 <tr><td>duration</td><td>int</td></tr>
+<tr><td>channel_id</td><td>int</td></tr>
 <tr><td>channel_title</td><td>int</td></tr>
 <tr><td>channel_image_url</td><td>int</td></tr>
 <tr><td>channel_description</td><td>int</td></tr>
@@ -40,6 +41,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>like_count</td><td>int</td></tr>
 <tr><td>dislike_count</td><td>int</td></tr>
 <tr><td>duration</td><td>int</td></tr>
+<tr><td>channel_id</td><td>int</td></tr>
 <tr><td>channel_title</td><td>int</td></tr>
 <tr><td>channel_image_url</td><td>int</td></tr>
 <tr><td>channel_description</td><td>int</td></tr>

@@ -36,6 +36,7 @@ class SearchVideo
       like_count:          input[:video].like_count, 
       dislike_count:       input[:video].dislike_count,
       duration:            input[:video].duration,
+      channel_id:          input[:video].channel_id,
       channel_title:       input[:video].channel_title,
       channel_description: input[:video].channel_description,
       channel_image_url:   input[:video].channel_image_url

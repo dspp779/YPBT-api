@@ -111,6 +111,7 @@ class RefreshDatabase
       like_count:          record.video_info.like_count,
       dislike_count:       record.video_info.dislike_count,
       duration:            record.video_info.duration,
+      channel_id:          record.video_info.channel_id,
       channel_title:       record.video_info.channel_title,
       channel_description: record.video_info.channel_description,
       channel_image_url:   record.video_info.channel_image_url
@@ -168,6 +169,7 @@ class RefreshDatabase
       like_count:          record.video_info.like_count,
       dislike_count:       record.video_info.dislike_count,
       duration:            record.video_info.duration,
+      channel_id:          record.video_info.channel_id,
       channel_title:       record.video_info.channel_title,
       channel_description: record.video_info.channel_description,
       channel_image_url:   record.video_info.channel_image_url
