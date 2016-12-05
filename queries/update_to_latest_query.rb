@@ -26,6 +26,7 @@ class Update2LatestQuery
 
   def self.update_video(video_found)
     unless within_cd(video_found)
+      refresh_last_update_time_beforehand(video_found.id)
       latest_video = YoutubeVideo::Video.find(video_id: video_found.video_id)
       arrayOfRecord = YPBTParser.call(latest_video)
       RefreshDatabase.call(arrayOfRecord)
@@ -49,5 +50,13 @@ class Update2LatestQuery
     else
       false
     end
+  end
+
+  def self.refresh_last_update_time_beforehand(id)
+    # Refresh the last_update_time for a video record; used when beforehand
+    # refreshment of the last_update_time of one video is needed before its 
+    # real update
+    video_info = VideoInfo.new()
+    updated_video = VideoRecord.update(id, video_info)
   end
 end
