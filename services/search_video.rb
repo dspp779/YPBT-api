@@ -21,7 +21,7 @@ class SearchVideo
     video_info = Video.find(video_id: video_id)
     video_info = fetch_video_from_YPBTgem(video_id) if video_info.nil?
 
-    if video_info
+    unless video_info.nil?
       Right(video_info: video_info)
     else
       Left(Error.new(:not_found, "Video (video_id: #{video_id}) not found"))
@@ -42,7 +42,11 @@ class SearchVideo
 
   def self.fetch_video_from_YPBTgem(video_id)
     video = YoutubeVideo::Video.find(video_id: video_id)
-    arrayOfRecord = YPBTParserVideoOnly.call(video)
-    video_info = arrayOfRecord.first.video_info
+    unless video.nil?
+      arrayOfRecord = YPBTParserVideoOnly.call(video)
+      video_info = arrayOfRecord.first.video_info
+    else
+      nil
+    end
   end
 end

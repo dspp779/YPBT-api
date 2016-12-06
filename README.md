@@ -11,7 +11,7 @@ API to access the information of comments following a given movie, such as autho
 
 ## Video  
 * <strong>Get</strong> /api/{version}/Video/{video_id}  
-> *Discription:* return a basic information of target video directly from YouTube API  
+> *Discription:* return a basic information of target video  
 > *Return:*  
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
@@ -29,8 +29,8 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 * <strong>Get</strong> /api/{version}/Videos
-> *Discription:* return information of all storaged videos
-> *Return:*  array of <strong>videos info</strong>
+> *Discription:* return information of all storaged videos  
+> *Return:*  array of <strong>videos info</strong>  
 > <strong>videos info=</strong>
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>

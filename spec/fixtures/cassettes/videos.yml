@@ -25925,4 +25925,70 @@ http_interactions:
         false,\n    \"totalReplyCount\": 0,\n    \"isPublic\": true\n   }\n  }\n ]\n}\n"
     http_version: 
   recorded_at: Mon, 21 Nov 2016 08:06:15 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCYE8GO8URXHt3eLkqeo3uSw&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Mon, 05 Dec 2016 09:51:02 GMT
+      Date:
+      - Mon, 05 Dec 2016 09:51:02 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/J9u74z_JP-X4K7if0X9fjk3MMLM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '714'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCYE8GO8URXHt3eLkqeo3uSw",
+           "snippet": {
+            "title": "RBC NETWORK BROADCASTING",
+            "description": "Donald Trump, Hillary Clinton, Speeches & Rallies, Donald Trump Live, Donald Trump Rally, Donald Trump Live Stream, Donald Trump Full Speech, Live Events, Full Event, Donald Trump 2016 Online, Live Streaming, Make America Great Again, Live Broadcasting 2016, Republican Party, Donald Trump Polls, Republican Candidates 2016, Republican Debate, Democratic Party, Mike Pence, Tim Kaine, Events",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-pLKZHi1yDc0/AAAAAAAAAAI/AAAAAAAAAAA/AXJKodKsQaM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Mon, 05 Dec 2016 09:51:02 GMT
 recorded_with: VCR 3.0.3
