@@ -42,8 +42,11 @@ VCR.configure do |c|
   end
 end
 
+COOLDOWN_TIME = 600.1 # second
 HAPPY_VIDEO_ID = 'OyDSCKYz5sA'
 SAD_VIDEO_ID = 'XxXx888xXxX'
+HAPPY_COMMENT_ID = "z12zvrrqlljmhvskd23fjbs4nvitcnai104"
+SAD_COMMENT_ID = "ooooooooooooooooooooooooooooooooooo"
 #REMOVED_VIDEO_ID = '5BTjZ9U5XF8'
 HAPPY_VIDEO_URL = 'https://www.youtube.com/watch?v=OyDSCKYz5sA'
 SAD_VIDEO_URL = 'https://www.youtube.com/watch?v=XxXx888xXxX'

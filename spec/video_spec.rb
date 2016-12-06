@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 require_relative 'spec_helper'
 
-COOLDOWN_TIME = 600.1 # second
-
 describe 'Videos Route' do
   before do
     VCR.insert_cassette VIDEOS_CASSETTE, record: :new_episodes
