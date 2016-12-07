@@ -56,7 +56,7 @@ class YPBTParser
   def self.fill_in_timetag_info(record, timetag)
     record.timetag_info.yt_like_count  = timetag.like_count
     record.timetag_info.our_like_count = 0
-    record.timetag_info.our_unlike_count = 0
+    record.timetag_info.our_dislike_count = 0
     record.set_timetag_start_time_from_iso8601(timetag.start_time)
     record
   end

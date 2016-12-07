@@ -138,7 +138,7 @@ class RefreshDatabase
       comment_id:            record.comment_info.id,
       yt_like_count:         record.timetag_info.yt_like_count,
       our_like_count:        record.timetag_info.our_like_count,
-      our_unlike_count:      record.timetag_info.our_unlike_count,
+      our_dislike_count:      record.timetag_info.our_dislike_count,
       tag_type:              record.timetag_info.tag_type,
       start_time:            record.timetag_info.start_time,
       end_time:              record.timetag_info.end_time,

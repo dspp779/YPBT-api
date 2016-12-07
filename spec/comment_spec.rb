@@ -34,14 +34,14 @@ describe 'Comments Route' do
 
       comments_data = JSON.parse(last_response.body)
       comments_data.length.must_be :>=, 1
-      first_comments = comments_data.first
-      first_comments["video_id"].must_equal HAPPY_VIDEO_ID
-      first_comments["comment_id"].length.must_be :>, 0
-      first_comments["text_display"].length.must_be :>, 0
-      first_comments["like_count"].wont_be_nil
-      first_comments["author_name"].length.must_be :>, 0
-      first_comments["author_image_url"].length.must_be :>, 0
-      first_comments["author_channel_url"].length.must_be :>, 0
+      first_comment = comments_data.first
+      first_comment["video_id"].must_equal HAPPY_VIDEO_ID
+      first_comment["comment_id"].length.must_be :>, 0
+      first_comment["text_display"].length.must_be :>, 0
+      first_comment["like_count"].wont_be_nil
+      first_comment["author_name"].length.must_be :>, 0
+      first_comment["author_image_url"].length.must_be :>, 0
+      first_comment["author_channel_url"].length.must_be :>, 0
     end
 
     it '[HAPPY]: not update the records for the target video if still in ' +
@@ -60,14 +60,14 @@ describe 'Comments Route' do
 
       comments_data = JSON.parse(last_response.body)
       comments_data.length.must_be :>=, 1
-      first_comments = comments_data.first
-      first_comments["video_id"].must_equal HAPPY_VIDEO_ID
-      first_comments["comment_id"].length.must_be :>, 0
-      first_comments["text_display"].length.must_be :>, 0
-      first_comments["like_count"].wont_be_nil
-      first_comments["author_name"].length.must_be :>, 0
-      first_comments["author_image_url"].length.must_be :>, 0
-      first_comments["author_channel_url"].length.must_be :>, 0
+      first_comment = comments_data.first
+      first_comment["video_id"].must_equal HAPPY_VIDEO_ID
+      first_comment["comment_id"].length.must_be :>, 0
+      first_comment["text_display"].length.must_be :>, 0
+      first_comment["like_count"].wont_be_nil
+      first_comment["author_name"].length.must_be :>, 0
+      first_comment["author_image_url"].length.must_be :>, 0
+      first_comment["author_channel_url"].length.must_be :>, 0
     end
 
     it '[HAPPY]: return information of targeted comment from database' do
@@ -111,14 +111,14 @@ describe 'Comments Route' do
 
       comments_data = JSON.parse(last_response.body)
       comments_data.length.must_be :>=, 1
-      first_comments = comments_data.first
-      first_comments["video_id"].must_equal HAPPY_VIDEO_ID
-      first_comments["comment_id"].length.must_be :>, 0
-      first_comments["text_display"].length.must_be :>, 0
-      first_comments["like_count"].wont_be_nil
-      first_comments["author_name"].length.must_be :>, 0
-      first_comments["author_image_url"].length.must_be :>, 0
-      first_comments["author_channel_url"].length.must_be :>, 0
+      first_comment = comments_data.first
+      first_comment["video_id"].must_equal HAPPY_VIDEO_ID
+      first_comment["comment_id"].length.must_be :>, 0
+      first_comment["text_display"].length.must_be :>, 0
+      first_comment["like_count"].wont_be_nil
+      first_comment["author_name"].length.must_be :>, 0
+      first_comment["author_image_url"].length.must_be :>, 0
+      first_comment["author_channel_url"].length.must_be :>, 0
     end
 
     it '[SAD]: report not found if target video not available on YouTube' do

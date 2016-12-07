@@ -3,7 +3,7 @@
 # Represents overall timetag information for JSON API output
 class TimetagInfoRepresenterB
   attr_reader :timetag_info, :time_tag_id, :start_time, :end_time, :like_count,
-              :unlike_count, :tag_type, :start_time_percentage,
+              :dislike_count, :tag_type, :start_time_percentage,
               :end_time_percentage, :comment_text_display,
               :comment_author_name, :comment_author_image_url,
               :comment_author_channel_url
@@ -14,7 +14,7 @@ class TimetagInfoRepresenterB
     @start_time                 = set_start_time(@timetag_info)
     @end_time                   = set_end_time(@timetag_info)
     @like_count                 = set_like_count(@timetag_info)
-    @unlike_count               = set_unlike_count(@timetag_info)
+    @dislike_count               = set_dislike_count(@timetag_info)
     @tag_type                   = set_tag_type(@timetag_info)
     @start_time_percentage      = set_start_time_percentage(@timetag_info)
     @end_time_percentage        = set_end_time_percentage(@timetag_info)
@@ -60,8 +60,8 @@ class TimetagInfoRepresenterB
     timetag_info.yt_like_count + timetag_info.our_like_count
   end
 
-  def set_unlike_count(timetag_info)
-    timetag_info.our_unlike_count
+  def set_dislike_count(timetag_info)
+    timetag_info.our_dislike_count
   end
 
   def set_tag_type(timetag_info)

@@ -104,7 +104,7 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>start_time</td><td>string</td></tr>
 <tr><td>end_time</td><td>string</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
-<tr><td>unlike_count</td><td>int</td></tr>
+<tr><td>dislike_count</td><td>int</td></tr>
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>comment_text_display</td><td>string</td></tr>
 <tr><td>comment_author_name</td><td>string</td></tr>
@@ -134,8 +134,8 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>api_key</td><td>string</td></tr>
 </table>
 
-* <strong>Put</strong> /api/{version}/TimeTag/add_one_unlike
-> *Discription:* add unlike count for the tag
+* <strong>Put</strong> /api/{version}/TimeTag/add_one_dislike
+> *Discription:* add dislike count for the tag
 > *Parameter:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
