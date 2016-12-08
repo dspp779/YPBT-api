@@ -128,7 +128,7 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 * <strong>Put</strong> /api/{version}/TimeTag/add_one_click
-> *Discription:* add click count for the tag
+> *Discription:* add click count for the tag  
 > *Parameter:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
@@ -146,7 +146,7 @@ API to access the information of comments following a given movie, such as autho
 </table>
 
 * <strong>Put</strong> /api/{version}/TimeTag/add_one_dislike
-> *Discription:* add dislike count for the tag
+> *Discription:* add dislike count for the tag  
 > *Parameter:*
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
