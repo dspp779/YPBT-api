@@ -6,11 +6,11 @@ Sequel.migration do
     create_table(:comments) do
       primary_key :id
       foreign_key :video_id
-      String :comment_id
-      String :updated_at
-      String :published_at
-      String :text_display
-      Integer :like_count
+      String      :comment_id
+      String      :updated_at
+      String      :published_at
+      String      :text_display
+      Integer     :like_count
     end
   end
 end

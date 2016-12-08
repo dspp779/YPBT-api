@@ -12,7 +12,7 @@ class TimetagRecord
       comment_id:            timetag_info.comment_id,
       yt_like_count:         timetag_info.yt_like_count,
       our_like_count:        timetag_info.our_like_count,
-      our_unlike_count:      timetag_info.our_unlike_count,
+      our_dislike_count:      timetag_info.our_dislike_count,
       tag_type:              timetag_info.tag_type,
       start_time:            timetag_info.start_time,
       end_time:              timetag_info.end_time,
@@ -24,7 +24,7 @@ class TimetagRecord
   # Find timetag record
   def self.find(timetag_info)
     columns = [:id, :comment_id, :yt_like_count, :our_like_count,
-               :our_unlike_count, :tag_type, :start_time, :end_time,
+               :our_dislike_count, :tag_type, :start_time, :end_time,
                :start_time_percentage, :end_time_percentage]
     results = Timetag.where()
     columns.each do |col|
@@ -37,7 +37,7 @@ class TimetagRecord
   # Find all match timetag records
   def self.find_all(timetag_info)
     columns = [:id, :comment_id, :yt_like_count, :our_like_count,
-               :our_unlike_count, :tag_type, :start_time, :end_time,
+               :our_dislike_count, :tag_type, :start_time, :end_time,
                :start_time_percentage, :end_time_percentage]
     results = Timetag.where()
     columns.each do |col|
@@ -52,7 +52,7 @@ class TimetagRecord
           comment_id:   timetag_found.comment_id,
           yt_like_count: timetag_found.yt_like_count,
           our_like_count: timetag_found.our_like_count,
-          our_unlike_count: timetag_found.our_unlike_count,
+          our_dislike_count: timetag_found.our_dislike_count,
           tag_type: timetag_found.tag_type,
           start_time: timetag_found.start_time,
           end_time: timetag_found.end_time,
@@ -69,7 +69,7 @@ class TimetagRecord
   def self.update(id, timetag_info)
     timetag = Timetag.find(id: id)
 
-    columns = [:comment_id, :yt_like_count, :our_like_count, :our_unlike_count,
+    columns = [:comment_id, :yt_like_count, :our_like_count, :our_dislike_count,
                :tag_type, :start_time, :end_time, :start_time_percentage,
                :end_time_percentage]
     columns.each do |col|
@@ -86,9 +86,9 @@ class TimetagRecord
     timetag.save
   end
 
-  def self.add_one_unlike(id)
+  def self.add_one_dislike(id)
     timetag = Timetag.find(id: id)
-    timetag.our_unlike_count += 1
+    timetag.our_dislike_count += 1
     timetag.save
   end
 end

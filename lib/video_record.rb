@@ -51,6 +51,34 @@ class VideoRecord
     end
   end
 
+  # Get all video records
+  def self.get_all_videos()
+    results = Video.where()
+    videos_found = results.map do |video|
+      video_found = VideoInfo.new(
+        id:                  video.id,
+        video_id:            video.video_id,
+        title:               video.title,
+        description:         video.description,
+        view_count:          video.view_count,
+        like_count:          video.like_count,
+        dislike_count:       video.dislike_count,
+        duration:            video.duration,
+        channel_id:          video.channel_id,
+        channel_title:       video.channel_title,
+        channel_description: video.channel_description,
+        channel_image_url:   video.channel_image_url,
+        last_update_time:    video.last_update_time
+      )
+    end
+
+    unless videos_found.empty?
+      videos_found
+    else
+      nil
+    end
+  end
+
   # Update existed video record
   def self.update(id, video_info)
     video = Video.find(id: id)

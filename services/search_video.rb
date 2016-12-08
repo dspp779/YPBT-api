@@ -18,30 +18,18 @@ class SearchVideo
 
   register :get_video_info, lambda { |input|
     video_id = input[:video_id]
-    #video = Video.find(video_id: video_id)
-    video = YoutubeVideo::Video.find(video_id: video_id)
-    if video
-      Right(video: video)
+    video_info = Video.find(video_id: video_id)
+    video_info = fetch_video_from_YPBTgem(video_id) if video_info.nil?
+
+    unless video_info.nil?
+      Right(video_info: video_info)
     else
       Left(Error.new(:not_found, "Video (video_id: #{video_id}) not found"))
     end
   }
 
   register :render_search_result, lambda { |input|
-    results = VideoInfo.new(
-      video_id:            input[:video].id,
-      title:               input[:video].title,
-      description:         input[:video].description,
-      view_count:          input[:video].view_count,
-      like_count:          input[:video].like_count, 
-      dislike_count:       input[:video].dislike_count,
-      duration:            input[:video].duration,
-      channel_id:          input[:video].channel_id,
-      channel_title:       input[:video].channel_title,
-      channel_description: input[:video].channel_description,
-      channel_image_url:   input[:video].channel_image_url
-    )
-    Right(results)
+    Right(input[:video_info])
   }
 
   def self.call(params)
@@ -50,5 +38,15 @@ class SearchVideo
       step :get_video_info
       step :render_search_result
     end.call(params)
+  end
+
+  def self.fetch_video_from_YPBTgem(video_id)
+    video = YoutubeVideo::Video.find(video_id: video_id)
+    unless video.nil?
+      arrayOfRecord = YPBTParserVideoOnly.call(video)
+      video_info = arrayOfRecord.first.video_info
+    else
+      nil
+    end
   end
 end

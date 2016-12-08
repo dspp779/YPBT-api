@@ -5,10 +5,11 @@ class SearchVideos
   extend Dry::Monads::Either::Mixin
 
   def self.call
-    if (videos = Video.all).nil?
+    videos_found = VideoRecord.get_all_videos
+    if videos_found.nil?
       Left(Error.new(:not_found, 'No Videos found'))
     else
-      Right(Videos.new(videos))
+      Right(videos_found)
     end
   end
 end

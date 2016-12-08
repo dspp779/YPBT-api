@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Add unlike count for the tag
-class TimetagAddOneUnlike
+# Add dislike count for the tag
+class TimetagAddOneDislike
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
 
@@ -29,10 +29,10 @@ class TimetagAddOneUnlike
     end
   }
 
-  register :add_one_unlike, lambda { |timetag|
-    timetag.our_unlike_count += 1
+  register :add_one_dislike, lambda { |timetag|
+    timetag.our_dislike_count += 1
     timetag.save
-    results = ApiInfo.new("Add one unlike on choosed time_tag")
+    results = ApiInfo.new("Add one dislike on choosed time_tag")
     Right(results)
   }
 
@@ -40,7 +40,7 @@ class TimetagAddOneUnlike
     Dry.Transaction(container: self) do
       step :api_key_authenticate
       step :check_timetag # is existed
-      step :add_one_unlike
+      step :add_one_dislike
     end.call(params)
   end
 end

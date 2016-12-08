@@ -49,7 +49,7 @@ class YPBT_API < Sinatra::Base
 
   # Add like count for the tag
   # tux: put 'api/v0.1/TimeTag/add_one_like',
-  #   { time_tag_id: "timetag_id" }.to_json,
+  #   { time_tag_id: "timetag_id", api: YOUTUBE_API_KEY }.to_json,
   #   'CONTENT_TYPE' => 'application/json'
   put "/#{API_VER}/TimeTag/add_one_like/?" do
     results = TimetagAddOneLike.call(request)
@@ -61,12 +61,12 @@ class YPBT_API < Sinatra::Base
     end
   end
 
-  # Add unlike count for the tag
-  # tux: put 'api/v0.1/TimeTag/add_one_unlike',
-  #   { time_tag_id: "timetag_id" }.to_json,
+  # Add dislike count for the tag
+  # tux: put 'api/v0.1/TimeTag/add_one_dislike',
+  #   { time_tag_id: "timetag_id", api: "YOUTUBE_API_KEY" }.to_json,
   #   'CONTENT_TYPE' => 'application/json'
-  put "/#{API_VER}/TimeTag/add_one_unlike/?" do
-    results = TimetagAddOneUnlike.call(request)
+  put "/#{API_VER}/TimeTag/add_one_dislike/?" do
+    results = TimetagAddOneDislike.call(request)
 
     if results.success?
       ApiInfoRepresenter.new(results.value).to_json

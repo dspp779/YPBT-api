@@ -23,9 +23,7 @@ class AddNewTimetag
     video_found = VideoRecord.find(video_info)
 
     if video_found.nil?
-      video_raw = YoutubeVideo::Video.find(video_id: video_id)
-      video_record = YPBTParserVideoOnly.call(video_raw).first
-      video_found = video_record.video_info
+      video_found = try_find_from_YPBTgem(video_id)
     end
 
     unless video_found.nil?
@@ -44,7 +42,7 @@ class AddNewTimetag
     else
       Left(Error.new(:internal_error,
         "Cannot add new time_tag in choosed video " +
-        "(video_id: #{params['video_id']})"))
+        "(video_id: #{input['video_id']})"))
     end
   }
 
@@ -61,5 +59,15 @@ class AddNewTimetag
       step :add_new_timetag
       step :render_api_info
     end.call(params)
+  end
+
+  def self.try_find_from_YPBTgem(video_id)
+    video_raw = YoutubeVideo::Video.find(video_id: video_id)
+    unless video_raw.nil?
+      video_record = YPBTParserVideoOnly.call(video_raw).first
+      video_found = video_record.video_info
+    else
+      nil
+    end
   end
 end

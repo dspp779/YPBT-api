@@ -11,7 +11,7 @@ class ConstructNewTimetag
 
     record.timetag_info.yt_like_count = 0
     record.timetag_info.our_like_count = 0
-    record.timetag_info.our_unlike_count = 0
+    record.timetag_info.our_dislike_count = 0
     record.timetag_info.tag_type = tag_type
     record.set_timetag_start_time_from_iso8601(start_time)
     record.set_timetag_start_time_percentage()

@@ -45,7 +45,7 @@ class SearchTimetag
       end_time:            input[:timetag].end_time,
       yt_like_count:       input[:timetag].yt_like_count,
       our_like_count:      input[:timetag].our_like_count,
-      our_unlike_count:    input[:timetag].our_unlike_count,
+      our_dislike_count:   input[:timetag].our_dislike_count,
       tag_type:            input[:timetag].tag_type,
       text_display:        input[:comment].text_display,
       author_name:         input[:author].author_name,
