@@ -54,6 +54,7 @@ class YPBTParser
   end
 
   def self.fill_in_timetag_info(record, timetag)
+    record.timetag_info.click_count = 0
     record.timetag_info.yt_like_count  = timetag.like_count
     record.timetag_info.our_like_count = 0
     record.timetag_info.our_dislike_count = 0

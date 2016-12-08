@@ -10,9 +10,10 @@ class TimetagRecord
 
     Timetag.create(
       comment_id:            timetag_info.comment_id,
+      click_count:           timetag_info.click_count,
       yt_like_count:         timetag_info.yt_like_count,
       our_like_count:        timetag_info.our_like_count,
-      our_dislike_count:      timetag_info.our_dislike_count,
+      our_dislike_count:     timetag_info.our_dislike_count,
       tag_type:              timetag_info.tag_type,
       start_time:            timetag_info.start_time,
       end_time:              timetag_info.end_time,
@@ -23,7 +24,7 @@ class TimetagRecord
 
   # Find timetag record
   def self.find(timetag_info)
-    columns = [:id, :comment_id, :yt_like_count, :our_like_count,
+    columns = [:id, :comment_id, :click_count, :yt_like_count, :our_like_count,
                :our_dislike_count, :tag_type, :start_time, :end_time,
                :start_time_percentage, :end_time_percentage]
     results = Timetag.where()
@@ -36,7 +37,7 @@ class TimetagRecord
 
   # Find all match timetag records
   def self.find_all(timetag_info)
-    columns = [:id, :comment_id, :yt_like_count, :our_like_count,
+    columns = [:id, :comment_id, :click_count, :yt_like_count, :our_like_count,
                :our_dislike_count, :tag_type, :start_time, :end_time,
                :start_time_percentage, :end_time_percentage]
     results = Timetag.where()
@@ -50,6 +51,7 @@ class TimetagRecord
         TimetagInfo.new(
           id:           timetag_found.id,
           comment_id:   timetag_found.comment_id,
+          click_count: timetag_found.click_count,
           yt_like_count: timetag_found.yt_like_count,
           our_like_count: timetag_found.our_like_count,
           our_dislike_count: timetag_found.our_dislike_count,
@@ -69,14 +71,20 @@ class TimetagRecord
   def self.update(id, timetag_info)
     timetag = Timetag.find(id: id)
 
-    columns = [:comment_id, :yt_like_count, :our_like_count, :our_dislike_count,
-               :tag_type, :start_time, :end_time, :start_time_percentage,
-               :end_time_percentage]
+    columns = [:comment_id, :click_count, :yt_like_count, :our_like_count,
+               :our_dislike_count, :tag_type, :start_time, :end_time,
+               :start_time_percentage, :end_time_percentage]
     columns.each do |col|
       val = timetag_info.send(col)
       timetag.send("#{col}=", timetag_info.send(col)) unless val.nil?
     end
 
+    timetag.save
+  end
+
+  def self.add_one_click(id)
+    timetag = Timetag.find(id: id)
+    timetag.click_count += 1
     timetag.save
   end
 

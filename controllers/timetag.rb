@@ -47,6 +47,20 @@ class YPBT_API < Sinatra::Base
     end
   end
 
+  # Add click count for the tag
+  # tux: put 'api/v0.1/TimeTag/add_one_click',
+  #   { time_tag_id: "timetag_id", api: YOUTUBE_API_KEY }.to_json,
+  #   'CONTENT_TYPE' => 'application/json'
+  put "/#{API_VER}/TimeTag/add_one_click/?" do
+    results = TimetagAddOneClick.call(request)
+
+    if results.success?
+      ApiInfoRepresenter.new(results.value).to_json
+    else
+      ErrorRepresenter.new(results.value).to_status_response
+    end
+  end
+
   # Add like count for the tag
   # tux: put 'api/v0.1/TimeTag/add_one_like',
   #   { time_tag_id: "timetag_id", api: YOUTUBE_API_KEY }.to_json,

@@ -43,6 +43,7 @@ class SearchTimetag
       id:                  input[:timetag].id,
       start_time:          input[:timetag].start_time,
       end_time:            input[:timetag].end_time,
+      click_count:         input[:timetag].click_count,
       yt_like_count:       input[:timetag].yt_like_count,
       our_like_count:      input[:timetag].our_like_count,
       our_dislike_count:   input[:timetag].our_dislike_count,
