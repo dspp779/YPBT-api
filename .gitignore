@@ -2,3 +2,5 @@ config/app.yml
 *.gem
 db/*.*
 .bundle/
+lib/temp
+queries/temp
