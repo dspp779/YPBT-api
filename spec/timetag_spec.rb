@@ -38,6 +38,7 @@ describe 'Timetags Route' do
       first_timetag["time_tag_id"].wont_be_nil
       first_timetag["start_time"].length.must_be :>, 0
       first_timetag["start_time_percentage"].wont_be_nil
+      first_timetag["click_count"].wont_be_nil
       first_timetag["like_count"].wont_be_nil
     end
 
@@ -61,6 +62,7 @@ describe 'Timetags Route' do
       first_timetag["time_tag_id"].wont_be_nil
       first_timetag["start_time"].length.must_be :>, 0
       first_timetag["start_time_percentage"].wont_be_nil
+      first_timetag["click_count"].wont_be_nil
       first_timetag["like_count"].wont_be_nil
     end
 
@@ -72,6 +74,7 @@ describe 'Timetags Route' do
       timetag_data = JSON.parse(last_response.body)
       timetag_data["time_tag_id"].wont_be_nil
       timetag_data["start_time"].length.must_be :>, 0
+      timetag_data["click_count"].wont_be_nil
       timetag_data["like_count"].wont_be_nil
       timetag_data["dislike_count"].wont_be_nil
       timetag_data["comment_text_display"].length.must_be :>, 0
@@ -120,6 +123,40 @@ describe 'Timetags Route' do
 
       last_response.status.must_equal 403
       last_response.body.must_include "Authentication fail"
+    end
+
+    it '[HAPPY]: allowed adding one click count for a tag' do
+      timetag_id = Timetag.first.id
+      original_click_count = Timetag.first.click_count
+
+      put 'api/v0.1/TimeTag/add_one_click', { time_tag_id: timetag_id,
+        api_key: ENV['YOUTUBE_API_KEY'] }.to_json,
+        'CONTENT_TYPE' => 'application/json'
+
+      last_response.status.must_equal 200
+      modified_click_count = Timetag.first.click_count
+      modified_click_count.must_equal (original_click_count + 1)
+    end
+
+    it '[SAD]: should report if authentication not pass' do
+      timetag_id = Timetag.first.id
+
+      put 'api/v0.1/TimeTag/add_one_click', { time_tag_id: timetag_id,
+        api_key: FAKE_API_KEY }.to_json,
+        'CONTENT_TYPE' => 'application/json'
+
+      last_response.status.must_equal 403
+      last_response.body.must_include "Authentication fail"
+    end
+
+    it '[SAD]: should report if target timetag is not existed' do
+      timetag_id = "0"
+      put 'api/v0.1/TimeTag/add_one_click', { time_tag_id: timetag_id,
+        api_key: ENV['YOUTUBE_API_KEY'] }.to_json,
+        'CONTENT_TYPE' => 'application/json'
+
+      last_response.status.must_equal 422
+      last_response.body.must_include timetag_id
     end
 
     it '[HAPPY]: allowed adding one like count for a tag' do
@@ -213,6 +250,7 @@ describe 'Timetags Route' do
       first_timetag["time_tag_id"].wont_be_nil
       first_timetag["start_time"].length.must_be :>, 0
       first_timetag["start_time_percentage"].wont_be_nil
+      first_timetag["click_count"].wont_be_nil
       first_timetag["like_count"].wont_be_nil
     end
 

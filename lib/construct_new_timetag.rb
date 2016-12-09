@@ -9,6 +9,7 @@ class ConstructNewTimetag
     record.comment_info.text_display = comment_text_display
     record.comment_info.like_count = 0
 
+    record.timetag_info.click_count = 0
     record.timetag_info.yt_like_count = 0
     record.timetag_info.our_like_count = 0
     record.timetag_info.our_dislike_count = 0

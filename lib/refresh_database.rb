@@ -136,9 +136,10 @@ class RefreshDatabase
   def self.create_timetag_record(record)
     timetag_info = TimetagInfo.new(
       comment_id:            record.comment_info.id,
+      click_count:           record.timetag_info.click_count,
       yt_like_count:         record.timetag_info.yt_like_count,
       our_like_count:        record.timetag_info.our_like_count,
-      our_dislike_count:      record.timetag_info.our_dislike_count,
+      our_dislike_count:     record.timetag_info.our_dislike_count,
       tag_type:              record.timetag_info.tag_type,
       start_time:            record.timetag_info.start_time,
       end_time:              record.timetag_info.end_time,
