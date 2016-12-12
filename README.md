@@ -86,8 +86,8 @@ API to access the information of comments following a given movie, such as autho
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>time_tag_id</td><td>string</td></tr>
-<tr><td>start_time</td><td>string</td></tr>
-<tr><td>end_time</td><td>string</td></tr>
+<tr><td>start_time</td><td>ISO 8601</td></tr>
+<tr><td>end_time</td><td>ISO 8601</td></tr>
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>start_time_percentage</td><td>float</td></tr>
 <tr><td>end_time_percentage</td><td>float</td></tr>
@@ -102,8 +102,8 @@ API to access the information of comments following a given movie, such as autho
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>time_tag_id</td><td>string</td></tr>
-<tr><td>start_time</td><td>string</td></tr>
-<tr><td>end_time</td><td>string</td></tr>
+<tr><td>start_time</td><td>ISO 8601</td></tr>
+<tr><td>end_time</td><td>ISO 8601</td></tr>
 <tr><td>click_count</td><td>int</td></tr>
 <tr><td>like_count</td><td>int</td></tr>
 <tr><td>dislike_count</td><td>int</td></tr>
@@ -120,8 +120,8 @@ API to access the information of comments following a given movie, such as autho
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
 <tr><td>video_id</td><td>string</td></tr>
-<tr><td>start_time</td><td>string</td></tr>
-<tr><td>end_time (optional)</td><td>string</td></tr>
+<tr><td>start_time</td><td>ISO 8601</td></tr>
+<tr><td>end_time (optional)</td><td>ISO 8601</td></tr>
 <tr><td>tag_type</td><td>string</td></tr>
 <tr><td>comment_text_display</td><td>string</td></tr>
 <tr><td>api_key</td><td>string</td></tr>
