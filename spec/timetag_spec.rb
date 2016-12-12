@@ -112,6 +112,13 @@ describe 'Timetags Route' do
       added_timetag.end_time.must_be_nil
       added_timetag.tag_type.must_equal "timetag"
       parent_comment.text_display.must_equal "post_test"
+
+      returned_timetag = JSON.parse(last_response.body)
+      returned_timetag["time_tag_id"].wont_be_nil
+      returned_timetag["start_time"].length.must_be :>, 0
+      returned_timetag["start_time_percentage"].wont_be_nil
+      returned_timetag["click_count"].wont_be_nil
+      returned_timetag["like_count"].wont_be_nil
     end
 
     it '[SAD]: should report if authentication not pass' do
@@ -284,6 +291,13 @@ describe 'Timetags Route' do
       added_timetag.end_time.must_be_nil
       added_timetag.tag_type.must_equal "timetag"
       parent_comment.text_display.must_equal "post_test"
+
+      returned_timetag = JSON.parse(last_response.body)
+      returned_timetag["time_tag_id"].wont_be_nil
+      returned_timetag["start_time"].length.must_be :>, 0
+      returned_timetag["start_time_percentage"].wont_be_nil
+      returned_timetag["click_count"].wont_be_nil
+      returned_timetag["like_count"].wont_be_nil
     end
 
     it '[SAD]: should report if the video on which the new timetag adding ' +
