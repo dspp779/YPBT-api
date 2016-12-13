@@ -18,11 +18,11 @@ class AddNewTimetagQuery
       )
 
       arrayOfRecord = 1.times.map { record }
-      RefreshDatabase.call(arrayOfRecord)
+      arrayOfRecord = RefreshDatabase.call(arrayOfRecord)
 
-      success = true
+      arrayOfRecord.first.timetag_info.id
     rescue
-      success = false
+      nil
     end
   end
 end

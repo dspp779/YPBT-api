@@ -41,7 +41,8 @@ class YPBT_API < Sinatra::Base
     results = AddNewTimetag.call(request)
 
     if results.success?
-      ApiInfoRepresenter.new(results.value).to_json
+      #ApiInfoRepresenter.new(results.value).to_json
+      TimetagInfoRepresenterB.new(results.value).to_json
     else
       ErrorRepresenter.new(results.value).to_status_response
     end
