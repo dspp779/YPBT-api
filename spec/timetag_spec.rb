@@ -36,7 +36,7 @@ describe 'Timetags Route' do
       timetags_data.length.must_be :>=, 1
       first_timetag = timetags_data.first
       first_timetag["time_tag_id"].wont_be_nil
-      first_timetag["start_time"].length.must_be :>, 0
+      first_timetag["start_time"].wont_be_nil
       first_timetag["start_time_percentage"].wont_be_nil
       first_timetag["click_count"].wont_be_nil
       first_timetag["like_count"].wont_be_nil
@@ -60,7 +60,7 @@ describe 'Timetags Route' do
       timetags_data.length.must_be :>=, 1
       first_timetag = timetags_data.first
       first_timetag["time_tag_id"].wont_be_nil
-      first_timetag["start_time"].length.must_be :>, 0
+      first_timetag["start_time"].wont_be_nil
       first_timetag["start_time_percentage"].wont_be_nil
       first_timetag["click_count"].wont_be_nil
       first_timetag["like_count"].wont_be_nil
@@ -73,7 +73,7 @@ describe 'Timetags Route' do
       last_response.content_type.must_equal 'application/json'
       timetag_data = JSON.parse(last_response.body)
       timetag_data["time_tag_id"].wont_be_nil
-      timetag_data["start_time"].length.must_be :>, 0
+      timetag_data["start_time"].wont_be_nil
       timetag_data["click_count"].wont_be_nil
       timetag_data["like_count"].wont_be_nil
       timetag_data["dislike_count"].wont_be_nil
@@ -94,7 +94,7 @@ describe 'Timetags Route' do
       original_timetag_number = Timetag.all.length
 
       post 'api/v0.1/TimeTag', { video_id: HAPPY_VIDEO_ID,
-        start_time: "PT15M26S", tag_type: "timetag",
+        start_time: 926.31, tag_type: "timetag",
         comment_text_display: "post_test",
         api_key: ENV['YOUTUBE_API_KEY']}.to_json,
         'CONTENT_TYPE' => 'application/json'
@@ -108,14 +108,14 @@ describe 'Timetags Route' do
       parent_video = Video.find(id: parent_comment.video_id)
       parent_video.video_id.must_equal HAPPY_VIDEO_ID
 
-      added_timetag.start_time.wont_be_nil
+      added_timetag.start_time.must_equal 926.31
       added_timetag.end_time.must_be_nil
       added_timetag.tag_type.must_equal "timetag"
       parent_comment.text_display.must_equal "post_test"
 
       returned_timetag = JSON.parse(last_response.body)
       returned_timetag["time_tag_id"].wont_be_nil
-      returned_timetag["start_time"].length.must_be :>, 0
+      returned_timetag["start_time"].wont_be_nil
       returned_timetag["start_time_percentage"].wont_be_nil
       returned_timetag["click_count"].wont_be_nil
       returned_timetag["like_count"].wont_be_nil
@@ -255,7 +255,7 @@ describe 'Timetags Route' do
       timetags_data.length.must_be :>=, 1
       first_timetag = timetags_data.first
       first_timetag["time_tag_id"].wont_be_nil
-      first_timetag["start_time"].length.must_be :>, 0
+      first_timetag["start_time"].wont_be_nil
       first_timetag["start_time_percentage"].wont_be_nil
       first_timetag["click_count"].wont_be_nil
       first_timetag["like_count"].wont_be_nil
@@ -273,7 +273,7 @@ describe 'Timetags Route' do
       original_timetag_number = Timetag.all.length
 
       post 'api/v0.1/TimeTag', { video_id: HAPPY_VIDEO_ID,
-        start_time: "PT15M26S", tag_type: "timetag",
+        start_time: 926.31, tag_type: "timetag",
         comment_text_display: "post_test",
         api_key: ENV['YOUTUBE_API_KEY']}.to_json,
         'CONTENT_TYPE' => 'application/json'
@@ -287,14 +287,14 @@ describe 'Timetags Route' do
       parent_video = Video.find(id: parent_comment.video_id)
       parent_video.video_id.must_equal HAPPY_VIDEO_ID
 
-      added_timetag.start_time.wont_be_nil
+      added_timetag.start_time.must_equal 926.31
       added_timetag.end_time.must_be_nil
       added_timetag.tag_type.must_equal "timetag"
       parent_comment.text_display.must_equal "post_test"
 
       returned_timetag = JSON.parse(last_response.body)
       returned_timetag["time_tag_id"].wont_be_nil
-      returned_timetag["start_time"].length.must_be :>, 0
+      returned_timetag["start_time"].wont_be_nil
       returned_timetag["start_time_percentage"].wont_be_nil
       returned_timetag["click_count"].wont_be_nil
       returned_timetag["like_count"].wont_be_nil
