@@ -144,7 +144,7 @@ class RefreshDatabase
       start_time:            record.timetag_info.start_time,
       end_time:              record.timetag_info.end_time,
       start_time_percentage: record.timetag_info.start_time_percentage,
-      end_time_percentage: record.timetag_info.end_time_percentage
+      end_time_percentage:   record.timetag_info.end_time_percentage
     )
     created_timetag = TimetagRecord.create(timetag_info)
     TimetagInfo.new(id: created_timetag.id)

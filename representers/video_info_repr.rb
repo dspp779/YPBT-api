@@ -61,8 +61,9 @@ class VideoInfoRepresenter
   end
 
   def set_duration(video_info)
-    duration_in_second = video_info.duration
-    Duration.new(duration_in_second).iso8601
+    video_info.duration
+    #duration_in_second = video_info.duration
+    #Duration.new(duration_in_second).iso8601
   end
 
   def set_channel_id(video_info)

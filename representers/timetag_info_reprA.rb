@@ -42,21 +42,27 @@ class TimetagInfoRepresenterA
   end
 
   def set_start_time(timetag_info)
+    timetag_info.start_time
+=begin
     duration_in_second = timetag_info.start_time
     unless duration_in_second.nil?
       Duration.new(duration_in_second).iso8601
     else
       nil
     end
+=end
   end
 
   def set_end_time(timetag_info)
+    timetag_info.end_time
+=begin
     duration_in_second = timetag_info.end_time
     unless duration_in_second.nil?
       Duration.new(duration_in_second).iso8601
     else
       nil
     end
+=end
   end
 
   def set_click_count(timetag_info)
