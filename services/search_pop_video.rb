@@ -5,10 +5,10 @@ class SearchPopVideo
   extend Dry::Monads::Either::Mixin
   extend Dry::Container::Mixin
 
-  register :check_given_zero_number_query, lambda { |params|
+  register :check_invalid_query_number, lambda { |params|
     max_results = params[:number].to_i
 
-    if max_results == 0
+    if max_results == 0 || max_results > 50
       Left(Error.new(:not_found, "No information available now"))
     else
       Right(params)
@@ -29,7 +29,7 @@ class SearchPopVideo
 
   def self.call(params)
     Dry.Transaction(container: self) do
-      step :check_given_zero_number_query
+      step :check_invalid_query_number
       step :get_pop_videos_info
     end.call(params)
   end
