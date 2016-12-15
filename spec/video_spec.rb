@@ -36,9 +36,14 @@ describe 'Videos Route' do
       first_video["thumbnail_url"].length.must_be :>, 0
     end
 
-    it '[SAD]: should report if assigned zero videos for ' +
+    it '[SAD]: should report if assigned invalid number for ' +
        'popular YouTube videos' do
       get "#{API_VER}/PopVideos/0"
+
+      last_response.status.must_equal 404
+      last_response.body.must_include "No information available now"
+
+      get "#{API_VER}/PopVideos/51"
 
       last_response.status.must_equal 404
       last_response.body.must_include "No information available now"
