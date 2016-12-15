@@ -47,6 +47,22 @@ API to access the information of comments following a given movie, such as autho
 <tr><td>channel_description</td><td>string</td></tr>
 </table>
 
+* <strong>Get</strong> /api/{version}/PopVideos/{number}  
+> *Discription:* return brief information about top assigned number of popular YouTube videos  
+> *Return:*  array of <strong>pop videos info</strong>  
+> - `number`: number of top popular YouTube videos returned  
+> <strong>pop videos info=</strong>  
+<table>
+<tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
+<tr><td>video_id</td><td>string</td></tr>
+<tr><td>title</td><td>string</td></tr>
+<tr><td>channel_id</td><td>string</td></tr>
+<tr><td>channel_title</td><td>string</td></tr>
+<tr><td>view_count</td><td>int</td></tr>
+<tr><td>like_count</td><td>int</td></tr>
+<tr><td>thumbnail_url</td><td>url</td></tr>
+</table>
+
 ## Comment
 * <strong>Get</strong> /api/{version}/Comment/{comment_id}  
 > *Discription:* return the detail information of targeted comment  

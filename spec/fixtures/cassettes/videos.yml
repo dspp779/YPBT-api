@@ -8320,4 +8320,2321 @@ http_interactions:
         }
     http_version: 
   recorded_at: Wed, 07 Dec 2016 01:51:34 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=OyDSCKYz5sA&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 05:50:49 GMT
+      Date:
+      - Thu, 15 Dec 2016 05:50:49 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/Id2CqTU9edHbDNkZRQmhkxwRvLM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '5461'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "OyDSCKYz5sA",
+           "snippet": {
+            "publishedAt": "2016-10-10T03:17:07.000Z",
+            "channelId": "UCYE8GO8URXHt3eLkqeo3uSw",
+            "title": "FULL: Second Presidential Debate - Donald Trump vs Hillary Clinton - Washington University 10/9/2016",
+            "description": "WATCH: Final Presidential Debate - Donald Trump vs Hillary Clinton: https://www.youtube.com/watch?v=dGQGwIr47YY\n\nWATCH:  First Presidential Debate 2016 - Donald Trump vs Hillary Clinton - Hofstra University NY\n\nhttps://www.youtube.com/watch?v=ZEHPrYUcoi0\n\n----------------------------------------------------------------------------------------------\n\nWATCH LIVE: Second Presidential Debate - Donald Trump vs Hillary Clinton - St. Louis, MO (10/9/2016) - Donald Trump & Hillary Clinton 2nd Presidential Debate at Washington University (October 9, 2016) - Trump Clinton debate\n\nSecond Debate trump vs clinton\n\nModerator: Martha Raddatz, Chief Global Affairs Correspondent and Co-Anchor of \"This Week,\" ABC \n\nDonald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO October 9th 2016 HQ HD~Live Trump vs Clinton Second Presidential Debate 2016 HD~LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016\nTrump Clinton Debate\nThe 2nd Presidential Debate\nSecond Presidential Debate 2016\nFULL Second Presidential Debate: Donald Trump vs Hillary Clinton 10/09/2016 - St. Louis, MO\nDonald Trump vs Hillary Clinton - Second Presidential Debate - St. Louis, MO (10/9/16)\nthe second presidential debate between Hillary Clinton and Donald Trump\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO 10/9/2016 HQ HD\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO 10/9/2016 HD\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO October 9th 2016\nLive Trump vs Clinton Second Presidential Debate 2016 HD LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016 LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016\n\nWATCH LIVESTREAM LIVE HQ Donald Trump vs Hillary Clinton 1st Presidential Debate at the Washington University in St. Louis\nMonday, September 26, 2016\nSecond presidential debate\nModerator: Lester Holt, Anchor, NBC Nightly News\nLocation: Washington University, Hempstead, MO\n\n\nTV Channels – Each debate will be broadcast live on C-SPAN, ABC, CBS, FOX and NBC, as well as all cable news channels including CNN, Fox News and MSNBC among others.\n\nFull Videos – Click the “Watch Full Video Link” below on each debate to watch the entire debate video.\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis 9-26-2016 HQ HD \n\nLIVE Stream: Donald Trump Hillary Clinton Second Presidential Debate In St. Louis 9-26-2016 HQ HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis 9-26-16 HQ HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis September 26th 2016 HQ HD\n\nLive Trump vs Hillary Second Presidential Debate 2016 HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University, Hempstead, MO\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University, Hempstead\n\nLIVE Stream: Trump vs Clinton Second Presidential Debate at the Washington University, Hempstead 9/26/16 HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University 9-26-2016 HD\n\nTAGS: Live Stream, Donald Trump, Hillary Clinton, Second Presidential Debate 2016, Trump live debate,\nlive trump debate 2016, live hillary clinton debate 2016,\nlive trump vs hillary debate 2016, live stream donald trump debates hillary clinton,\nwatch live presidential debate 2016, live Washington University, live hempstead,\nlive St. Louis debate 2016, livestream hillary vs trump debate, lester holt,\nfull Second presidential debate, live debate trump vs hillary, live 2016 debate\n\nDonald Trump Rally \nHillary Clinton Speech\nDonald Trump Speech \nHillary Clinton Rally \nTim Kaine Rally Speech Live Event \n\nPresidential Debate\n2016 Presidential Debate\nTrump Clinton Debate\nKaine Pence debate\n\nPresidential Debate\n2016 Presidential Debate\n\n#Debates #Debates2016 #debatenight #donaldtrump #trump2016 #trump #TrumpPence16 #TrumpRally #trumptrain #politics #trump4prez #makeamericagreatagain #VoteTrump2016 #TrumpHasMyVote #teamtrump #vote4trump #votetrump #trumpforpresident #americaSecond #trumphasmysupport #Debate #PresidentialDebate #SecondPresidentialdebate #HillaryClinton #Hillary #Clinton #Clinton2016 #ClintonKaine #Hofstra",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/OyDSCKYz5sA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "25"
+           },
+           "contentDetails": {
+            "duration": "PT1H33M54S"
+           },
+           "statistics": {
+            "viewCount": "3442985",
+            "likeCount": "12399",
+            "dislikeCount": "1883"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 05:50:49 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=XxXx888xXxX&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 05:51:07 GMT
+      Date:
+      - Thu, 15 Dec 2016 05:51:07 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/ftqcoEi5lFrDLEyLbPZCiTrEzXU"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '17'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": []
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 05:51:07 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?chart=mostpopular&fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&key=<API_KEY>&maxResults=25&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:58 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:58 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/vKct1pfxRTncGzoDpWyB81v49ns"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '38662'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "{\n \"items\": [\n  {\n   \"id\": \"F-eMt3SrfFU\",\n   \"snippet\":
+        {\n    \"publishedAt\": \"2016-12-14T15:00:12.000Z\",\n    \"channelId\":
+        \"UCjmJDM5pRKbUlVIzDYYWb6g\",\n    \"title\": \"Dunkirk - Trailer 1 [HD]\",\n
+        \   \"description\": \"From filmmaker Christopher Nolan (“Interstellar,” “Inception,”
+        “The Dark Knight” Trilogy) comes the epic action thriller DUNKIRK, in theaters
+        July 21, 2017.\\n\\nhttps://www.facebook.com/Dunkirkmovie/\\nhttps://twitter.com/dunkirkmovie\\nhttp://instagram.com/dunkirkmovie/\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/F-eMt3SrfFU/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT2M19S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"821795\",\n    \"likeCount\": \"85431\",\n
+        \   \"dislikeCount\": \"1675\"\n   }\n  },\n  {\n   \"id\": \"AFxCO_DyzYM\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T06:32:59.000Z\",\n    \"channelId\":
+        \"UCJ0uqCI0Vqr2Rrt1HseGirg\",\n    \"title\": \"Bruno Mars Carpool Karaoke\",\n
+        \   \"description\": \"James Corden and Bruno Mars drive through Los Angeles
+        singing his hits, including tracks from the new album \\\"24K Magic,\\\" and
+        chat about everything from Elvis to poker. Get Bruno Mars' new album '24K
+        Magic' out now: https://brunom.rs/24kMagic\\n\\nStream ’24K Magic’\\nSpotify:
+        https://brunom.rs/24kMagicStream\\nApple Music: https://brunom.rs/24kmagicAM\\n\\nDownload
+        ’24K Magic’\\niTunes: https://brunom.rs/24kMagic\\nAmazon: https://brunom.rs/24kmagicamazon\\nGoogle
+        Play: https://brunom.rs/24kmagicGP\\n\\nConnect with Bruno:\\nhttp://www.brunomars.com\\nhttp://www.instagram.com/brunomars\\nhttp://www.twitter.com/brunomars\\nhttp://www.facebook.com/brunomars\\n\\n\\n\\\"Subscribe
+        To \\\"\\\"The Late Late Show\\\"\\\" Channel HERE: http://bit.ly/CordenYouTube\\nWatch
+        Full Episodes of \\\"\\\"The Late Late Show\\\"\\\" HERE: http://bit.ly/1ENyPw4\\nLike
+        \\\"\\\"The Late Late Show\\\"\\\" on Facebook HERE: http://on.fb.me/19PIHLC\\nFollow
+        \\\"\\\"The Late Late Show\\\"\\\" on Twitter HERE: http://bit.ly/1Iv0q6k\\nFollow
+        \\\"\\\"The Late Late Show\\\"\\\" on Google+ HERE: http://bit.ly/1N8a4OU\\n\\nWatch
+        The Late Late Show with James Corden weeknights at 12:35 AM ET/11:35 PM CT.
+        Only on CBS.\\n\\nGet the CBS app for iPhone & iPad! Click HERE: http://bit.ly/12rLxge\\n\\nGet
+        new episodes of shows you love across devices the next day, stream live TV,
+        and watch full seasons of CBS fan favorites anytime, anywhere with CBS All
+        Access. Try it free! http://bit.ly/1OQA29B\\n\\n---\\nEach week night, THE
+        LATE LATE SHOW with JAMES CORDEN throws the ultimate late night after party
+        with a mix of celebrity guests, edgy musical acts, games and sketches. Corden
+        differentiates his show by offering viewers a peek behind-the-scenes into
+        the green room, bringing all of his guests out at once and lending his musical
+        and acting talents to various sketches. Additionally, bandleader Reggie Watts
+        and the house band provide original, improvised music throughout the show.
+        Since Corden took the reigns as host in March 2015, he has quickly become
+        known for generating buzzworthy viral videos, such as Carpool Karaoke.\\\"\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/AFxCO_DyzYM/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT15M25S\"\n
+        \  },\n   \"statistics\": {\n    \"viewCount\": \"3241716\",\n    \"likeCount\":
+        \"453103\",\n    \"dislikeCount\": \"3340\"\n   }\n  },\n  {\n   \"id\": \"6DBi41reeF0\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T16:00:04.000Z\",\n    \"channelId\":
+        \"UCq7OHvWO6Z3u-LztFdrcU-g\",\n    \"title\": \"Despicable Me 3 - Official
+        Trailer - In Theaters Summer 2017 (HD)\",\n    \"description\": \"Despicable
+        Me 3 - Official Trailer\\nhttp://www.despicable.me \\n\\nThe team who brought
+        you Despicable Me and the biggest animated hits of 2013 and 2015, Despicable
+        Me 2 and Minions, returns to continue the adventures of Gru, Lucy, their adorable
+        daughters—Margo, Edith and Agnes—and the Minions.  Despicable Me 3, directed
+        by Pierre Coffin and Kyle Balda, co-directed by Eric Guillon, and written
+        by Cinco Paul & Ken Daurio, will be released in theaters on June 30, 2017.\\n
+        \\nThe animated film is produced by Illumination’s Chris Meledandri and Janet
+        Healy, and executive produced by Chris Renaud.\\n \\nJoining Steve Carell
+        and Kristen Wiig in Despicable Me 3 is Emmy, Tony and Grammy Award winner
+        Trey Parker, co-creator of Comedy Central’s global phenomenon South Park and
+        the Broadway smash The Book of Mormon.  Parker voices the role of villain
+        Balthazar Bratt, a former child star who’s grown up to become obsessed with
+        the character he played in the ‘80s, and proves to be Gru’s most formidable
+        nemesis to date.\",\n    \"thumbnails\": {\n     \"medium\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/6DBi41reeF0/mqdefault.jpg\",\n      \"width\": 320,\n
+        \     \"height\": 180\n     }\n    },\n    \"categoryId\": \"24\"\n   },\n
+        \  \"contentDetails\": {\n    \"duration\": \"PT2M30S\"\n   },\n   \"statistics\":
+        {\n    \"viewCount\": \"116012\",\n    \"likeCount\": \"9236\",\n    \"dislikeCount\":
+        \"574\"\n   }\n  },\n  {\n   \"id\": \"sCEzEVJkO1U\",\n   \"snippet\": {\n
+        \   \"publishedAt\": \"2016-12-14T01:23:19.000Z\",\n    \"channelId\": \"UCn-bD1rQMwvyDXAa_yrwagg\",\n
+        \   \"title\": \"Comcast Xfinity's repair trucks may have caused multiple
+        slide offs and collision.\",\n    \"description\": \"12/13/16 - One vehicle
+        slide off hit a Comcast box in Indianapolis. Comcast repair trucks parked
+        on the road and placed 4-5 cones at the bottom of the hill they were working
+        at. This caused 5 slide offs.  I personally warned another arriving Comcast
+        truck of the slide offs and danger of parking at the bottom of the hill. He
+        blew me of because he \\\"had a job to do\\\". Minutes later there was a crash
+        because of the blocked lane. Multiple people were placed in danger. Even after
+        the accident happened in front of them, they continued to work not changing
+        any of their \\\"safety\\\" procedures. They showed ZERO concern for the safety
+        of people before or after the accidents. \\n\\nPeople at the scene got out
+        their own barriers and directed traffic while Comcast finished and left the
+        scene. \\n\\nLonger portions of the video are filmed. All rights reserved
+        and retained. Contact for usage. amishhacker@gmail.com\",\n    \"thumbnails\":
+        {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/sCEzEVJkO1U/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"25\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT3M41S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"668208\",\n    \"likeCount\": \"29972\",\n
+        \   \"dislikeCount\": \"2161\"\n   }\n  },\n  {\n   \"id\": \"6sEkeEFH7uw\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T16:06:02.000Z\",\n    \"channelId\":
+        \"UCb0xfM3HGOsqPYNAocXXNAQ\",\n    \"title\": \"Adam Ruins Everything - Why
+        Gift Giving Makes No Economic Sense\",\n    \"description\": \"Despite our
+        best intentions, giving gifts leads to billions in lost value.\\n\\nSubscribe:
+        http://full.sc/1s9KQGe\\nWatch Full Episodes for FREE: http://bit.ly/1Rw2yzp\\nCheck
+        Adam’s Sources: http://bit.ly/1Q7MHpK\\n\\nIn Adam Ruins Everything, host
+        Adam Conover employs a combination of comedy, history and science to dispel
+        widespread misconceptions about everything we take for granted. A blend of
+        entertainment and enlightenment, Adam Ruins Everything is like that friend
+        who knows a little bit too much about everything and is going to tell you
+        about it... whether you like it or not. \\n\\n\\ntruTV Official Site: http://www.trutv.com/\\nLike
+        truTV on Facebook:  https://www.facebook.com/truTV\\nFollow truTV on Twitter:
+        https://twitter.com/truTV\\nFollow truTV on Tumblr: http://trutv.tumblr.com/\\nGet
+        the truTV app on Google Play: http://bit.ly/1eYxjPP\\nGet the truTV app on
+        iTunes: http://apple.co/1JiGkjh\\n\\nWay more truTV!  Watch clips, sneak peeks
+        and exclusives from original shows like Comedy Knockout, Those Who Can't and
+        more – plus fresh video from hit shows like Impractical Jokers and The Carbonaro
+        Effect. \\n\\nAdam Ruins Everything - Why Gift Giving Makes No Economic Sense\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/6sEkeEFH7uw/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT2M21S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"86352\",\n    \"likeCount\": \"6957\",\n
+        \   \"dislikeCount\": \"855\"\n   }\n  },\n  {\n   \"id\": \"vNySOrI2Ny8\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T14:21:33.000Z\",\n    \"channelId\":
+        \"UCkLXELm63_pH7L-r-548kig\",\n    \"title\": \"Amazon Prime Air’s First Customer
+        Delivery\",\n    \"description\": \"Amazon Prime Air has begun private trials
+        in England, and the first customer delivery by drone recently took place.
+        Check it out! http://amzn.to/primeair\",\n    \"thumbnails\": {\n     \"medium\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/vNySOrI2Ny8/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"28\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT2M6S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"99335\",\n    \"likeCount\": \"6006\",\n
+        \   \"dislikeCount\": \"342\"\n   }\n  },\n  {\n   \"id\": \"en2D_5TzXCA\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T20:05:00.000Z\",\n    \"channelId\":
+        \"UC07Kxew-cMIaykMOkzqHtBQ\",\n    \"title\": \"Lady Gaga - Million Reasons\",\n
+        \   \"description\": \"LADY GAGA / JOANNE \\nNEW ALBUM / OUT NOW\\niTunes:
+        http://smarturl.it/Joanne \\nGoogle Play: http://smarturl.it/Joanne.gp \\nAmazon:
+        http://smarturl.it/Joanne.amz\\nLadyGaga.com: http://smarturl.it/GagaStore\\n
+        \\nFOLLOW LADY GAGA:\\nhttp://www.facebook.com/ladygaga\\nhttp://www.twitter.com/ladygaga\\nhttp://www.instagram.com/ladygaga\\nhttp://www.snapchat.com/add/ladygaga\\nhttp://smarturl.it/LG.sp
+        \\n \\nEMAIL LIST: \\nhttp://smarturl.it/LadyGaga.News\\n\\nMusic video by
+        Lady Gaga performing Million Reasons. (C) 2016 Interscope Records\\n\\nhttp://vevo.ly/zxo4Yb\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/en2D_5TzXCA/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"10\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT4M13S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"456163\",\n    \"likeCount\": \"173667\",\n
+        \   \"dislikeCount\": \"4855\"\n   }\n  },\n  {\n   \"id\": \"KIViy7L_lo8\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T09:11:26.000Z\",\n    \"channelId\":
+        \"UCK8sQmJBp8GCxrOtXWBpyEA\",\n    \"title\": \"Google - Year In Search 2016\",\n
+        \   \"description\": \"See what the world searched for in 2016. \\nhttp://google.com/2016
+        | #YearInSearch\\n\\n\\nMusic: Grace VanderWaal - Light The Sky | https://goo.gl/v9kg3q\\n\\nWatch
+        past Year In Search videos: http://goo.gl/LXA4nQ\\n\\n\\n\\n\\nC R E D I T
+        S:\\nBrexit - Ruptly \\nTrump & Hillary Supporters - Associated Press (AP)\\nUS
+        Election map: ABC\\nBLM Protesters - AP \\nDallas PD Vigil - Ruptly \\nDallas
+        PD memorial - ITN News Source \\nOrlando PD - Steven Fernandez\\nAleppo Wall
+        - Russia Insider \\nOmran Daqneesh - AP\\nRefugees welcome - Shay Murphy\\nJustin
+        Trudeau at pride - Canadian Press\\nHillary Clinton @ DNC - CNN \\nDoaa Elghobashy
+        @ Olympics - AP \\nSimone Biles performance - USA Gymnastics \\nPrince with
+        guitar - Richard E. Aaaron \\nSpecial thanks to www.alicenter.org/\\nAli with
+        mic - AP\\nBowie with Lighting Bolt - Duffy Archive & Bowie Archive \\nAziz
+        Ansari w/ Lighting - Photo by Crackerfarm/Under The Table\\nAdditional Lighting
+        Makeup shot - Dade Freeman \\nBear and Deer - JukinMedia\\nSecret Life of
+        Pets available on Google Play \\nZianna Speaks to City Council - CNN \\nRefugees
+        at Sea - Vice News \\nBorder embrace - ITN/Reuters \\nDallas Protest - Dallas
+        Morning News\",\n    \"thumbnails\": {\n     \"medium\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/KIViy7L_lo8/mqdefault.jpg\",\n      \"width\": 320,\n
+        \     \"height\": 180\n     }\n    },\n    \"categoryId\": \"28\"\n   },\n
+        \  \"contentDetails\": {\n    \"duration\": \"PT2M1S\"\n   },\n   \"statistics\":
+        {\n    \"viewCount\": \"106870\",\n    \"likeCount\": \"17035\",\n    \"dislikeCount\":
+        \"905\"\n   }\n  },\n  {\n   \"id\": \"N5AIDgzDuws\",\n   \"snippet\": {\n
+        \   \"publishedAt\": \"2016-12-14T08:35:00.000Z\",\n    \"channelId\": \"UCMtFAi84ehTSYSE9XoHefig\",\n
+        \   \"title\": \"Trump And Kanye Meet To Discuss New Collaboration\",\n    \"description\":
+        \"We're told the two will be dropping a new album together, it's called 'The
+        Deportation of Pablo.'\\n\\nSubscribe To \\\"The Late Show\\\" Channel HERE:
+        http://bit.ly/ColbertYouTube\\nFor more content from \\\"The Late Show with
+        Stephen Colbert\\\", click HERE: http://bit.ly/1AKISnR\\nWatch full episodes
+        of \\\"The Late Show\\\" HERE: http://bit.ly/1Puei40\\nLike \\\"The Late Show\\\"
+        on Facebook HERE: http://on.fb.me/1df139Y\\nFollow \\\"The Late Show\\\" on
+        Twitter HERE: http://bit.ly/1dMzZzG\\nFollow \\\"The Late Show\\\" on Google+
+        HERE: http://bit.ly/1JlGgzw\\nFollow \\\"The Late Show\\\" on Instagram HERE:
+        http://bit.ly/29wfREj\\nFollow \\\"The Late Show\\\" on Tumblr HERE: http://bit.ly/29DVvtR\\n\\nWatch
+        The Late Show with Stephen Colbert weeknights at 11:35 PM ET/10:35 PM CT.
+        Only on CBS.\\n\\nGet the CBS app for iPhone & iPad! Click HERE: http://bit.ly/12rLxge\\n\\nGet
+        new episodes of shows you love across devices the next day, stream live TV,
+        and watch full seasons of CBS fan favorites anytime, anywhere with CBS All
+        Access. Try it free! http://bit.ly/1OQA29B\\n\\n---\\nThe Late Show with Stephen
+        Colbert is the premier late night talk show on CBS, airing at 11:35pm EST,
+        streaming online via CBS All Access, and delivered to the International Space
+        Station on a USB drive taped to a weather balloon. Every night, viewers can
+        expect: Comedy, humor, funny moments, witty interviews, celebrities, famous
+        people, movie stars, bits, humorous celebrities doing bits, funny celebs,
+        big group photos of every star from Hollywood, even the reclusive ones, plus
+        also jokes.\",\n    \"thumbnails\": {\n     \"medium\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/N5AIDgzDuws/mqdefault.jpg\",\n      \"width\": 320,\n
+        \     \"height\": 180\n     }\n    },\n    \"categoryId\": \"24\"\n   },\n
+        \  \"contentDetails\": {\n    \"duration\": \"PT12M29S\"\n   },\n   \"statistics\":
+        {\n    \"viewCount\": \"263159\",\n    \"likeCount\": \"13103\",\n    \"dislikeCount\":
+        \"1864\"\n   }\n  },\n  {\n   \"id\": \"QgzxXC-A1pk\",\n   \"snippet\": {\n
+        \   \"publishedAt\": \"2016-12-13T22:00:10.000Z\",\n    \"channelId\": \"UC0v-tlzsn0QZwJnkiaUSJVQ\",\n
+        \   \"title\": \"YOUTUBERS REACT TO YOUTUBE REWIND 2016\",\n    \"description\":
+        \"YouTube Rewind 2016 reacted to by the YouTubers! Original video link below.\\nPlease
+        share this video and subscribe to all the YouTube stars! (Links Below)\\nSUBSCRIBE
+        THEN HIT THE \U0001F514! New Videos 2pm PST on FBE! http://goo.gl/aFu8C\\nWatch
+        all main React episodes (Kids/Teens/Elders/Adults/YouTubers): http://goo.gl/4iDVa\\n\\nYoutubers
+        React to YouTube Rewind 2016! Watch to see their reaction!\\n\\nVideo Featured
+        in this episode: \\nYouTube Rewind: The Ultimate 2016 Challenge | #YouTubeRewind\\nhttps://goo.gl/bzQoZf\\n\\nWatch
+        all the previous YouTube Rewind React episodes! https://www.youtube.com/playlist?list=PLwnD0jwK0yyk87MF5PcdIotYENBqM5MrY\\n\\nGreg
+        & Mitch\\nhttp://youtube.com/AsapSCIENCE\\nJordan Maron\\nhttp://youtube.com/CaptainSparklez\\nBrandon
+        Rogers\\nhttp://youtube.com/hotbananastud\\nJack Douglass\\nhttp://youtube.com/jacksfilms\\nLaurDIY\\nhttp://youtube.com/laurDIY\\nLiza
+        Koshy\\nhttp://youtube.com/lizakoshy\\nMatPat\\nhttp://youtube.com/MatthewPatrick13\\nTeala
+        Dunn\\nhttp://youtube.com/Tealaxx2\\nTimothy DeLaGhetto\\nhttp://youtube.com/TIMOTHY\\nAlex
+        Wassabi\\nhttp://youtube.com/WassabiProductions\\n\\nFollow Fine Brothers
+        Entertainment:\\nFBE WEBSITE: http://www.finebrosent.com\\nFBE CHANNEL: http://www.youtube.com/FBE\\nREACT
+        CHANNEL: http://www.youtube.com/REACT\\nBONUS CHANNEL: https://www.youtube.com/FBE2\\nFACEBOOK:
+        http://www.facebook.com/FineBros\\nTWITTER: http://www.twitter.com/thefinebros\\nINSTAGRAM:
+        http://www.instagram.com/fbe\\nSNAPCHAT: https://www.snapchat.com/add/finebros\\nTUMBLR:
+        http://fbeofficial.tumblr.com/\\nGOOGLE+:http://plus.google.com/+FBE\\n\\nSEND
+        US STUFF:\\nFine Brothers Entertainment \\nP.O. BOX 4324\\nValley Village,
+        CA 91617-4324\\n\\nCreators & Executive Producers - Benny Fine & Rafi Fine\\nHead
+        of Digital Production - Jim Stoddard\\nHead of Post Production - Nick Bergthold\\nAssociate
+        Producer - Dallen Detamore, Kyle Segal\\nJr. Associate Producer - Ethan Weiser\\nCoordinator
+        - Cynthia Garcia\\nProduction Assistant - Locke Alexander, Kristy Kiefer,
+        Kenira Moore\\nEditor - Alyssa Salter\\nAssistant Editor - Kelsey Houser,
+        Karen Rivas\\nDirector of Production - Drew Roder\\nPost Supervisor - Adam
+        Speas\\nPost Coordinator - David Valbuena\\nResearchers - Colleen Scriven,
+        Morgan Roger\\nSet design - Melissa Judson\\nMusic - Cormac Bluestone http://www.youtube.com/cormacbluestone\\n\\n©
+        Fine Brothers Entertainment.\\n\\nYOUTUBERS REACT #106 - YOUTUBERS REACT YOUTUBE
+        REWIND 2016\\n\\nIf you liked YOUTUBERS REACT YOUTUBE REWIND 2016 check out
+        the reaction to WTF DID I JUST WATCH?! COMPILATION https://www.youtube.com/watch?v=z9sjNxeFF9s\\nIf
+        you liked YOUTUBERS REACT YOUTUBE REWIND 2016 check out the reaction to Russian
+        Music Videos (Leningrad) | Ленинград https://www.youtube.com/watch?v=curErgP-M48\\nIf
+        you liked YOUTUBERS REACT YOUTUBE REWIND 2016 check out the reaction to SHELTER
+        MUSIC VIDEO (Porter Robinson & Madeon) https://www.youtube.com/watch?\\nv=3qG149YyCCg\\nIf
+        you liked YOUTUBERS REACT YOUTUBE REWIND 2016 check out the reaction to IGUANA
+        VS. SNAKES https://www.youtube.com/watch?v=IBN-u2urzko\\nIf you liked YOUTUBERS
+        REACT YOUTUBE REWIND 2016 check out the reaction to Oddly UNsatisfying Compilation
+        https://www.youtube.com/watch?v=xV0zS0Xh_AQ\\nIf you liked YOUTUBERS REACT
+        YOUTUBE REWIND 2016 check out the reaction to Chair Flip Challenge Compilation
+        https://www.youtube.com/watch?v=BvI1PNEUy_4\\nIf you liked YOUTUBERS REACT
+        YOUTUBE REWIND 2016 check out the reaction to Song Lyric Text Prank Compilation
+        https://www.youtube.com/watch?v=3ogt0DPwZaI\\nIf you liked YOUTUBERS REACT
+        YOUTUBE REWIND 2016 check out the reaction to HARAMBE https://www.youtube.com/watch?v=bPTVr_j06Yg\\nIf
+        you liked YOUTUBERS REACT YOUTUBE REWIND 2016 check out the reaction to Oddly
+        Satisfying Compilation https://www.youtube.com/watch?v=3U2iDPujBOo\\nIf you
+        liked YOUTUBERS REACT YOUTUBE REWIND 2016 check out the reaction to VISUAL
+        KEI (Japanese Rock) https://www.youtube.com/watch?v=3U2iDPujBOo\",\n    \"thumbnails\":
+        {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/QgzxXC-A1pk/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT10M55S\"\n
+        \  },\n   \"statistics\": {\n    \"viewCount\": \"1425796\",\n    \"likeCount\":
+        \"92623\",\n    \"dislikeCount\": \"5640\"\n   }\n  },\n  {\n   \"id\": \"IVjmIovOPek\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T16:01:43.000Z\",\n    \"channelId\":
+        \"UCLXo7UDZvByw2ixzpQCufnA\",\n    \"title\": \"How cars went from boxy to
+        curvy\",\n    \"description\": \"The big shift from boxy cars in the '80s
+        to curvy cars in the '90s, explained.\\n\\nRead more: http://www.vox.com/2015/6/11/8762373/car-design-curves\\n\\nMagazine
+        archive from: http://oldcarbrochures.org/\\n\\nAutomotive Hall of Fame footage
+        from: https://www.youtube.com/watch?v=MaOP6dZkFf4\\n\\nSubscribe to our channel!
+        http://goo.gl/0bsAjO\\n\\nVox.com is a news website that helps you cut through
+        the noise and understand what's really driving the events in the headlines.
+        Check out http://www.vox.com to get up to speed on everything from Kurdistan
+        to the Kim Kardashian app. \\n\\nCheck out our full video catalog: http://goo.gl/IZONyE\\nFollow
+        Vox on Twitter: http://goo.gl/XFrZ5H\\nOr on Facebook: http://goo.gl/U2g06o\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/IVjmIovOPek/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"25\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT4M1S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"73882\",\n    \"likeCount\": \"8806\",\n
+        \   \"dislikeCount\": \"277\"\n   }\n  },\n  {\n   \"id\": \"YIQMBLahtqY\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T05:58:34.000Z\",\n    \"channelId\":
+        \"UCVTyTA7-g9nopHeHbeuvpRA\",\n    \"title\": \"Trump's Cabinet of Plutocrats
+        and Hardliners: A Closer Look\",\n    \"description\": \"Seth takes a closer
+        look at President-elect Donald Trump continuing to fill his cabinet with wealthy
+        elites and hardliners.\\n» Subscribe to Late Night: http://bit.ly/LateNightSeth\\n»
+        Get more Late Night with Seth Meyers: http://www.nbc.com/late-night-with-seth-meyers/\\n»
+        Watch Late Night with Seth Meyers Weeknights 12:35/11:35c on NBC.\\n\\nLATE
+        NIGHT ON SOCIAL\\nFollow Late Night on Twitter: https://twitter.com/LateNightSeth\\nLike
+        Late Night on Facebook: https://www.facebook.com/LateNightSeth\\nFind Late
+        Night on Tumblr: http://latenightseth.tumblr.com/\\nConnect with Late Night
+        on Google+: https://plus.google.com/+LateNightSeth/videos\\n\\nLate Night
+        with Seth Meyers on YouTube features A-list celebrity guests, memorable comedy,
+        and topical monologue jokes.\\n\\nNBC ON SOCIAL \\nLike NBC: http://Facebook.com/NBC\\nFollow
+        NBC: http://Twitter.com/NBC\\nNBC Tumblr: http://NBCtv.tumblr.com/\\nNBC Pinterest:
+        http://Pinterest.com/NBCtv/\\nNBC Google+: https://plus.google.com/+NBC\\nYouTube:
+        http://www.youtube.com/nbc\\nNBC Instagram: http://instagram.com/nbctv\\n\\nTrump's
+        Cabinet of Plutocrats and Hardliners: A Closer Look- Late Night with Seth
+        Meyers\\nhttps://youtu.be/YIQMBLahtqY\\n\\n\\nLate Night with Seth Meyers\\nhttp://www.youtube.com/user/latenightseth\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/YIQMBLahtqY/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"23\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT8M52S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"194086\",\n    \"likeCount\": \"10088\",\n
+        \   \"dislikeCount\": \"848\"\n   }\n  },\n  {\n   \"id\": \"70dplWEKqow\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-13T20:27:47.000Z\",\n    \"channelId\":
+        \"UCn1XB-jvmd9fXMzhiA6IR0w\",\n    \"title\": \"Addiction\",\n    \"description\":
+        \"Receive your own crate of awesome from Loot Anime at http://www.lootcrate.com/domics.
+        Use code DOMICS to save 10%!\\n\\nOriginal Music by Christopher Carlone\\nhttps://www.youtube.com/user/Carlonec
+        \\nTwitter: Carlonecmusic\\nWebsite: http://www.christophercarlone.com/\\n\\nAdditional
+        Animatosr:\\nShho: https://twitter.com/Shhotime\\nEhlboy: https://www.youtube.com/ehlboy\\nJomm:
+        https://www.youtube.com/FlashJ0mm\\n\\nPO BOX:\\nDomics\\n11-4040 Creditview
+        Rd.\\nSuite #317\\nMississauga ON L5C 3Y8\\nCanada\\n\\nFollow me!\\nTUMBLR:
+        http://www.domics.me\\nFACEBOOK: http://www.facebook.com/domics.me\\nTWITTER:
+        https://twitter.com/OmNomDomz\\nINSTAGRAM: http://www.instagram.com/omnomdomz\\nI
+        LIVESTREAM SOMETIMES: http://www.twitch.tv/d0mics\\n\\nThis video is sponsored
+        by LootCrate\",\n    \"thumbnails\": {\n     \"medium\": {\n      \"url\":
+        \"https://i.ytimg.com/vi/70dplWEKqow/mqdefault.jpg\",\n      \"width\": 320,\n
+        \     \"height\": 180\n     }\n    },\n    \"categoryId\": \"23\"\n   },\n
+        \  \"contentDetails\": {\n    \"duration\": \"PT7M32S\"\n   },\n   \"statistics\":
+        {\n    \"viewCount\": \"1333637\",\n    \"likeCount\": \"125059\",\n    \"dislikeCount\":
+        \"1134\"\n   }\n  },\n  {\n   \"id\": \"_CdJ4oae8f4\",\n   \"snippet\": {\n
+        \   \"publishedAt\": \"2016-12-15T00:17:37.000Z\",\n    \"channelId\": \"UCO2Ht1tCxOT5SiySrRRTV2A\",\n
+        \   \"title\": \"Self-Driving Uber running red light\",\n    \"description\":
+        \"\",\n    \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/_CdJ4oae8f4/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"2\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT31S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"54691\",\n    \"likeCount\": \"673\",\n
+        \   \"dislikeCount\": \"164\"\n   }\n  },\n  {\n   \"id\": \"OKJK3_XIGD4\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T15:34:50.000Z\",\n    \"channelId\":
+        \"UCgnxoUwDmmyzeigmmcf0hZA\",\n    \"title\": \"San Francisco, Your Self-Driving
+        Uber is Arriving Now\",\n    \"description\": \"Self-driving cars have been
+        picking up and dropping off riders on the streets of Pittsburgh for the last
+        3 months, and now we’re excited to bring them to our hometown of San Francisco.
+        Ready to take a ride in a Self-Driving Uber?\",\n    \"thumbnails\": {\n     \"medium\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/OKJK3_XIGD4/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT1M49S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"37347\"\n   }\n  },\n  {\n   \"id\":
+        \"8Gjn0ObXWak\",\n   \"snippet\": {\n    \"publishedAt\": \"2016-12-13T19:20:05.000Z\",\n
+        \   \"channelId\": \"UClOf1XXinvZsy4wKPAkro2A\",\n    \"title\": \"[NEW SEASONAL
+        EVENT] Welcome to Overwatch's Winter Wonderland!\",\n    \"description\":
+        \"It's lookin’ downright festive in these parts: http://blizz.ly/OWW2016\\n\\nThe
+        season of giving (and receiving) is here, and we’re ready to celebrate. From
+        now until January 2, every day is a snow day in Overwatch! Unwrap all new
+        holiday-themed loot, take a stroll through the decked halls of Hanamura and
+        King's Row, and put your enemies on ice in our latest brawl: Mei’s Snowball
+        Offensive.\\n\\nBegin Your Watch: http://blizz.ly/BuyOverwatch\\nLike Us on
+        Facebook: http://www.facebook.com/playoverwatch\\nFollow Us on Twitter: http://www.twitter.com/playoverwatch\\nFollow
+        us on Instagram: https://www.instagram.com/playoverwatch\",\n    \"thumbnails\":
+        {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/8Gjn0ObXWak/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"20\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT1M33S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"1083641\",\n    \"likeCount\":
+        \"36351\",\n    \"dislikeCount\": \"741\"\n   }\n  },\n  {\n   \"id\": \"-CZwFNh4utM\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-13T15:00:00.000Z\",\n    \"channelId\":
+        \"UCbaGn5VkOVlcRgIWAHcrJKA\",\n    \"title\": \"American Kids Try Christmas
+        Foods from Around the World | Ep 10\",\n    \"description\": \"http://cut.com\\n\\nhttp://cut.com/licensing\\n\\nProduced,
+        Directed, and Edited by Cut!\\n\\nDon't forget to follow us on social media\\nFacebook:
+        https://www.facebook.com/watchcut\\nTwitter: https://www.twitter.com/watchcut\\nInstagram:
+        https://www.instagram.com/storiesbycut \\n\\n\\nGet Cut swag here: \\nhttp://bit.ly/BuyCut\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/-CZwFNh4utM/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT5M15S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"974570\",\n    \"likeCount\": \"29006\",\n
+        \   \"dislikeCount\": \"1779\"\n   }\n  },\n  {\n   \"id\": \"-_AshChTEY0\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T04:25:58.000Z\",\n    \"channelId\":
+        \"UC06E4Y_-ybJgBUMtXx8uNNw\",\n    \"title\": \"Red Hot Cannonball Vs Styrofoam
+        Tower\",\n    \"description\": \"Thanks to Casper for partnering with me!
+        Go to http://casper.com/backyard and use code backyard for $50 towards any
+        mattress purchase!\\n\\nMy girlfriend's channel - SandraSays https://www.youtube.com/channel/UC967EJHoQ7ukJLLYz9VaLHA/videos\\n\\nFacebook:
+        https://www.facebook.com/TheBackyardScientistOfficial/\\nInstagram: https://www.instagram.com/backyardscientistofficial/\\nTwitter:
+        https://twitter.com/ChemicalKevy\\nWebsite: http://thebackyardscient.ist/\\n\\nCameras
+        I used in this video:\\nHighspeed camera- Chronos 1.4 https://www.kickstarter.com/projects/1714585446/chronos-14-high-speed-camera\\nMain
+        Camera - Sony RX 10 ii\\nSecondary Camera - Sony RX 100 IV\\nTertiary Camera
+        \ - GoPro Hero 4 Black\\n\\nMy new foundry is made from:\\nInsulating firebrick
+        - GREENTHERM 26 LI http://thinkhwi.com/global-sourcing-centers/\\nHigh Temperature
+        mortar - GREENPATCH-421 http://thinkhwi.com/global-sourcing-centers/\\nBio-Soluble
+        Ceramic Blanket - http://skylinecomponents.com/\\nI highly recommend looking
+        for a HWI distribution center near you. They sell to individuals, and because
+        they make the refractory materials the price is dirt cheap, like $36 for a
+        12 pack of insulating firebricks. On amazon they are $27 for 2 firebricks.
+        \\n\\nOther materials: \\nRed Hot cannonball - 6lb, ~3 inch cast iron shotput.\\nPropane
+        burner for foundry - http://www.ebay.com/itm/U-S-Made-gas-burner-blacksmith-forge-raku-kiln-propane-foundry-with-regulator-/232172874783?hash=item360e94ec1f:g:6RoAAOSwzOxUYmHZ\\nCrucible
+        - https://www.amazon.com/10-Graphite-Crucible-Refining-Aluminum/dp/B00FBGAG6G\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/-_AshChTEY0/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"28\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT5M49S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"284816\",\n    \"likeCount\": \"22859\",\n
+        \   \"dislikeCount\": \"956\"\n   }\n  },\n  {\n   \"id\": \"Ukk5TJL27pE\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T15:00:02.000Z\",\n    \"channelId\":
+        \"UCJkMlOu7faDgqh4PfzbpLdg\",\n    \"title\": \"The Epidemic of Passable Movies\",\n
+        \   \"description\": \"Get 10% any purchase here: http://squarespace.com/nerdwriter\\n\\nHELP
+        ME MAKE MORE VIDEOS: http://www.patreon.com/nerdwriter\\n\\nASK ME QUESTIONS
+        HERE: http://thenerdwriter.tumblr.com TWITTER: https://twitter.com/TheeNerdwriter\\n\\nEmail
+        me here: thenerdwriter@gmail.com\\n\\nKevin Macleod, \\\"Fairy Tale Waltz\\\"\\nhttp://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100232\\n\\nKevin
+        Macleod, \\\"Marty Gots A Plan\\\"\\nhttps://incompetech.com/wordpress/2015/02/marty-gots-a-plan/\\n\\nYuki
+        Ame, \\\"Blew Ya Head\\\"\\nhttps://soundcloud.com/yukinoame/blew-ya-head-demo2014\\n\\nJoey
+        Pecoraro, \\\"Toy Houses\\\"\\nhttps://soundcloud.com/joeypecoraro/toy-houses\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/Ukk5TJL27pE/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"27\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT6M59S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"133191\",\n    \"likeCount\": \"19991\",\n
+        \   \"dislikeCount\": \"1056\"\n   }\n  },\n  {\n   \"id\": \"1MhcLkHWBBk\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T16:08:19.000Z\",\n    \"channelId\":
+        \"UCpZ5qUqpW4hW4zdfuBxMSJA\",\n    \"title\": \"21 Things That Turned 21 in
+        2016 - mental_floss List Show Ep. 449\",\n    \"description\": \"A weekly
+        show where knowledge junkies get their fix of trivia-tastic information. This
+        week, John reviews 21 things that turned 21 in 2016!\\n\\nSubscribe for new
+        episodes of mental_floss every Wednesday!\\n\\n----\\n\\nWE'RE ON SNAPCHAT!
+        Username: mental.floss\\nMental Floss Video on Twitter: http://www.twitter.com/mf_video\\n\\n----\\nWebsite:
+        http://www.mentalfloss.com\\nTwitter: http://www.twitter.com/mental_floss\\nFacebook:
+        http://www.facebook.com/mentalflossmagazine\\nStore: http://store.mentalfloss.com/
+        (enter promo code: \\\"YoutubeFlossers\\\" for 15% off!)\",\n    \"thumbnails\":
+        {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/1MhcLkHWBBk/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"27\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT6M6S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"7587\",\n    \"likeCount\": \"1286\",\n
+        \   \"dislikeCount\": \"19\"\n   }\n  },\n  {\n   \"id\": \"ETpiA8ych30\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-12T13:30:01.000Z\",\n    \"channelId\":
+        \"UC-FQUIVQ-bZiefzBiQAa8Fw\",\n    \"title\": \"Jennifer Lawrence & Chris
+        Pratt Insult Each Other | CONTAINS STRONG LANGUAGE!\",\n    \"description\":
+        \"For more, head over to Radio 1 on BBC iPlayer http://bit.ly/Radio1BBCiPlayer\\n\\n\\\"I
+        recently told you that you act like Adele sings.  I hate Adele.\\\" - Passengers
+        stars Jennifer Lawrence & Chris Pratt take it in turns to INSULT EACH OTHER
+        in the Playground Insults game on Scott Mills’ radio show on BBC Radio 1.\\n\\nWho
+        will win when two Hollywood superstars rip each other apart?\\n\\nListen to
+        Scott Mills and Chris Stark on BBC Radio 1, weekdays 1-4pm.\\n\\nPassengers
+        is out on December 21st 2016 in the UK.\\nFacebook: http://bit.ly/BBCR1facebook\\nTwitter:
+        http://bit.ly/BBCR1twitter\\nInstagram: http://bit.ly/BBCR1instagram\\nVine:
+        http://bit.ly/BBCR1vine\\nWebsite: http://bit.ly/BBCR1website\",\n    \"thumbnails\":
+        {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/ETpiA8ych30/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"1\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT4M52S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"6521405\",\n    \"likeCount\":
+        \"100713\",\n    \"dislikeCount\": \"3357\"\n   }\n  },\n  {\n   \"id\": \"flLfo8AHVKs\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-13T22:22:42.000Z\",\n    \"channelId\":
+        \"UCd1fLoVFooPeWqCEYVUJZqg\",\n    \"title\": \"Epic French Toast (Food Challenge)\",\n
+        \   \"description\": \"Good Video? Like/Thumbs Up & Share!!\\n\\nIt's a big
+        shoe to fill, but I want to say this is my most epic creation of 2016. If
+        not, it's definitely up there..\\n\\nENJOY!!!\\n\\nFacebook - http://www.facebook.com/megatoad\\nTwitter
+        - https://twitter.com/MattStonie\\nInstagram - http://instagram.com/matt_stonie\\nMegatoad
+        Tee's - http://mattstonie.bigcartel.com/\\n\\nNEW PO BOX!! Send me stuff!!!\\n\\nP.O.
+        Box 22210\\nSan Jose, CA 95151\\n\\nCredits:\\nRoyalty Free Music by http://audiomicro.com/royalty-free-music\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/flLfo8AHVKs/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT11M23S\"\n
+        \  },\n   \"statistics\": {\n    \"viewCount\": \"384588\",\n    \"likeCount\":
+        \"23111\",\n    \"dislikeCount\": \"456\"\n   }\n  },\n  {\n   \"id\": \"vr3iIr9y4xc\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-14T05:10:37.000Z\",\n    \"channelId\":
+        \"UCpdK1NLHxEUGXc1gq2NxkTw\",\n    \"title\": \"The Voice 2016 Billy Gilman
+        and Kelly Clarkson - Finale: \\\"It's Quiet Uptown\\\"\",\n    \"description\":
+        \"Billy Gilman teams up with Kelly Clarkson for a duet of \\\"It's Quiet Uptown,\\\"
+        from The Hamilton Mixtape.\\n» Get The Voice Official App: http://bit.ly/TheVoiceOfficialApp\\n»
+        Subscribe for More: http://bit.ly/TheVoiceSub\\n» The Voice Returns Monday
+        February 27 8/7c on NBC!\\n» Watch Full Episodes: http://bit.ly/TheVoiceFullEpisodes\\n\\nTHE
+        VOICE ON SOCIAL:\\nLike The Voice: http://Facebook.com/NBCTheVoice\\nFollow
+        The Voice: https://Twitter.com/NBCTheVoice\\nThe Voice Tumblr: http://nbcTheVoice.Tumblr.com/\\nGoogle+:
+        https://plus.google.com/+TheVoice/\\nThe Voice Pinterest: http://Pinterest.com/nbcTheVoice/\\n\\nNBC’s
+        The Voice follows the strongest vocalists from across the country and invites
+        them to compete in this season's blockbuster vocal competition.\\n\\nFind
+        The Voice trailers, full episode highlights, previews, promos, clips, and
+        digital exclusives here.\\n\\nNBC ON SOCIAL:\\nNBC YouTube: http://www.youtube.com/nbc\\nLike
+        NBC: http://Facebook.com/NBC\\nFollow NBC: http://Twitter.com/NBC\\nNBC Tumblr:
+        http://nbctv.tumblr.com/\\nNBC Google+: https://plus.google.com/+NBC/posts\\n\\nABOUT
+        THE VOICE\\nThe Voice 2016 USA YouTube channel features exclusive content
+        with The Voice coaches, highlights from The Voice auditions, interviews with
+        The Voice winners, as well as The Voice recaps and results. Learn more about
+        The Voice contestants, The Voice tour, the eliminations, and follow your favorite
+        performers all the way to the finale. In season 11, internationally acclaimed
+        artists Miley Cyrus and Alicia Keys join Adam Levine and Blake Shelton as
+        celebrity musician coaches, while Carson Daly continues to serve as host.
+        The show's innovative format features five stages of competition: the first
+        begins with the blind auditions, followed by the battle rounds, the knockouts,
+        the live playoffs and finally, the live performance shows.\\n\\nThe Voice
+        2016 Billy Gilman and Kelly Clarkson - Finale: \\\"It's Quiet Uptown\\\"\\nhttps://youtu.be/vr3iIr9y4xc\\n\\nThe
+        Voice\\nhttp://www.youtube.com/user/nbcthevoice\",\n    \"thumbnails\": {\n
+        \    \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/vr3iIr9y4xc/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"24\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT3M38S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"119308\",\n    \"likeCount\": \"4064\",\n
+        \   \"dislikeCount\": \"82\"\n   }\n  },\n  {\n   \"id\": \"Yr2UDKEzAL8\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-13T17:10:34.000Z\",\n    \"channelId\":
+        \"UCYUQQgogVeQY8cMQamhHJcg\",\n    \"title\": \"Everything Wrong With Star
+        Trek Beyond In 17 Minutes Or Less\",\n    \"description\": \"Star Trek Beyond,
+        the third entry to this current series, is actually pretty fun, and was a
+        bright spot in a horrible summer of movies. Still not perfect, so here are
+        its sins. \\n\\nThursday: Another space movie.\\n\\nRemember, no movie is
+        without sin! Which movie's sins should we expose next?!\\n\\nPodcast: http://soundcloud.com/cinemasins\\nSins
+        Video Playlist: http://www.youtube.com/watch?v=wy-v4c4is-w&list=PLMWfZxj1nTkQBy4AeRGG4xH5d2IIApNPj\\nTweet
+        us: http://twitter.com/cinemasins\\nReddit with us: http://reddit.com/r/cinemasins\\nTumble
+        us: http://cinema-sins.tumblr.com\\nCall us: 405-459-7466\\nJeremy's book
+        now available: http://theablesbook.com\",\n    \"thumbnails\": {\n     \"medium\":
+        {\n      \"url\": \"https://i.ytimg.com/vi/Yr2UDKEzAL8/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"1\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT17M34S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"566213\",\n    \"likeCount\": \"18006\",\n
+        \   \"dislikeCount\": \"530\"\n   }\n  },\n  {\n   \"id\": \"olP8JIQYLFw\",\n
+        \  \"snippet\": {\n    \"publishedAt\": \"2016-12-13T18:00:06.000Z\",\n    \"channelId\":
+        \"UCXhSCMRRPyxSoyLSPFxK7VA\",\n    \"title\": \"50 AMAZING Facts to Blow Your
+        Mind! #56\",\n    \"description\": \"Check out ScreenRant, and subscribe!
+        https://www.youtube.com/playlist?list=PL--PgETgAz5EST8IApKy1PrgjqsPdW6S-\\n50
+        of the most AMAZING facts you'll ever see!\\nSubscribe and click the bell
+        to enable notifications for my new videos! https://www.youtube.com/matthewsantoro?sub_confirmation=1\\nFollow
+        me for more DAILY facts and important updates!\\nSnapchat: http://bit.ly/SantoroSnapchat\\nTwitter:
+        http://twitter.com/MatthewSantoro\\nInstagram: http://instagr.am/MatthewSantoro\\nFacebook
+        Profile: http://fb.com/MatthewMSantoro\\nFacebook Page: http://fb.com/MatthewSantoroOfficial\\n\\nGet
+        my book MIND = BLOWN here! http://matthewsantoro.squarespace.com/\\n\\nSubscribe
+        to my second channel! https://www.youtube.com/matthewsantoro2?sub_confirmation=1\\n\\nSources:\\nAll
+        facts in this video are sourced from the following websites, and then individually
+        researched to ensure veracity. I encourage you to visit these websites if
+        you want to learn more!\\nhttp://omgfacts.com\\nhttp://thefactsite.com\\nhttp://factslides.com\\nhttp://wtffunfact.com\\nhttp://todayifoundout.com\\nhttps://reddit.com/r/todayilearned\",\n
+        \   \"thumbnails\": {\n     \"medium\": {\n      \"url\": \"https://i.ytimg.com/vi/olP8JIQYLFw/mqdefault.jpg\",\n
+        \     \"width\": 320,\n      \"height\": 180\n     }\n    },\n    \"categoryId\":
+        \"27\"\n   },\n   \"contentDetails\": {\n    \"duration\": \"PT8M52S\"\n   },\n
+        \  \"statistics\": {\n    \"viewCount\": \"544741\",\n    \"likeCount\": \"23627\",\n
+        \   \"dislikeCount\": \"973\"\n   }\n  }\n ]\n}\n"
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:58 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCjmJDM5pRKbUlVIzDYYWb6g&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:58 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:58 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/lp72KivpWNiEjZ0NzRj-IVGrzRA"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '450'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+           "snippet": {
+            "title": "Warner Bros. Pictures",
+            "description": "Welcome to the official channel for Warner Bros. Pictures. Subscribe now for all our latest movie trailers, clips and featurettes!",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-FWmT_QaBmts/AAAAAAAAAAI/AAAAAAAAAAA/3qj7yNGlH_0/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:58 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCJ0uqCI0Vqr2Rrt1HseGirg&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/zs4v8kOJmFj8JVIkUw8VnGTETdI"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '420'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCJ0uqCI0Vqr2Rrt1HseGirg",
+           "snippet": {
+            "title": "The Late Late Show with James Corden",
+            "description": "This is the official YouTube channel for The Late Late Show with James Corden on CBS.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-NhxJe9XKyV8/AAAAAAAAAAI/AAAAAAAAAAA/XkSb5PFaHP8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCq7OHvWO6Z3u-LztFdrcU-g&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/7tdf7jisL581kmUqo88ED6qf7Es"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '515'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCq7OHvWO6Z3u-LztFdrcU-g",
+           "snippet": {
+            "title": "Illumination",
+            "description": "Connect with Illumination Entertainment Online:\n\nLike Illumination Entertainment on FACEBOOK:  http://bit.ly/IlluminationEntFB\nVisit the Illumination Entertainment WEBSITE:  http://www.minionsmovie.com",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-wH_8TqefjvY/AAAAAAAAAAI/AAAAAAAAAAA/M6U0icLG-_8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCn-bD1rQMwvyDXAa_yrwagg&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/rZVcW3pM5LnfcmbXKjTwrVPbwfM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '311'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCn-bD1rQMwvyDXAa_yrwagg",
+           "snippet": {
+            "title": "Amish Hacker",
+            "description": "",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-VMQ1yrnKLcM/AAAAAAAAAAI/AAAAAAAAAAA/vATgoZq2CvY/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCb0xfM3HGOsqPYNAocXXNAQ&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/hjUOHEkqyaijXdFfEzPNjlkvQ30"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '447'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCb0xfM3HGOsqPYNAocXXNAQ",
+           "snippet": {
+            "title": "truTV",
+            "description": "truTV offers an innovative and entertaining look at the real world through authentic characters, humorous situations and engaging storytelling.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-hb-3RuH6y54/AAAAAAAAAAI/AAAAAAAAAAA/bXRGcus8u2M/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCkLXELm63_pH7L-r-548kig&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/P8AAWYaXIUlzdUF77h__rpeXhDM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '825'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCkLXELm63_pH7L-r-548kig",
+           "snippet": {
+            "title": "amazon",
+            "description": "Amazon.com seeks to be Earth's most customer-centric company, where customers can find and discover anything they might want to buy online, and endeavors to offer its customers the lowest possible prices. Amazon.com and other sellers offer millions of unique new, refurbished and used items in categories such as Books; Movies, Music & Games; Digital Downloads; Electronics & Computers; Home & Garden; Toys, Kids & Baby; Grocery; Apparel, Shoes & Jewelry; Health & Beauty; Sports & Outdoors; and Tools, Auto & Industrial",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-XBsWGhOGcU4/AAAAAAAAAAI/AAAAAAAAAAA/w-D9-p2sNKk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UC07Kxew-cMIaykMOkzqHtBQ&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/_gu5J8ztpulCkwo4enHFWV76E8k"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '311'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UC07Kxew-cMIaykMOkzqHtBQ",
+           "snippet": {
+            "title": "LadyGagaVEVO",
+            "description": "",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-dcILwG2R9Mw/AAAAAAAAAAI/AAAAAAAAAAA/Jn9461K2F_s/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCK8sQmJBp8GCxrOtXWBpyEA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/TWm7TvOT-we30EVv8KokyAlQtDg"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '518'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCK8sQmJBp8GCxrOtXWBpyEA",
+           "snippet": {
+            "title": "Google",
+            "description": "Experience the world of Google on our official YouTube channel. Watch videos about our products,  technology, company happenings and more. Subscribe to get updates from all your favorite Google products and teams.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAAAA/OixOH_h84Po/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCMtFAi84ehTSYSE9XoHefig&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:10:59 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/xrh1Kx8NxmCrPaDfAlbOQNvNTH4"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '445'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCMtFAi84ehTSYSE9XoHefig",
+           "snippet": {
+            "title": "The Late Show with Stephen Colbert",
+            "description": "Welcome to the official YouTube channel for \"The Late Show with Stephen Colbert\"! Weeknights at 11:35pm/10:35c",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-_DMSPt1vZaw/AAAAAAAAAAI/AAAAAAAAAAA/sSVARCDuXwE/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:10:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UC0v-tlzsn0QZwJnkiaUSJVQ&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/xI_My1ZNy6UjZdV6iDIdNbNf48U"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1319'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UC0v-tlzsn0QZwJnkiaUSJVQ",
+           "snippet": {
+            "title": "Fine Brothers Entertainment",
+            "description": "Fine Brothers Entertainment brings you the stuff you want to talk more about, from our award-winning REACT series, to shows across scripted, unscripted, animation, interactive, sketch comedy, and more.\n\nFBE makes originals for TV, the web, and everything in between. For newcomers, we’ve been making some of the web’s most popular series on this channel and across the web for over a decade! Subscribe now to catch multiple new shows every week, your sub box will thank you!\n\nFBE CHANNEL SCHEDULE - NEW VIDEOS 5 DAYS A WEEK:\n\nSUNDAYS/TUESDAYS/THURSDAYS/SATURDAYS - Episodes of REACT (Kids/Teens/Elders/YouTubers/Adults etc.)\n\nWEDNESDAYS - Sample School every other week then other scripted content (Spoilers, Last Moments, Sketches, Animation)\nFridays: Celebs React\n\nOther channels by FBE\nREACT CHANNEL: http://www.youtube.com/REACT for Gaming, Laugh Challenges, Food Shows, and Lyric Breakdowns!\nBONUS CHANNEL: https://www.youtube.com/FBE2 for bloopers and behind the scenes.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-UsqednQXiuQ/AAAAAAAAAAI/AAAAAAAAAAA/HHn1lQdSH8I/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCLXo7UDZvByw2ixzpQCufnA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/TbHK3IeoWjUKxtZ81CcNmasDIeg"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '802'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCLXo7UDZvByw2ixzpQCufnA",
+           "snippet": {
+            "title": "Vox",
+            "description": "Vox helps you cut through the noise and understand what's driving events in the headlines and in our lives, on everything from Taxes to Terrorism to Taylor Swift. For much much more, head over to www.vox.com. Vox Video is Joe Posner, Joss Fong, Matt Vree, Estelle Caswell, Johnny Harris, Phil Edwards, Carlos Waters, Gina Barton, Liz Scheltens, Liz Plank, Christophe Haubursin, and the staff of Vox.com. \n\nTo write us: joe@vox.com.\nTo request permission to use our videos: permissions@voxmedia.com",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-moy7q66uDVs/AAAAAAAAAAI/AAAAAAAAAAA/3kiAD7O0Q_E/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCVTyTA7-g9nopHeHbeuvpRA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/Q9s7G5uayFhyv_hNLHLJUveo-Fk"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '657'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCVTyTA7-g9nopHeHbeuvpRA",
+           "snippet": {
+            "title": "Late Night with Seth Meyers",
+            "description": "Beloved \"Saturday Night Live\" personality — and the longest serving anchor on the show's wildly popular \"Weekend Update\" — Seth Meyers takes over as host of NBC's \"Late Night,\" home to A-list celebrity guests, memorable comedy and the best in musical talent. \n\nWatch Late Night with Seth Meyers weeknights 12:35/11:35c.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-TI5ffZo0Qd4/AAAAAAAAAAI/AAAAAAAAAAA/glgeFHJ0Sto/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCn1XB-jvmd9fXMzhiA6IR0w&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/Kvb3eGe0l5B-eBsGiava8O8ZJpo"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '621'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCn1XB-jvmd9fXMzhiA6IR0w",
+           "snippet": {
+            "title": "Domics",
+            "description": "NEWS: The NEW Domics website is now live! http://domics.co/\n\n25-year old Youtube Animator from Toronto.\n\nMy Birthday page: http://www.famousbirthdays.com/people/dominic-panganiban.html\n\nI may not be able to take on client or commission work right now. For business inquiries, visit my website http://domics.co/",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-1QFcxAtWhxk/AAAAAAAAAAI/AAAAAAAAAAA/2aBO20Ndci8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCO2Ht1tCxOT5SiySrRRTV2A&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/kTUkm0XszBxXNqs1vR7BsHEm8kQ"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '467'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCO2Ht1tCxOT5SiySrRRTV2A",
+           "snippet": {
+            "title": "Charles Rotter",
+            "description": "Owner of Crotters' Best, the finest no sugar added chocolate you can buy.\n\ncrotterbest.com\n\nfacebook.com/crottersbest\n\namazon.com/shops/crottersbest",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-ckK2XXFFEZ8/AAAAAAAAAAI/AAAAAAAAAAA/P07aW5LKjXs/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCgnxoUwDmmyzeigmmcf0hZA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:00 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/KwVkmGiaAG7QfvdIPWlmZoe-WQM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '405'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCgnxoUwDmmyzeigmmcf0hZA",
+           "snippet": {
+            "title": "Uber",
+            "description": "The official YouTube channel for Uber. We're changing the way the world moves — one city at a time.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-40Y5g5gjLfw/AAAAAAAAAAI/AAAAAAAAAAA/2abS8t4cZw8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:00 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UClOf1XXinvZsy4wKPAkro2A&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/GzPKyDFqE_Gm7FelS3LPJMqpXPM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '678'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UClOf1XXinvZsy4wKPAkro2A",
+           "snippet": {
+            "title": "PlayOverwatch",
+            "description": "Overwatch™ is a highly stylized team-based shooter set in a future worth fighting for. Every match is an intense multiplayer showdown pitting a diverse cast of soldiers, scientists, adventurers, and oddities against each other in an epic, globe-spanning conflict. \n\nESRB rating TEEN for Blood, Violence, and Use of Tobacco. Visit esrb.org for rating information.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-M2-DH_DN-Qs/AAAAAAAAAAI/AAAAAAAAAAA/kczw_wtvMOI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCbaGn5VkOVlcRgIWAHcrJKA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/p7dVV3w6uqpBOVSBJBv3Ohktsgw"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '502'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCbaGn5VkOVlcRgIWAHcrJKA",
+           "snippet": {
+            "title": "WatchCut Video",
+            "description": "Cut is for everyone.\n\nFollow us on:\nFacebook.com/watchcut\nTwitter.com/watchcut\nSnap chat: @watchcut\nInstagram: @storiesbycut @100YOB\n\nSend us stuff!\nPO Box 19604\nSeattle, WA 98109",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-SFgNlQ0Jt40/AAAAAAAAAAI/AAAAAAAAAAA/H-Fz7fGb3H8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UC06E4Y_-ybJgBUMtXx8uNNw&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/EbcrlKbGEDCtRzZEKxFUPLxTjnE"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1317'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+           "snippet": {
+            "title": "TheBackyardScientist",
+            "description": "Aloha YouTubers, I am The Backyard Scientist!\n\nI like to make videos on all the crazy stuff I do. From exploding arrows, to making instruments, molten aluminum to science/chemistry experiments - I do it so you don't have to!\n\nI'm always thinking of more stuff to do, most of which involves chemistry, science experiments, technology, fire, burning things, melting things... \n\nAlmost everything I do can be considered dangerous, but I have been doing this stuff my whole life. I have experienced burns, cuts, shocks etc.. But with each mishap I have learned something the most important way- by experience. If you insist on trying my videos at home, just remember- if you play with fire, you're going to get burned. Electricity is deadly. Be safe guys :)\n\nI try to read every comment, but sometimes I miss a few. If you want help with a project, or just have any questions please message/email me!! :) I'm always open for collaboration.\n\nBad words are blocked a for family safe experience.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-IZZnLTRrXGY/AAAAAAAAAAI/AAAAAAAAAAA/VGWto8NZJQY/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCJkMlOu7faDgqh4PfzbpLdg&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/hQXdOD91E1uDXtCBkYmEeAD2AlQ"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '380'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCJkMlOu7faDgqh4PfzbpLdg",
+           "snippet": {
+            "title": "Nerdwriter1",
+            "description": "The Nerdwriter is a weekly video essay series that puts ideas to work.",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-z-h8rbCsYjw/AAAAAAAAAAI/AAAAAAAAAAA/kj1K5vjzFso/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCpZ5qUqpW4hW4zdfuBxMSJA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/LBkgR0qsIEm3kWc1SxN8HCK_UQk"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '489'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCpZ5qUqpW4hW4zdfuBxMSJA",
+           "snippet": {
+            "title": "Mental Floss",
+            "description": "A channel where knowledge junkies come to get their fix of trivia-tastic information! Subscribe and check for new episodes uploaded every Wednesday and first Monday of the month!",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-cfYReUTn8VY/AAAAAAAAAAI/AAAAAAAAAAA/7M3hX7-V3zs/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UC-FQUIVQ-bZiefzBiQAa8Fw&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/p4vRr634fi3-IyuwfND8QdBOnoU"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '611'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UC-FQUIVQ-bZiefzBiQAa8Fw",
+           "snippet": {
+            "title": "BBC Radio 1",
+            "description": "The world's best radio station, bringing you the biggest pop acts, the freshest new music and many moments of joy and hilarity.\n\nListen live online and find out more at www.bbc.co.uk/radio1.\n\nSubscribe to us now to join the Radio 1 YouTube family and never miss out on any of our beautiful videos!",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-gqWw2ln-AFM/AAAAAAAAAAI/AAAAAAAAAAA/p6f_Yd_96Mk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCd1fLoVFooPeWqCEYVUJZqg&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/prqajmquAk7n6a68DV2O6sZExMs"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '398'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCd1fLoVFooPeWqCEYVUJZqg",
+           "snippet": {
+            "title": "Matt Stonie",
+            "description": "I record myself eating food and upload it here.\n\nNew Videos Every Week!\n-------------",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-nCHVVyPUqUQ/AAAAAAAAAAI/AAAAAAAAAAA/geujz8zz0kk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCpdK1NLHxEUGXc1gq2NxkTw&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:01 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/IxVNUyF-pK03Li9WPKFP6hX_ADY"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1165'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCpdK1NLHxEUGXc1gq2NxkTw",
+           "snippet": {
+            "title": "The Voice",
+            "description": "The Voice Returns Monday February 27 8/7c on NBC!\n\nThe Voice 2016 USA YouTube channel features exclusive content with The Voice coaches, highlights from The Voice auditions, interviews with The Voice winners, as well as The Voice recaps and results. Learn more about The Voice contestants, The Voice tour, the eliminations, and follow your favorite performers all the way to the finale. In season 11, internationally acclaimed artists Miley Cyrus and Alicia Keys join Adam Levine and Blake Shelton as celebrity musician coaches, while Carson Daly continues to serve as host. The show's innovative format features five stages of competition: the first begins with the blind auditions, followed by the battle rounds, the knockouts, the live playoffs and finally, the live performance shows.\n\nWatch Full Episodes Free of Your Favorite Shows on the NBC App!",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-w77XbfoSzqA/AAAAAAAAAAI/AAAAAAAAAAA/K2oWTuy82ps/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:01 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCYUQQgogVeQY8cMQamhHJcg&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:02 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:02 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/XlGzvIZKjdAvGH_CMD6drmF_rqg"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '588'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCYUQQgogVeQY8cMQamhHJcg",
+           "snippet": {
+            "title": "CinemaSins",
+            "description": "No movie is without sin. We exist mostly just to remind you of that.\nNew sins videos every Tuesday & Thursday. \n\nCall the Cinema Sins Hotline to narrate your own sins: 405-459-7466\nFollow us on Twitter: http://twitter.com/cinemasins\nOr Tumblr: http://cinema-sins.tumblr.com/",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-HjjGeDoxdtY/AAAAAAAAAAI/AAAAAAAAAAA/KpncFwQe_JM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:02 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCXhSCMRRPyxSoyLSPFxK7VA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 08:11:02 GMT
+      Date:
+      - Thu, 15 Dec 2016 08:11:02 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/BkKBfSyZsU7NDeRJStZkTghATmY"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '410'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCXhSCMRRPyxSoyLSPFxK7VA",
+           "snippet": {
+            "title": "MatthewSantoro",
+            "description": "New videos with mind-blowing facts every week! Turn on notifications so you never miss an upload!",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-5ZK_31nb5s8/AAAAAAAAAAI/AAAAAAAAAAA/czPsZ3UhQ-Q/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 08:11:02 GMT
 recorded_with: VCR 3.0.3

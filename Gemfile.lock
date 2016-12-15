@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    YPBT (0.2.6)
+    YPBT (0.2.8)
       http (~> 2.0)
       ruby-duration (~> 3.2.3)
     activesupport (5.0.0.1)
@@ -142,7 +142,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  YPBT (~> 0.2.6)
+  YPBT (~> 0.2.8)
   dry-container
   dry-monads
   dry-transaction

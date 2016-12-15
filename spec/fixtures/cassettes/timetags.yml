@@ -16517,4 +16517,215 @@ http_interactions:
         }
     http_version: 
   recorded_at: Wed, 07 Dec 2016 02:15:17 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=OyDSCKYz5sA&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 05:50:51 GMT
+      Date:
+      - Thu, 15 Dec 2016 05:50:51 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/Id2CqTU9edHbDNkZRQmhkxwRvLM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '5461'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "OyDSCKYz5sA",
+           "snippet": {
+            "publishedAt": "2016-10-10T03:17:07.000Z",
+            "channelId": "UCYE8GO8URXHt3eLkqeo3uSw",
+            "title": "FULL: Second Presidential Debate - Donald Trump vs Hillary Clinton - Washington University 10/9/2016",
+            "description": "WATCH: Final Presidential Debate - Donald Trump vs Hillary Clinton: https://www.youtube.com/watch?v=dGQGwIr47YY\n\nWATCH:  First Presidential Debate 2016 - Donald Trump vs Hillary Clinton - Hofstra University NY\n\nhttps://www.youtube.com/watch?v=ZEHPrYUcoi0\n\n----------------------------------------------------------------------------------------------\n\nWATCH LIVE: Second Presidential Debate - Donald Trump vs Hillary Clinton - St. Louis, MO (10/9/2016) - Donald Trump & Hillary Clinton 2nd Presidential Debate at Washington University (October 9, 2016) - Trump Clinton debate\n\nSecond Debate trump vs clinton\n\nModerator: Martha Raddatz, Chief Global Affairs Correspondent and Co-Anchor of \"This Week,\" ABC \n\nDonald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO October 9th 2016 HQ HD~Live Trump vs Clinton Second Presidential Debate 2016 HD~LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016\nTrump Clinton Debate\nThe 2nd Presidential Debate\nSecond Presidential Debate 2016\nFULL Second Presidential Debate: Donald Trump vs Hillary Clinton 10/09/2016 - St. Louis, MO\nDonald Trump vs Hillary Clinton - Second Presidential Debate - St. Louis, MO (10/9/16)\nthe second presidential debate between Hillary Clinton and Donald Trump\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO 10/9/2016 HQ HD\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO 10/9/2016 HD\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO October 9th 2016\nLive Trump vs Clinton Second Presidential Debate 2016 HD LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016 LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016\n\nWATCH LIVESTREAM LIVE HQ Donald Trump vs Hillary Clinton 1st Presidential Debate at the Washington University in St. Louis\nMonday, September 26, 2016\nSecond presidential debate\nModerator: Lester Holt, Anchor, NBC Nightly News\nLocation: Washington University, Hempstead, MO\n\n\nTV Channels – Each debate will be broadcast live on C-SPAN, ABC, CBS, FOX and NBC, as well as all cable news channels including CNN, Fox News and MSNBC among others.\n\nFull Videos – Click the “Watch Full Video Link” below on each debate to watch the entire debate video.\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis 9-26-2016 HQ HD \n\nLIVE Stream: Donald Trump Hillary Clinton Second Presidential Debate In St. Louis 9-26-2016 HQ HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis 9-26-16 HQ HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis September 26th 2016 HQ HD\n\nLive Trump vs Hillary Second Presidential Debate 2016 HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University, Hempstead, MO\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University, Hempstead\n\nLIVE Stream: Trump vs Clinton Second Presidential Debate at the Washington University, Hempstead 9/26/16 HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University 9-26-2016 HD\n\nTAGS: Live Stream, Donald Trump, Hillary Clinton, Second Presidential Debate 2016, Trump live debate,\nlive trump debate 2016, live hillary clinton debate 2016,\nlive trump vs hillary debate 2016, live stream donald trump debates hillary clinton,\nwatch live presidential debate 2016, live Washington University, live hempstead,\nlive St. Louis debate 2016, livestream hillary vs trump debate, lester holt,\nfull Second presidential debate, live debate trump vs hillary, live 2016 debate\n\nDonald Trump Rally \nHillary Clinton Speech\nDonald Trump Speech \nHillary Clinton Rally \nTim Kaine Rally Speech Live Event \n\nPresidential Debate\n2016 Presidential Debate\nTrump Clinton Debate\nKaine Pence debate\n\nPresidential Debate\n2016 Presidential Debate\n\n#Debates #Debates2016 #debatenight #donaldtrump #trump2016 #trump #TrumpPence16 #TrumpRally #trumptrain #politics #trump4prez #makeamericagreatagain #VoteTrump2016 #TrumpHasMyVote #teamtrump #vote4trump #votetrump #trumpforpresident #americaSecond #trumphasmysupport #Debate #PresidentialDebate #SecondPresidentialdebate #HillaryClinton #Hillary #Clinton #Clinton2016 #ClintonKaine #Hofstra",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/OyDSCKYz5sA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "25"
+           },
+           "contentDetails": {
+            "duration": "PT1H33M54S"
+           },
+           "statistics": {
+            "viewCount": "3442985",
+            "likeCount": "12399",
+            "dislikeCount": "1883"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 05:50:51 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=OyDSCKYz5sA&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 05:50:59 GMT
+      Date:
+      - Thu, 15 Dec 2016 05:50:59 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/Id2CqTU9edHbDNkZRQmhkxwRvLM"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '5461'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "OyDSCKYz5sA",
+           "snippet": {
+            "publishedAt": "2016-10-10T03:17:07.000Z",
+            "channelId": "UCYE8GO8URXHt3eLkqeo3uSw",
+            "title": "FULL: Second Presidential Debate - Donald Trump vs Hillary Clinton - Washington University 10/9/2016",
+            "description": "WATCH: Final Presidential Debate - Donald Trump vs Hillary Clinton: https://www.youtube.com/watch?v=dGQGwIr47YY\n\nWATCH:  First Presidential Debate 2016 - Donald Trump vs Hillary Clinton - Hofstra University NY\n\nhttps://www.youtube.com/watch?v=ZEHPrYUcoi0\n\n----------------------------------------------------------------------------------------------\n\nWATCH LIVE: Second Presidential Debate - Donald Trump vs Hillary Clinton - St. Louis, MO (10/9/2016) - Donald Trump & Hillary Clinton 2nd Presidential Debate at Washington University (October 9, 2016) - Trump Clinton debate\n\nSecond Debate trump vs clinton\n\nModerator: Martha Raddatz, Chief Global Affairs Correspondent and Co-Anchor of \"This Week,\" ABC \n\nDonald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO October 9th 2016 HQ HD~Live Trump vs Clinton Second Presidential Debate 2016 HD~LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016\nTrump Clinton Debate\nThe 2nd Presidential Debate\nSecond Presidential Debate 2016\nFULL Second Presidential Debate: Donald Trump vs Hillary Clinton 10/09/2016 - St. Louis, MO\nDonald Trump vs Hillary Clinton - Second Presidential Debate - St. Louis, MO (10/9/16)\nthe second presidential debate between Hillary Clinton and Donald Trump\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO 10/9/2016 HQ HD\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO 10/9/2016 HD\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In Washington University in St. Louis, St. Louis, MO October 9th 2016\nLive Trump vs Clinton Second Presidential Debate 2016 HD LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016 LIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University in St. Louis, St. Louis, MO 10/9/2016\n\nWATCH LIVESTREAM LIVE HQ Donald Trump vs Hillary Clinton 1st Presidential Debate at the Washington University in St. Louis\nMonday, September 26, 2016\nSecond presidential debate\nModerator: Lester Holt, Anchor, NBC Nightly News\nLocation: Washington University, Hempstead, MO\n\n\nTV Channels – Each debate will be broadcast live on C-SPAN, ABC, CBS, FOX and NBC, as well as all cable news channels including CNN, Fox News and MSNBC among others.\n\nFull Videos – Click the “Watch Full Video Link” below on each debate to watch the entire debate video.\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis 9-26-2016 HQ HD \n\nLIVE Stream: Donald Trump Hillary Clinton Second Presidential Debate In St. Louis 9-26-2016 HQ HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis 9-26-16 HQ HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate In St. Louis September 26th 2016 HQ HD\n\nLive Trump vs Hillary Second Presidential Debate 2016 HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University, Hempstead, MO\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University, Hempstead\n\nLIVE Stream: Trump vs Clinton Second Presidential Debate at the Washington University, Hempstead 9/26/16 HD\n\nLIVE Stream: Donald Trump vs Hillary Clinton Second Presidential Debate at the Washington University 9-26-2016 HD\n\nTAGS: Live Stream, Donald Trump, Hillary Clinton, Second Presidential Debate 2016, Trump live debate,\nlive trump debate 2016, live hillary clinton debate 2016,\nlive trump vs hillary debate 2016, live stream donald trump debates hillary clinton,\nwatch live presidential debate 2016, live Washington University, live hempstead,\nlive St. Louis debate 2016, livestream hillary vs trump debate, lester holt,\nfull Second presidential debate, live debate trump vs hillary, live 2016 debate\n\nDonald Trump Rally \nHillary Clinton Speech\nDonald Trump Speech \nHillary Clinton Rally \nTim Kaine Rally Speech Live Event \n\nPresidential Debate\n2016 Presidential Debate\nTrump Clinton Debate\nKaine Pence debate\n\nPresidential Debate\n2016 Presidential Debate\n\n#Debates #Debates2016 #debatenight #donaldtrump #trump2016 #trump #TrumpPence16 #TrumpRally #trumptrain #politics #trump4prez #makeamericagreatagain #VoteTrump2016 #TrumpHasMyVote #teamtrump #vote4trump #votetrump #trumpforpresident #americaSecond #trumphasmysupport #Debate #PresidentialDebate #SecondPresidentialdebate #HillaryClinton #Hillary #Clinton #Clinton2016 #ClintonKaine #Hofstra",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/OyDSCKYz5sA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "25"
+           },
+           "contentDetails": {
+            "duration": "PT1H33M54S"
+           },
+           "statistics": {
+            "viewCount": "3442985",
+            "likeCount": "12399",
+            "dislikeCount": "1883"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 05:50:59 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=XxXx888xXxX&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Thu, 15 Dec 2016 05:51:07 GMT
+      Date:
+      - Thu, 15 Dec 2016 05:51:07 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/ftqcoEi5lFrDLEyLbPZCiTrEzXU"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '17'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": []
+        }
+    http_version: 
+  recorded_at: Thu, 15 Dec 2016 05:51:07 GMT
 recorded_with: VCR 3.0.3
