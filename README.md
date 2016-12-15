@@ -50,7 +50,7 @@ API to access the information of comments following a given movie, such as autho
 * <strong>Get</strong> /api/{version}/PopVideos/{number}  
 > *Discription:* return brief information about top assigned number of popular YouTube videos  
 > *Return:*  array of <strong>pop videos info</strong>  
-> - `number`: number of top popular YouTube videos returned  
+> `number`: number of top popular YouTube videos returned  
 > <strong>pop videos info=</strong>  
 <table>
 <tr><td><strong>Field</strong></td><td><strong>Type</strong></td></tr>
