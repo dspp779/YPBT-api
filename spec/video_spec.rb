@@ -10,6 +10,41 @@ describe 'Videos Route' do
     VCR.eject_cassette
   end
 
+  describe 'about dealing infomation of popular YouTube videos' do
+    before do
+      DB[:videos].delete
+      DB[:comments].delete
+      DB[:timetags].delete
+      DB[:authors].delete
+    end
+
+    it '[HAPPY]: return information about top assigned number of ' +
+       'popular YouTube videos' do
+      get "#{API_VER}/PopVideos/25"
+
+      last_response.status.must_equal 200
+      last_response.content_type.must_equal 'application/json'
+      videos_pop_data = JSON.parse(last_response.body)
+      videos_pop_data.length.must_equal 25
+      first_video = videos_pop_data.first
+      first_video["video_id"].length.must_be :>, 0
+      first_video["title"].length.must_be :>, 0
+      first_video["channel_id"].length.must_be :>, 0
+      first_video["channel_title"].length.must_be :>, 0
+      first_video["view_count"].wont_be_nil
+      first_video["like_count"].wont_be_nil
+      first_video["thumbnail_url"].length.must_be :>, 0
+    end
+
+    it '[SAD]: should report if assigned zero videos for ' +
+       'popular YouTube videos' do
+      get "#{API_VER}/PopVideos/0"
+
+      last_response.status.must_equal 404
+      last_response.body.must_include "No information available now"
+    end
+  end
+
   describe 'when some storaged videos existed' do
     before do
       DB[:videos].delete
