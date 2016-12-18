@@ -3,23 +3,23 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
-gem 'sinatra'
-gem 'puma'
-gem 'json'
 gem 'econfig'
+gem 'json'
+gem 'puma'
+gem 'sinatra'
 
 gem 'YPBT', '~> 0.2.8'
-gem 'sequel'
-gem 'roar'
-gem 'multi_json'
-gem 'dry-monads'
 gem 'dry-container'
+gem 'dry-monads'
 gem 'dry-transaction'
+gem 'multi_json'
+gem 'roar'
 gem 'ruby-duration', '~> 3.2', '>= 3.2.3'
+gem 'sequel'
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'pry-byebug'
+  gem 'sqlite3'
 end
 
 group :test, :production do
@@ -29,8 +29,9 @@ end
 group :development do
   gem 'rerun'
 
-  gem 'flog'
   gem 'flay'
+  gem 'flog'
+  gem 'rubocop'
 end
 
 group :test do
@@ -48,6 +49,6 @@ group :production do
 end
 
 group :development, :production do
-  gem 'tux'
   gem 'hirb'
+  gem 'tux'
 end
