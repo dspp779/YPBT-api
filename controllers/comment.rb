@@ -2,7 +2,7 @@
 
 # YPBT-API web service
 class YPBT_API < Sinatra::Base
-  #YT_URL_REGEX = %r{https://www.youtube.com/watch\?v=(\S[^&]+)}
+  # YT_URL_REGEX = %r{https://www.youtube.com/watch\?v=(\S[^&]+)}
 
   # Get comment info from database
   # tux: get 'api/v0.1/comment/:comment_id'
